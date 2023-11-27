@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - 分类 - WJ BLOG</title>
+        <link>http://example.org/categories/</link>
+        <description>Categories - 分类 - WJ BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 23 Nov 2023 17:45:25 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo安装&amp;基本配置</title>
+    <link>http://example.org/categories/hugo%E5%AE%89%E8%A3%85%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Thu, 23 Nov 2023 17:45:25 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/categories/hugo%E5%AE%89%E8%A3%85%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Authors - 作者 - WJ BLOG</title>
+        <link>http://example.org/authors/</link>
+        <description>Authors - 作者 - WJ BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 28 Feb 2022 14:27:14 &#43;0000</lastBuildDate><atom:link href="http://example.org/authors/" rel="self" type="application/rss+xml" /><item>
+    <title>PCloud</title>
+    <link>http://example.org/authors/pcloud/</link>
+    <pubDate>Mon, 28 Feb 2022 14:27:14 &#43;0000</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/authors/pcloud/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Dillon</title>
+    <link>http://example.org/authors/dillon/</link>
+    <pubDate>Fri, 06 Mar 2020 16:29:59 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/authors/dillon/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>

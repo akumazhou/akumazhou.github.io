@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Series - 系列 - WJ BLOG</title>
+        <link>http://example.org/series/</link>
+        <description>Series - 系列 - WJ BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 23 Nov 2023 17:45:25 &#43;0800</lastBuildDate><atom:link href="http://example.org/series/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo基本配置</title>
+    <link>http://example.org/series/hugo%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Thu, 23 Nov 2023 17:45:25 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/series/hugo%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>

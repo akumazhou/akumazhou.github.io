@@ -1,0 +1,77 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - 标签 - WJ BLOG</title>
+        <link>http://example.org/tags/</link>
+        <description>Tags - 标签 - WJ BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 23 Nov 2023 17:45:25 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo</title>
+    <link>http://example.org/tags/hugo/</link>
+    <pubDate>Thu, 23 Nov 2023 17:45:25 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/hugo/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>diagram</title>
+    <link>http://example.org/tags/diagram/</link>
+    <pubDate>Mon, 28 Feb 2022 14:27:14 &#43;0000</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/diagram/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Markdown</title>
+    <link>http://example.org/tags/markdown/</link>
+    <pubDate>Mon, 28 Feb 2022 14:27:14 &#43;0000</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/markdown/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>PWA</title>
+    <link>http://example.org/tags/pwa/</link>
+    <pubDate>Mon, 10 May 2021 16:21:41 &#43;0100</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/pwa/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>shortcodes</title>
+    <link>http://example.org/tags/shortcodes/</link>
+    <pubDate>Fri, 06 Mar 2020 16:29:59 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/shortcodes/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>content</title>
+    <link>http://example.org/tags/content/</link>
+    <pubDate>Wed, 04 Mar 2020 16:30:05 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/content/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>configuration</title>
+    <link>http://example.org/tags/configuration/</link>
+    <pubDate>Tue, 03 Mar 2020 21:40:32 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/configuration/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>installation</title>
+    <link>http://example.org/tags/installation/</link>
+    <pubDate>Tue, 03 Mar 2020 21:40:32 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/installation/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>HTML</title>
+    <link>http://example.org/tags/html/</link>
+    <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/html/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>emoji</title>
+    <link>http://example.org/tags/emoji/</link>
+    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/emoji/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
