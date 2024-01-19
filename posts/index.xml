@@ -3,10 +3,17 @@
         <title>所有文章 - WJ BLOG</title>
         <link>http://example.org/posts/</link>
         <description>所有文章 | WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 Nov 2023 17:41:12 &#43;0900</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Jan 2024 14:21:12 &#43;0900</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Windows自动登录</title>
+    <link>http://example.org/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</link>
+    <pubDate>Thu, 18 Jan 2024 14:21:12 &#43;0900</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</guid>
+    <description><![CDATA[一.设置自动登录的方法找到运行窗口后输入control userpasswords2或者netplwiz代码并按下回车键 在跳转界面中点击用户属]]></description>
+</item><item>
     <title>手把手教你安装1Panel,一个现代化开源的服务器管理面板</title>
     <link>http://example.org/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AE%89%E8%A3%851panel%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96%E5%BC%80%E6%BA%90%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF/</link>
-    <pubDate>Wed, 29 Nov 2023 17:41:12 &#43;0900</pubDate><author>
+    <pubDate>Wed, 29 Nov 2023 17:41:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AE%89%E8%A3%851panel%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96%E5%BC%80%E6%BA%90%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF/</guid>
     <description><![CDATA[1.进入官网GitHub - 1Panel-dev/1Panel: 🔥 🔥 🔥 现代化、开源的 Linux 服务器运维管理面板。 2.一键安装 1 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh &amp;&amp; sudo bash quick_start.sh 执行中,可以看到会自动安装docker]]></description>
@@ -86,14 +93,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/theme-documentation-basics/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>探索 Hugo - <strong>DoIt</strong> 主题的全部内容和背后的核心概念.</p>]]></description>
-</item><item>
-    <title>Markdown 基本语法</title>
-    <link>http://example.org/basic-markdown-syntax/</link>
-    <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate><author>
-                    <name>Dillon</name>
-                </author><guid>http://example.org/basic-markdown-syntax/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/basic-markdown-syntax/featured-image.webp" referrerpolicy="no-referrer">
-            </div><p>这篇文章提供了可以在 Hugo 的文章中使用的基本 Markdown 语法示例.</p>]]></description>
 </item></channel>
 </rss>

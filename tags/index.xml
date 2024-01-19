@@ -3,10 +3,17 @@
         <title>Tags - 标签 - WJ BLOG</title>
         <link>http://example.org/tags/</link>
         <description>Tags - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 Nov 2023 17:41:12 &#43;0900</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Jan 2024 14:21:12 &#43;0900</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>WINDOWS技巧</title>
+    <link>http://example.org/tags/windows%E6%8A%80%E5%B7%A7/</link>
+    <pubDate>Thu, 18 Jan 2024 14:21:12 &#43;0900</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/windows%E6%8A%80%E5%B7%A7/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>1Panel</title>
     <link>http://example.org/tags/1panel/</link>
-    <pubDate>Wed, 29 Nov 2023 17:41:12 &#43;0900</pubDate><author>
+    <pubDate>Wed, 29 Nov 2023 17:41:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/tags/1panel/</guid>
     <description><![CDATA[]]></description>
@@ -65,13 +72,6 @@
     <pubDate>Tue, 03 Mar 2020 21:40:32 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/tags/configuration/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>installation</title>
-    <link>http://example.org/tags/installation/</link>
-    <pubDate>Tue, 03 Mar 2020 21:40:32 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>http://example.org/tags/installation/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
