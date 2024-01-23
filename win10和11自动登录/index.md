@@ -7,23 +7,15 @@
 
 找到运行窗口后输入control userpasswords2或者netplwiz代码并按下回车键
 
-![1](https://img.win10h.com/2023/1012/20231012042328133.jpg)
-
-
+{{< image src="./20231012042328133.jpg" caption="图片1" height="1182px" width="489px">}}
 
 在跳转界面中点击用户属性一览，如下图所示取消对用户名密码输入的勾选
 
-![2](https://img.win10h.com/2023/1012/20231012042328412.jpg)
-
-
+{{< image src="./20231012042328412.jpg" caption="图片2" height="890px" width="492px">}}
 
 点击保存后即可看到系统已经设置为自动登录效果
 
-![3](https://img.win10h.com/2023/1012/20231012042328442.jpg)
-
-
-
-
+{{< image src="./20231012042328442.jpg" caption="图片3" height="902px" width="410px">}}
 
 
 
@@ -33,7 +25,7 @@
 
 　　但有些电脑，会出现“要使用本计算机，用户必须输入用户名和密码”选项不见的情况
 
-![4](https://i0.hdslb.com/bfs/article/c77e1d05534f00d51c92cee9870e67b1feead79c.png@!web-article-pic.webp)
+{{< image src="./c77e1d05534f00d51c92cee9870e67b1feead79c.png@!web-article-pic.webp" caption="图片4" height="471px" width="589px">}}
 
 　　解决方法，桌面新建文本文件，输入以下文字
 
@@ -47,11 +39,15 @@ Windows Registry Editor Version 5.00
 
 　　然后另存为“恢复.reg”，双击，点“是”确认(注意扩展名不是txt)
 
-![5](https://i0.hdslb.com/bfs/article/776710a9479ff4e01bfa258b51e8f694bfcb48f1.png@!web-article-pic.webp)
+{{< image src="./776710a9479ff4e01bfa258b51e8f694bfcb48f1.png@!web-article-pic.webp" caption="图片5" height="1182px" width="574px">}}
 
-　　也可以按按win+r，输入regedit，回车，然后在注册表中修改相应的值，其原始值是2，改为0即可。 
 
-![6](https://i0.hdslb.com/bfs/article/564cdcba569c21fb0103120d0302fb9394f531b0.png@1256w_888h_!web-article-pic.webp)
+
+　　也可以按按win+r，输入regedit，回车，然后在注册表中修改相应的值，其原始值是2，改为0即可。
+
+{{< image src="./564cdcba569c21fb0103120d0302fb9394f531b0.png@1256w_888h_!web-article-pic.webp" caption="图片6" height="902px" width="637px">}} 
+
+
 
 
 
