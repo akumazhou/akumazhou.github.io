@@ -3,9 +3,16 @@
         <title>WJ BLOG</title>
         <link>http://example.org/</link>
         <description>这是我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Jan 2024 14:21:12 &#43;0900</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 25 Mar 2024 10:55:12 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>黑群晖 Active Backup for Business 套件激活方法</title>
+    <link>http://example.org/%E9%BB%91%E7%BE%A4%E6%99%96-active-backup-for-business-%E5%A5%97%E4%BB%B6%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/</link>
+    <pubDate>Mon, 25 Mar 2024 10:55:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/%E9%BB%91%E7%BE%A4%E6%99%96-active-backup-for-business-%E5%A5%97%E4%BB%B6%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/</guid>
+    <description><![CDATA[黑群晖 Active Backup for Business 套件激活方法 首先我们先安装好Active Backup for Business套件 这时候打开会显示需要激活 我们到【控制面板】 - 【信息中心】 找到【]]></description>
+</item><item>
     <title>Windows自动登录</title>
     <link>http://example.org/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</link>
     <pubDate>Thu, 18 Jan 2024 14:21:12 &#43;0900</pubDate><author>
@@ -84,16 +91,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/theme-documentation-content/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>了解如何在 <strong>DoIt</strong> 主题中快速, 直观地创建和组织内容.</p>]]></description>
-</item><item>
-    <title>主题文档 - 基本概念</title>
-    <link>http://example.org/theme-documentation-basics/</link>
-    <pubDate>Tue, 03 Mar 2020 21:40:32 &#43;0800</pubDate><author>
-                    <name>Dillon</name>
-                </author><author>
-                    <name>PCloud</name>
-                </author><guid>http://example.org/theme-documentation-basics/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/theme-documentation-basics/featured-image.webp" referrerpolicy="no-referrer">
-            </div><p>探索 Hugo - <strong>DoIt</strong> 主题的全部内容和背后的核心概念.</p>]]></description>
 </item></channel>
 </rss>
