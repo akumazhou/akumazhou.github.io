@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>阿里云服务器ECS搭建个人网站新手教程（超详细） - WJ BLOG</title><meta name="Description" content="阿里云服务器ECS搭建个人网站新手教程（超详细）"><meta property="og:title" content="阿里云服务器ECS搭建个人网站新手教程（超详细）" />
+<meta property="og:description" content="阿里云服务器ECS搭建个人网站新手教程（超详细）" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-04-08T11:30:25+08:00" />
+<meta property="article:modified_time" content="2024-04-08T11:30:25+08:00" /><meta property="og:site_name" content="我的全新 Hugo 网站" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="阿里云服务器ECS搭建个人网站新手教程（超详细）"/>
+<meta name="twitter:description" content="阿里云服务器ECS搭建个人网站新手教程（超详细）"/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" /><link rel="prev" href="http://example.org/%E9%BB%91%E7%BE%A4%E6%99%96-active-backup-for-business-%E5%A5%97%E4%BB%B6%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "阿里云服务器ECS搭建个人网站新手教程（超详细）",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86\/"
+        },"genre": "posts","keywords": "web","wordcount":  2789 ,
+        "url": "http:\/\/example.org\/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86\/","datePublished": "2024-04-08T11:30:25+08:00","dateModified": "2024-04-08T11:30:25+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "AKUMA"
+            },"description": "阿里云服务器ECS搭建个人网站新手教程（超详细）"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="WJ BLOG"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/series/"> 系列 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="WJ BLOG"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/series/" title="">系列</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1ssh连接登录到云服务器">1、SSH连接登录到云服务器</a></li>
+    <li><a href="#2执行宝塔面板的安装命令">2、执行宝塔面板的安装命令</a></li>
+    <li><a href="#3宝塔面板登录地址账号和密码">3、宝塔面板登录地址、账号和密码</a></li>
+    <li><a href="#4在阿里云服务器控制台开通宝塔面板端口">4、在阿里云服务器控制台开通宝塔面板端口</a></li>
+    <li><a href="#5登录到宝塔管理地址并安装lnmp环境">5、登录到宝塔管理地址并安装LNMP环境</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">阿里云服务器ECS搭建个人网站新手教程（超详细）</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">AKUMA</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-08">2024-04-08</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-08">2024-04-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2789 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 6 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1ssh连接登录到云服务器">1、SSH连接登录到云服务器</a></li>
+    <li><a href="#2执行宝塔面板的安装命令">2、执行宝塔面板的安装命令</a></li>
+    <li><a href="#3宝塔面板登录地址账号和密码">3、宝塔面板登录地址、账号和密码</a></li>
+    <li><a href="#4在阿里云服务器控制台开通宝塔面板端口">4、在阿里云服务器控制台开通宝塔面板端口</a></li>
+    <li><a href="#5登录到宝塔管理地址并安装lnmp环境">5、登录到宝塔管理地址并安装LNMP环境</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><blockquote>
+<p><strong>简介：</strong> 阿里云服务器ECS搭建个人网站新手教程超详细，使用阿里云服务器快速搭建网站教程，先为云服务器安装宝塔面板，然后在宝塔面板上新建站点，阿里云服务器网以搭建WordPress网站博客为例，来详细说下从阿里云服务器CPU内存配置选择、Web环境、域名解析到网站上线全流程：</p>
+</blockquote>
+<p>使用阿里云服务器快速搭建网站教程，先为云服务器安装宝塔面板，然后在宝塔面板上新建站点，阿里云服务器网以搭建WordPress网站博客为例，来详细说下从阿里云服务器CPU内存配置选择、Web环境、域名解析到网站上线全流程：</p>
+<h1 id="步骤一云服务器配置选择" class="headerLink">
+    <a href="#%e6%ad%a5%e9%aa%a4%e4%b8%80%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%85%8d%e7%bd%ae%e9%80%89%e6%8b%a9" class="header-mark"></a>步骤一：云服务器配置选择</h1><p>如果你已经有了阿里云服务器，那么可以跳过步骤一。阿里云服务器分为<a href="https://www.aliyun.com/product/ecs?source=5176.11533457&amp;userCode=r3yteowb" target="_blank" rel="noopener noreferrer">云服务器ECS</a>和<a href="https://www.aliyun.com/product/swas?source=5176.11533457&amp;userCode=r3yteowb" target="_blank" rel="noopener noreferrer">轻量应用服务器</a>，轻量应用服务器支持WordPress、宝塔面板等应用镜像，通过应用镜像可以一键搭建网站，非常简单，所以阿里云服务器网就不多赘述。本文阿里云服务器网是以云服务器ECS实例为例，从零开始为大家讲解使用阿里云服务器建站流程。</p>
+<p>关于轻量和ECS区别请参考：<a href="https://help.aliyun.com/document_detail/369471.html?source=5176.11533457&amp;userCode=r3yteowb" target="_blank" rel="noopener noreferrer">https://help.aliyun.com/document_detail/369471.html</a> 本文不多赘述。</p>
+<p>云服务器CPU内存配置如何选择？根据实际应用情况选择，如果是个人用户搭建博客1核2G或2核2G就够用了，如果是企业用户建议2核4G起步，阿里云服务器网用来搭建个人博客，所以选择了1核2G配置的云服务器，1M公网带宽就够用了，操作系统选择了CentOS镜像。可以使用阿里云测速工具 aliyunping.com 测试一下本地到阿里云服务器各个地域节点的Ping值网络延迟。</p>
+<ul>
+<li>云服务器ECS：<a href="https://www.aliyun.com/product/ecs?source=5176.11533457&amp;userCode=r3yteowb" target="_blank" rel="noopener noreferrer">https://www.aliyun.com/product/ecs</a></li>
+<li>轻量应用服务器：<a href="https://www.aliyun.com/product/swas?source=5176.11533457&amp;userCode=r3yteowb" target="_blank" rel="noopener noreferrer">https://www.aliyun.com/product/swas</a></li>
+</ul>
+<h1 id="步骤二通过宝塔面板为云服务器安装web环境" class="headerLink">
+    <a href="#%e6%ad%a5%e9%aa%a4%e4%ba%8c%e9%80%9a%e8%bf%87%e5%ae%9d%e5%a1%94%e9%9d%a2%e6%9d%bf%e4%b8%ba%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%ae%89%e8%a3%85web%e7%8e%af%e5%a2%83" class="header-mark"></a>步骤二：通过宝塔面板为云服务器安装Web环境</h1><p>Web环境是网站运行所依赖的环境，阿里云百科是用来搭建WordPress博客，为云服务器安装LNMP环境（Linux+Nginx+MySQL+PHP），本文的LNMP环境是通过安装宝塔Linux面板实现的，下面开始安装宝塔Linux面板。</p>
+<h2 id="1ssh连接登录到云服务器" class="headerLink">
+    <a href="#1ssh%e8%bf%9e%e6%8e%a5%e7%99%bb%e5%bd%95%e5%88%b0%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8" class="header-mark"></a>1、SSH连接登录到云服务器</h2><p>阿里云服务器支持多种远程连接方式，可以使用阿里云自带的<a href="https://help.aliyun.com/document_detail/71529.html?source=5176.11533457&amp;userCode=r3yteowb" target="_blank" rel="noopener noreferrer">Workbench远程连接方式</a>，也可以使用第三方SSH远程连接软件如PuTTY、Xshell等。阿里云服务器网使用阿里云自带的远程连接方式：</p>
+<p>首先登录到云服务器ECS管理控制台，左侧栏【实例与镜像】&raquo;【实例】，找到目标云服务器ECS实例，然后点击右侧的【远程连接】，如下图：
+<figure><a class="lightgallery" href="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_7f2a540201554efca023f04b21b76ae5.jpg" title="yuanchenglianjie.jpg" data-thumbnail="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_7f2a540201554efca023f04b21b76ae5.jpg">
+        <img
+            
+            loading="lazy"
+            src="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_7f2a540201554efca023f04b21b76ae5.jpg"
+            srcset="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_7f2a540201554efca023f04b21b76ae5.jpg, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_7f2a540201554efca023f04b21b76ae5.jpg 1.5x, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_7f2a540201554efca023f04b21b76ae5.jpg 2x"
+            sizes="auto"
+            alt="yuanchenglianjie.jpg">
+    </a></figure>
+可以选择SSH密码登录或密匙证书登录，如果没有密码，可以<a href="https://help.aliyun.com/document_detail/25439.html?source=5176.11533457&amp;userCode=r3yteowb" target="_blank" rel="noopener noreferrer">重置密码</a>。</p>
+<h2 id="2执行宝塔面板的安装命令" class="headerLink">
+    <a href="#2%e6%89%a7%e8%a1%8c%e5%ae%9d%e5%a1%94%e9%9d%a2%e6%9d%bf%e7%9a%84%e5%ae%89%e8%a3%85%e5%91%bd%e4%bb%a4" class="header-mark"></a>2、执行宝塔面板的安装命令</h2><p>登录到你的云服务器后，执行宝塔面板安装命令，阿里云服务器网使用的CentOS操作系统，命令如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">yum</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">wget</span> <span class="o">&amp;&amp;</span> <span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="n">install</span><span class="o">.</span><span class="n">sh</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="o">.</span><span class="n">bt</span><span class="o">.</span><span class="n">cn</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">install_6</span><span class="o">.</span><span class="mf">0.</span><span class="n">sh</span> <span class="o">&amp;&amp;</span> <span class="n">sh</span> <span class="n">install</span><span class="o">.</span><span class="n">sh</span> <span class="n">ed8484bec</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行宝塔Linux面板安装命令后，会提示如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Do you want to install Bt-Panel to the /www directory now?(y/n): y
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>保持默认，回复个字母“y”，如下图：
+<figure><a class="lightgallery" href="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_587a0b985252458d9d93f9b9846bbf7e.jpg" title="y.jpg" data-thumbnail="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_587a0b985252458d9d93f9b9846bbf7e.jpg">
+        <img
+            
+            loading="lazy"
+            src="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_587a0b985252458d9d93f9b9846bbf7e.jpg"
+            srcset="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_587a0b985252458d9d93f9b9846bbf7e.jpg, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_587a0b985252458d9d93f9b9846bbf7e.jpg 1.5x, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_587a0b985252458d9d93f9b9846bbf7e.jpg 2x"
+            sizes="auto"
+            alt="y.jpg">
+    </a></figure></p>
+<p>然后回车，系统会自动安装，大约1分钟左右会自动安装完成。</p>
+<h2 id="3宝塔面板登录地址账号和密码" class="headerLink">
+    <a href="#3%e5%ae%9d%e5%a1%94%e9%9d%a2%e6%9d%bf%e7%99%bb%e5%bd%95%e5%9c%b0%e5%9d%80%e8%b4%a6%e5%8f%b7%e5%92%8c%e5%af%86%e7%a0%81" class="header-mark"></a>3、宝塔面板登录地址、账号和密码</h2><p>宝塔面板自动安装完成后，会显示宝塔后台登录地址、username和password，如下图：
+<figure><a class="lightgallery" href="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_2052ebb6352b46f3aa789e8846311ad8.jpg" title="zhanghaomima.jpg" data-thumbnail="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_2052ebb6352b46f3aa789e8846311ad8.jpg">
+        <img
+            
+            loading="lazy"
+            src="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_2052ebb6352b46f3aa789e8846311ad8.jpg"
+            srcset="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_2052ebb6352b46f3aa789e8846311ad8.jpg, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_2052ebb6352b46f3aa789e8846311ad8.jpg 1.5x, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_2052ebb6352b46f3aa789e8846311ad8.jpg 2x"
+            sizes="auto"
+            alt="zhanghaomima.jpg">
+    </a></figure>
+如上图所示，保存好上述信息，如果是通过外网登录宝塔后台，就是用外网面板地址，如果是在云服务器上登录宝塔可以使用内网面板地址。</p>
+<h2 id="4在阿里云服务器控制台开通宝塔面板端口" class="headerLink">
+    <a href="#4%e5%9c%a8%e9%98%bf%e9%87%8c%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%8e%a7%e5%88%b6%e5%8f%b0%e5%bc%80%e9%80%9a%e5%ae%9d%e5%a1%94%e9%9d%a2%e6%9d%bf%e7%ab%af%e5%8f%a3" class="header-mark"></a>4、在阿里云服务器控制台开通宝塔面板端口</h2><p>最初宝塔面板的端口号是8888，出于安全考虑，现在宝塔面板使用的端口是程序安装完成后随机生成的端口号，在上图的面板地址中可以看出，端口号为39118，在云服务器ECS的安全组中开启宝塔端口号。</p>
+<p>安全组开启端口详细教程参考：<a href="https://help.aliyun.com/document_detail/25471.html?source=5176.11533457&amp;userCode=r3yteowb" target="_blank" rel="noopener noreferrer">https://help.aliyun.com/document_detail/25471.html</a></p>
+<h2 id="5登录到宝塔管理地址并安装lnmp环境" class="headerLink">
+    <a href="#5%e7%99%bb%e5%bd%95%e5%88%b0%e5%ae%9d%e5%a1%94%e7%ae%a1%e7%90%86%e5%9c%b0%e5%9d%80%e5%b9%b6%e5%ae%89%e8%a3%85lnmp%e7%8e%af%e5%a2%83" class="header-mark"></a>5、登录到宝塔管理地址并安装LNMP环境</h2><p>在浏览器中粘贴宝塔面板的外网面板地址，并输入账号和密码，登录到宝塔面板管理后台，第一次登录需要勾选同意协议，然后进入面板。然后绑定宝塔帐号，有宝塔账号的话，直接输入手机号和密码登录即可。</p>
+<p>然后会弹出推荐安装套件窗口，选择LNMP(推荐)，点击【一键安装】，如下图：
+<figure><a class="lightgallery" href="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_d9fb80055cc14b86b0bd8fe36915d11e.jpg" title="lnmp.jpg" data-thumbnail="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_d9fb80055cc14b86b0bd8fe36915d11e.jpg">
+        <img
+            
+            loading="lazy"
+            src="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_d9fb80055cc14b86b0bd8fe36915d11e.jpg"
+            srcset="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_d9fb80055cc14b86b0bd8fe36915d11e.jpg, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_d9fb80055cc14b86b0bd8fe36915d11e.jpg 1.5x, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_d9fb80055cc14b86b0bd8fe36915d11e.jpg 2x"
+            sizes="auto"
+            alt="lnmp.jpg">
+    </a></figure></p>
+<p>会弹出消息盒子，显示安装进度，大约等待5分钟左右，即可自动安装WordPress博客程序所需的Web环境。</p>
+<h1 id="步骤三在宝塔面板上添加站点" class="headerLink">
+    <a href="#%e6%ad%a5%e9%aa%a4%e4%b8%89%e5%9c%a8%e5%ae%9d%e5%a1%94%e9%9d%a2%e6%9d%bf%e4%b8%8a%e6%b7%bb%e5%8a%a0%e7%ab%99%e7%82%b9" class="header-mark"></a>步骤三：在宝塔面板上添加站点</h1><p>登录到宝塔面板管理后台，点击左侧栏的【网站】&raquo;【添加站点】，如下图：
+<figure><a class="lightgallery" href="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_ad7df6da40994b7f90558685d096fa88.jpg" title="tianjiazhandian.jpg" data-thumbnail="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_ad7df6da40994b7f90558685d096fa88.jpg">
+        <img
+            
+            loading="lazy"
+            src="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_ad7df6da40994b7f90558685d096fa88.jpg"
+            srcset="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_ad7df6da40994b7f90558685d096fa88.jpg, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_ad7df6da40994b7f90558685d096fa88.jpg 1.5x, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_ad7df6da40994b7f90558685d096fa88.jpg 2x"
+            sizes="auto"
+            alt="tianjiazhandian.jpg">
+    </a></figure>
+域名：输入域名，www和不带www都的域名均可填写
+根目录：根目录会根据域名自动生成，默认即可
+FTP账号：需要FTP就选择创建，系统会自动生成FTP账号和密码，也可以自己自定义设置
+数据库：选择创建MySQL，系统会自动创建数据库账号和密码</p>
+<p>然后点【提交】，会显示成功创建站点，并显示FTP和数据库账号资料。</p>
+<h1 id="步骤四下载wordpress程序安装包" class="headerLink">
+    <a href="#%e6%ad%a5%e9%aa%a4%e5%9b%9b%e4%b8%8b%e8%bd%bdwordpress%e7%a8%8b%e5%ba%8f%e5%ae%89%e8%a3%85%e5%8c%85" class="header-mark"></a>步骤四：下载WordPress程序安装包</h1><p>已经下载的同学可以跳过此步骤，在WordPress官网下载WP程序安装包即可。</p>
+<h1 id="步骤五上传wordpress安装包到根目录" class="headerLink">
+    <a href="#%e6%ad%a5%e9%aa%a4%e4%ba%94%e4%b8%8a%e4%bc%a0wordpress%e5%ae%89%e8%a3%85%e5%8c%85%e5%88%b0%e6%a0%b9%e7%9b%ae%e5%bd%95" class="header-mark"></a>步骤五：上传WordPress安装包到根目录</h1><p>点击左侧栏【文件】&raquo;【上传】，将你的WordPress安装包程序上传到网站根目录。网站根目录路径为：/www/wwwroot/你的域名，如下图：
+<figure><a class="lightgallery" href="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_f1746b01365d40739a9e045cbc656df8.jpg" title="genmulu.jpg" data-thumbnail="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_f1746b01365d40739a9e045cbc656df8.jpg">
+        <img
+            
+            loading="lazy"
+            src="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_f1746b01365d40739a9e045cbc656df8.jpg"
+            srcset="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_f1746b01365d40739a9e045cbc656df8.jpg, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_f1746b01365d40739a9e045cbc656df8.jpg 1.5x, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_f1746b01365d40739a9e045cbc656df8.jpg 2x"
+            sizes="auto"
+            alt="genmulu.jpg">
+    </a></figure></p>
+<h1 id="步骤六域名解析到你的云服务器公网ip地址" class="headerLink">
+    <a href="#%e6%ad%a5%e9%aa%a4%e5%85%ad%e5%9f%9f%e5%90%8d%e8%a7%a3%e6%9e%90%e5%88%b0%e4%bd%a0%e7%9a%84%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%85%ac%e7%bd%91ip%e5%9c%b0%e5%9d%80" class="header-mark"></a>步骤六：域名解析到你的云服务器公网IP地址</h1><p>在域名注册商处，将你的域名解析到你的云服务器的公网IP地址上，解析教程以域名注册商文档为准，阿里云域名添加网站解析参考：<a href="https://help.aliyun.com/document_detail/106535.html?source=5176.11533457&amp;userCode=r3yteowb" target="_blank" rel="noopener noreferrer">https://help.aliyun.com/document_detail/106535.html</a></p>
+<h1 id="步骤七安装wordpress程序" class="headerLink">
+    <a href="#%e6%ad%a5%e9%aa%a4%e4%b8%83%e5%ae%89%e8%a3%85wordpress%e7%a8%8b%e5%ba%8f" class="header-mark"></a>步骤七：安装WordPress程序</h1><p>域名解析到云服务器生效后，在浏览器中输入你的域名，并打开网站，就可以看到熟悉的WordPress安装界面，如下图：
+<figure><a class="lightgallery" href="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_1696a62d1b2945feb9e8c98b7b574530.jpg" title="wpanzhuang.jpg" data-thumbnail="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_1696a62d1b2945feb9e8c98b7b574530.jpg">
+        <img
+            
+            loading="lazy"
+            src="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_1696a62d1b2945feb9e8c98b7b574530.jpg"
+            srcset="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_1696a62d1b2945feb9e8c98b7b574530.jpg, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_1696a62d1b2945feb9e8c98b7b574530.jpg 1.5x, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_1696a62d1b2945feb9e8c98b7b574530.jpg 2x"
+            sizes="auto"
+            alt="wpanzhuang.jpg">
+    </a></figure>
+如上图，点击现在就开始！
+填写数据库名、数据库用户名和密码信息，该信息是在步骤三中，在宝塔面板上添加站点时生成的用户名和密码信息，此步骤填写的是数据库信息，填写完成后点击提交。如下图：
+<figure><a class="lightgallery" href="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_e70ecfe04f194cfba4b18acf1344e206.jpg" title="tianxieshujuku.jpg" data-thumbnail="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_e70ecfe04f194cfba4b18acf1344e206.jpg">
+        <img
+            
+            loading="lazy"
+            src="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_e70ecfe04f194cfba4b18acf1344e206.jpg"
+            srcset="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_e70ecfe04f194cfba4b18acf1344e206.jpg, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_e70ecfe04f194cfba4b18acf1344e206.jpg 1.5x, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_e70ecfe04f194cfba4b18acf1344e206.jpg 2x"
+            sizes="auto"
+            alt="tianxieshujuku.jpg">
+    </a></figure></p>
+<p>数据库信息通过后，然后填写WordPress站点标题、用户名、密码及电子邮件信息，然后点击安装WordPress，如下图：
+<figure><a class="lightgallery" href="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_cbd3fbb29fc04bb7829b8cdf3a09c69c.jpg" title="anzhuang.jpg" data-thumbnail="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_cbd3fbb29fc04bb7829b8cdf3a09c69c.jpg">
+        <img
+            
+            loading="lazy"
+            src="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_cbd3fbb29fc04bb7829b8cdf3a09c69c.jpg"
+            srcset="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_cbd3fbb29fc04bb7829b8cdf3a09c69c.jpg, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_cbd3fbb29fc04bb7829b8cdf3a09c69c.jpg 1.5x, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_cbd3fbb29fc04bb7829b8cdf3a09c69c.jpg 2x"
+            sizes="auto"
+            alt="anzhuang.jpg">
+    </a></figure>
+提示：成功！WordPress安装完成。谢谢！
+<figure><a class="lightgallery" href="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_52f8071921ac49239f85f0eb58aa17fd.jpg" title="chenggong.jpg" data-thumbnail="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_52f8071921ac49239f85f0eb58aa17fd.jpg">
+        <img
+            
+            loading="lazy"
+            src="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_52f8071921ac49239f85f0eb58aa17fd.jpg"
+            srcset="https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_52f8071921ac49239f85f0eb58aa17fd.jpg, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_52f8071921ac49239f85f0eb58aa17fd.jpg 1.5x, https://ucc.alicdn.com/pic/developer-ecology/gwu3lhygmapgi_52f8071921ac49239f85f0eb58aa17fd.jpg 2x"
+            sizes="auto"
+            alt="chenggong.jpg">
+    </a></figure></p>
+<p>至此，使用阿里云服务器搭建WordPress网站博客教程完毕，现在云服务器安装WordPress所需的Web环境，本文阿里云百科选择通过宝塔面板的方式来安装Web环境，然后在宝塔面板上新建WordPress网站。</p>
+<p>更多关于阿里云服务器使用说明，请以官方页面为准：<a href="https://www.aliyun.com/product/ecs?source=5176.11533457&amp;userCode=r3yteowb" target="_blank" rel="noopener noreferrer">https://www.aliyun.com/product/ecs</a></p>
+<br>
+<p>————————————————<br>
+版权声明：本文为CSDN博主「生生世世是所说的」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://developer.aliyun.com/article/1209096" target="_blank" rel="noopener noreferrer">阿里云服务器ECS搭建个人网站新手教程（超详细）-阿里云开发者社区 (aliyun.com)</a></p>
+</div>
+
+        
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-04-08</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" data-title="阿里云服务器ECS搭建个人网站新手教程（超详细）" data-hashtags="web"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" data-hashtag="web"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" data-title="阿里云服务器ECS搭建个人网站新手教程（超详细）" data-web><span class="fab fa-whatsapp fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" data-title="阿里云服务器ECS搭建个人网站新手教程（超详细）"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" data-title="阿里云服务器ECS搭建个人网站新手教程（超详细）"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Myspace" data-sharer="myspace" data-url="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" data-title="阿里云服务器ECS搭建个人网站新手教程（超详细）" data-description="阿里云服务器ECS搭建个人网站新手教程（超详细）"><span data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></span></button><button title="分享到 Blogger" data-sharer="blogger" data-url="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" data-title="阿里云服务器ECS搭建个人网站新手教程（超详细）" data-description="阿里云服务器ECS搭建个人网站新手教程（超详细）"><span class="fab fa-blogger fa-fw"></span></button><button title="分享到 Evernote" data-sharer="evernote" data-url="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" data-title="阿里云服务器ECS搭建个人网站新手教程（超详细）"><span class="fab fa-evernote fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/web/">web</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E9%BB%91%E7%BE%A4%E6%99%96-active-backup-for-business-%E5%A5%97%E4%BB%B6%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/" class="prev" rel="prev" title="黑群晖 Active Backup for Business 套件激活方法"><i class="fas fa-angle-left fa-fw"></i>黑群晖 Active Backup for Business 套件激活方法</a></div>
+</div>
+<div id="comments"></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.120.4">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">AKUMA</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"WJ BLOG","mobile-header-typeit":"WJ BLOG"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

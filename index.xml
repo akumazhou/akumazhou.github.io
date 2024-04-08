@@ -3,9 +3,16 @@
         <title>WJ BLOG</title>
         <link>http://example.org/</link>
         <description>这是我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 25 Mar 2024 10:55:12 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 08 Apr 2024 11:30:25 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>阿里云服务器ECS搭建个人网站新手教程（超详细）</title>
+    <link>http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/</link>
+    <pubDate>Mon, 08 Apr 2024 11:30:25 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/</guid>
+    <description><![CDATA[简介： 阿里云服务器ECS搭建个人网站新手教程超详细，使用阿里云服务器快速搭建网站教程，先为云服务器安装宝塔面板，然后在宝塔面板上新建站点，阿]]></description>
+</item><item>
     <title>黑群晖 Active Backup for Business 套件激活方法</title>
     <link>http://example.org/%E9%BB%91%E7%BE%A4%E6%99%96-active-backup-for-business-%E5%A5%97%E4%BB%B6%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/</link>
     <pubDate>Mon, 25 Mar 2024 10:55:12 &#43;0800</pubDate><author>
@@ -80,16 +87,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/theme-documentation-built-in-shortcodes/featured-image.webp" referrerpolicy="no-referrer">
             </div><p><strong>Hugo</strong> 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁.</p>]]></description>
-</item><item>
-    <title>主题文档 - 内容</title>
-    <link>http://example.org/theme-documentation-content/</link>
-    <pubDate>Wed, 04 Mar 2020 16:30:05 &#43;0800</pubDate><author>
-                    <name>Dillon</name>
-                </author><author>
-                    <name>PCloud</name>
-                </author><guid>http://example.org/theme-documentation-content/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/theme-documentation-content/featured-image.webp" referrerpolicy="no-referrer">
-            </div><p>了解如何在 <strong>DoIt</strong> 主题中快速, 直观地创建和组织内容.</p>]]></description>
 </item></channel>
 </rss>
