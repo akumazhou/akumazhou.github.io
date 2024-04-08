@@ -48,7 +48,7 @@ Do you want to install Bt-Panel to the /www directory now?(y/n): y
 
 保持默认，回复个字母“y”，如下图：
 
-{{< image src="./gwu3lhygmapgi_587a0b985252458d9d93f9b9846bbf7e.jpg" caption="图片2" >}}
+{{< image src="./gwu3lhygmapgi_587a0b985252458d9d93f9b9846bbf7e.jpg" >}}
 
 然后回车，系统会自动安装，大约1分钟左右会自动安装完成。
 
