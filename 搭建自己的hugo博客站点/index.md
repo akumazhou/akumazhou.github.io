@@ -377,7 +377,7 @@ https://onlyonexl.github.io/hugoblog/
 
  - 验证(完美)😘
 
-{{< image src="./4290606701.png" >}}
+   {{< image src="./4290606701.png" >}}
 
 📍 如何修改站点名称(已解决)-2022.5.4
 
@@ -389,7 +389,7 @@ https://onlyonexl.github.io/hugoblog/
 
  - 效果
 
-{{< image src="./2844540220.png" >}}
+   {{< image src="./2844540220.png" >}}
 
 📍 hugo目录结构
 
