@@ -37,7 +37,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/example.org\/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4\/"
-        },"genre": "posts","keywords": "WINDOWS技巧","wordcount":  2113 ,
+        },"genre": "posts","keywords": "WINDOWS技巧","wordcount":  2124 ,
         "url": "http:\/\/example.org\/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4\/","datePublished": "2024-05-09T10:50:45+08:00","dateModified": "2024-05-09T10:50:45+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -119,46 +119,126 @@
 <main class="main">
             <div class="container"><div class="toc" id="toc-auto">
         <h2 class="toc-title">目录</h2>
-        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents"></nav></div>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#1ping测试"><strong>1、Ping测试</strong></a></li>
+                <li><a href="#2traceroutetracepath"><strong>2、Traceroute/Tracepath</strong></a></li>
+                <li><a href="#3telnetssh远程登录"><strong>3、Telnet/SSH远程登录</strong></a></li>
+                <li><a href="#4路由表和arp表检查"><strong>4、路由表和ARP表检查</strong></a></li>
+                <li><a href="#5日志分析"><strong>5、日志分析</strong></a></li>
+                <li><a href="#6端口和服务检查"><strong>6、端口和服务检查</strong></a></li>
+                <li><a href="#7更新和备份">**7、更新和备份</a></li>
+                <li><a href="#8dns查询"><strong>8、DNS查询</strong></a></li>
+                <li><a href="#9防火墙规则检查">**9、防火墙规则检查</a></li>
+                <li><a href="#10vlan配置检查"><strong>10、VLAN配置检查</strong></a></li>
+                <li><a href="#11mtu大小检查"><strong>11、MTU大小检查</strong></a></li>
+                <li><a href="#12负载均衡配置检查"><strong>12、负载均衡配置检查</strong></a></li>
+                <li><a href="#13bgp邻居状态检查"><strong>13、BGP邻居状态检查</strong></a></li>
+                <li><a href="#14子网掩码检查"><strong>14、子网掩码检查</strong></a></li>
+                <li><a href="#15mtu-path-discovery">15、MTU Path Discovery</a></li>
+                <li><a href="#16acl规则检查"><strong>16、ACL规则检查</strong></a></li>
+                <li><a href="#17dhcp规则检查"><strong>17、DHCP规则检查</strong></a></li>
+                <li><a href="#18链路聚合检查"><strong>18、链路聚合检查</strong></a></li>
+                <li><a href="#19mac地址表检查"><strong>19、MAC地址表检查</strong></a></li>
+                <li><a href="#20系统资源利用率监控"><strong>20、系统资源利用率监控</strong></a></li>
+                <li><a href="#21acl日志分析"><strong>21、ACL日志分析</strong></a></li>
+                <li><a href="#22链路状态检查"><strong>22、链路状态检查</strong></a></li>
+                <li><a href="#23dns服务器可用性检查"><strong>23、DNS服务器可用性检查</strong></a></li>
+                <li><a href="#24ospf邻居状态检查"><strong>24、OSPF邻居状态检查</strong></a></li>
+                <li><a href="#25冗余路由和ha状态检查"><strong>25、冗余路由和HA状态检查</strong></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">网络工程师常用的25个排障命令</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">AKUMA</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-05-09">2024-05-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-05-09">2024-05-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2113 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-05-09">2024-05-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-05-09">2024-05-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2124 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#1ping测试"><strong>1、Ping测试</strong></a></li>
+                <li><a href="#2traceroutetracepath"><strong>2、Traceroute/Tracepath</strong></a></li>
+                <li><a href="#3telnetssh远程登录"><strong>3、Telnet/SSH远程登录</strong></a></li>
+                <li><a href="#4路由表和arp表检查"><strong>4、路由表和ARP表检查</strong></a></li>
+                <li><a href="#5日志分析"><strong>5、日志分析</strong></a></li>
+                <li><a href="#6端口和服务检查"><strong>6、端口和服务检查</strong></a></li>
+                <li><a href="#7更新和备份">**7、更新和备份</a></li>
+                <li><a href="#8dns查询"><strong>8、DNS查询</strong></a></li>
+                <li><a href="#9防火墙规则检查">**9、防火墙规则检查</a></li>
+                <li><a href="#10vlan配置检查"><strong>10、VLAN配置检查</strong></a></li>
+                <li><a href="#11mtu大小检查"><strong>11、MTU大小检查</strong></a></li>
+                <li><a href="#12负载均衡配置检查"><strong>12、负载均衡配置检查</strong></a></li>
+                <li><a href="#13bgp邻居状态检查"><strong>13、BGP邻居状态检查</strong></a></li>
+                <li><a href="#14子网掩码检查"><strong>14、子网掩码检查</strong></a></li>
+                <li><a href="#15mtu-path-discovery">15、MTU Path Discovery</a></li>
+                <li><a href="#16acl规则检查"><strong>16、ACL规则检查</strong></a></li>
+                <li><a href="#17dhcp规则检查"><strong>17、DHCP规则检查</strong></a></li>
+                <li><a href="#18链路聚合检查"><strong>18、链路聚合检查</strong></a></li>
+                <li><a href="#19mac地址表检查"><strong>19、MAC地址表检查</strong></a></li>
+                <li><a href="#20系统资源利用率监控"><strong>20、系统资源利用率监控</strong></a></li>
+                <li><a href="#21acl日志分析"><strong>21、ACL日志分析</strong></a></li>
+                <li><a href="#22链路状态检查"><strong>22、链路状态检查</strong></a></li>
+                <li><a href="#23dns服务器可用性检查"><strong>23、DNS服务器可用性检查</strong></a></li>
+                <li><a href="#24ospf邻居状态检查"><strong>24、OSPF邻居状态检查</strong></a></li>
+                <li><a href="#25冗余路由和ha状态检查"><strong>25、冗余路由和HA状态检查</strong></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
             </div><div class="content" id="content"><p>在网络运维工作中，掌握排障命令可以帮助我们快速定位和解决各种网络故障，确保网络稳定运行。</p>
 <p>今天要和大家分享的是关于<strong>网络排障中常用的25个命令</strong>。</p>
-<p><strong>1、Ping测试</strong></p>
-<p>**方法：**使用Ping命令测试目标设备的连通性。</p>
+<h5 id="1ping测试" class="headerLink">
+    <a href="#1ping%e6%b5%8b%e8%af%95" class="header-mark"></a><strong>1、Ping测试</strong></h5><p>**方法：**使用Ping命令测试目标设备的连通性。</p>
 <p>**命令：**在命令行界面中输入以下命令</p>
 <p>ping 目标设备的IP地址或域名</p>
 <p>示例: （假设目标IP地址为10.0.0.1）</p>
 <p>&lt;设备&gt; ping 10.0.0.1</p>
 <p>**
 **</p>
-<p><strong>2、Traceroute/Tracepath</strong></p>
-<p>方法：使用tracert命令（Windows）或traceroute命令（Linux）查看数据包的路由路径</p>
+<h5 id="2traceroutetracepath" class="headerLink">
+    <a href="#2traceroutetracepath" class="header-mark"></a><strong>2、Traceroute/Tracepath</strong></h5><p>方法：使用tracert命令（Windows）或traceroute命令（Linux）查看数据包的路由路径</p>
 <p>命令：在命令行界面中输入以下命令</p>
 <p>tracert 目标设备的IP地址或域名</p>
 <p>示例: （假设目标IP地址为10.0.0.1）</p>
 <p>&lt;设备&gt; tracert 10.0.0.1</p>
 <p>**
 **</p>
-<p><strong>3、Telnet/SSH远程登录</strong></p>
-<p>方法：使用Telnet或SSH协议远程连接到目标设备，以查看和管理设备</p>
+<h5 id="3telnetssh远程登录" class="headerLink">
+    <a href="#3telnetssh%e8%bf%9c%e7%a8%8b%e7%99%bb%e5%bd%95" class="header-mark"></a><strong>3、Telnet/SSH远程登录</strong></h5><p>方法：使用Telnet或SSH协议远程连接到目标设备，以查看和管理设备</p>
 <p>命令（SSH）：在命令行界面输入以下命令</p>
 <p>ssh 用户名@目标设备的IP地址或域名</p>
 <p>示例: （假设用户名为admin，目标IP地址为10.0.0.1）</p>
 <p>&lt;设备&gt; ssh <a href="mailto:admin@10.0.0.1" rel="">admin@10.0.0.1</a></p>
 <p>**
 **</p>
-<p><strong>4、路由表和ARP表检查</strong></p>
-<p>方法：查看路由器上的路由表和ARP表</p>
+<h5 id="4路由表和arp表检查" class="headerLink">
+    <a href="#4%e8%b7%af%e7%94%b1%e8%a1%a8%e5%92%8carp%e8%a1%a8%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>4、路由表和ARP表检查</strong></h5><p>方法：查看路由器上的路由表和ARP表</p>
 <p>命令（路由表）：在命令行界面中输入以下命令</p>
 <p>display ip routing-table</p>
 <p>&lt;设备&gt;display ip routing-table</p>
@@ -167,66 +247,66 @@
 <p>&lt;设备&gt;display arp</p>
 <p>**
 **</p>
-<p><strong>5、日志分析</strong></p>
-<p>**
+<h5 id="5日志分析" class="headerLink">
+    <a href="#5%e6%97%a5%e5%bf%97%e5%88%86%e6%9e%90" class="header-mark"></a><strong>5、日志分析</strong></h5><p>**
 **方法：查看设备和服务器上的日志文件，以查找与网络问题相关的错误或异常信息</p>
 <p>示例：使用命令查看设备上的日志文件</p>
 <p>&lt;设备&gt; display logbuffer</p>
 <p>**
 **</p>
-<p><strong>6、端口和服务检查</strong></p>
-<p>方法：确认设备的端口和服务配置是否正确 ，包括防火墙规则和ACL</p>
+<h5 id="6端口和服务检查" class="headerLink">
+    <a href="#6%e7%ab%af%e5%8f%a3%e5%92%8c%e6%9c%8d%e5%8a%a1%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>6、端口和服务检查</strong></h5><p>方法：确认设备的端口和服务配置是否正确 ，包括防火墙规则和ACL</p>
 <p>示例：查看设备的端口配置和防火墙规则</p>
 <p>&lt;设备&gt;</p>
 <p>display current-configuration | include port-group</p>
 <p>&lt;设备&gt;display firewall configuration</p>
-<p>**7、更新和备份
-**
+<h5 id="7更新和备份" class="headerLink">
+    <a href="#7%e6%9b%b4%e6%96%b0%e5%92%8c%e5%a4%87%e4%bb%bd" class="header-mark"></a>**7、更新和备份</h5><p>**
 方法：定期更新设备固件和备份配置，以防止故障和数据丢失。</p>
 <p>示例：执行备份和更新操作</p>
 <p>&lt;设备&gt; save
 &lt;设备&gt;upgrade software filename.bin</p>
 <p>**
 **</p>
-<p><strong>8、DNS查询</strong></p>
-<p>方法：使用ping 命令测试DNS解析是否正确</p>
+<h5 id="8dns查询" class="headerLink">
+    <a href="#8dns%e6%9f%a5%e8%af%a2" class="header-mark"></a><strong>8、DNS查询</strong></h5><p>方法：使用ping 命令测试DNS解析是否正确</p>
 <p>示例：使用ping测试域名解析</p>
 <p>&lt;设备&gt;ping <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">www.example.com</a></p>
 <p>**
 **</p>
-<p>**9、防火墙规则检查
-**
+<h5 id="9防火墙规则检查" class="headerLink">
+    <a href="#9%e9%98%b2%e7%81%ab%e5%a2%99%e8%a7%84%e5%88%99%e6%a3%80%e6%9f%a5" class="header-mark"></a>**9、防火墙规则检查</h5><p>**
 方法：查看防火墙规则配置，确保允许必要的流量通过</p>
 <p>示例：查看防火墙规则</p>
 <p>&lt;设备&gt; display firewall zone</p>
 <p>&lt;设备&gt;display firewall rule</p>
 <p>**
 **</p>
-<p><strong>10、VLAN配置检查</strong></p>
-<p>方法：查看交换机上的VLAN配置，确保设备位于正确的VLAN中</p>
+<h5 id="10vlan配置检查" class="headerLink">
+    <a href="#10vlan%e9%85%8d%e7%bd%ae%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>10、VLAN配置检查</strong></h5><p>方法：查看交换机上的VLAN配置，确保设备位于正确的VLAN中</p>
 <p>示例：查看VLAN配置</p>
 <p>&lt;设备&gt;display vlan</p>
 <p>**
 **</p>
-<p><strong>11、MTU大小检查</strong></p>
-<p>方法：检查网络设备的最大传输单元（MTU）设置，确保它们匹配</p>
+<h5 id="11mtu大小检查" class="headerLink">
+    <a href="#11mtu%e5%a4%a7%e5%b0%8f%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>11、MTU大小检查</strong></h5><p>方法：检查网络设备的最大传输单元（MTU）设置，确保它们匹配</p>
 <p>示例：查看接口MTU配置</p>
 <p>&lt;设备&gt;</p>
 <p>display interface GigabitEthernet0/0/1</p>
 <p>**
 **</p>
-<p><strong>12、负载均衡配置检查</strong></p>
-<p>方法：查看负载均衡设备的配置，确保流量均匀分配</p>
+<h5 id="12负载均衡配置检查" class="headerLink">
+    <a href="#12%e8%b4%9f%e8%bd%bd%e5%9d%87%e8%a1%a1%e9%85%8d%e7%bd%ae%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>12、负载均衡配置检查</strong></h5><p>方法：查看负载均衡设备的配置，确保流量均匀分配</p>
 <p>示例：查看服务器农场配置</p>
 <p>&lt;设备&gt;display server-farm</p>
 <p>**
 **</p>
-<p><strong>13、BGP邻居状态检查</strong></p>
-<p>方法：检查BGP邻居状态，确保BGP路由正常传播</p>
+<h5 id="13bgp邻居状态检查" class="headerLink">
+    <a href="#13bgp%e9%82%bb%e5%b1%85%e7%8a%b6%e6%80%81%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>13、BGP邻居状态检查</strong></h5><p>方法：检查BGP邻居状态，确保BGP路由正常传播</p>
 <p>示例：查看BGP邻居状态</p>
 <p>&lt;设备&gt;display bgp peer</p>
-<p><strong>14、子网掩码检查</strong></p>
-<p>方法：检查子网掩码是否正确配置，以确保IP地址分配正确</p>
+<h5 id="14子网掩码检查" class="headerLink">
+    <a href="#14%e5%ad%90%e7%bd%91%e6%8e%a9%e7%a0%81%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>14、子网掩码检查</strong></h5><p>方法：检查子网掩码是否正确配置，以确保IP地址分配正确</p>
 <p>示例：查看接口配置</p>
 <p>&lt;设备&gt;</p>
 <p>display ip interface GigabitEthernet0/0/1</p>
@@ -234,69 +314,69 @@
 **</p>
 <p>**
 **</p>
-<p>15、MTU Path Discovery</p>
-<p>方法：使用MTU Path Discovery检查网络路径的最大传输单元</p>
+<h5 id="15mtu-path-discovery" class="headerLink">
+    <a href="#15mtu-path-discovery" class="header-mark"></a>15、MTU Path Discovery</h5><p>方法：使用MTU Path Discovery检查网络路径的最大传输单元</p>
 <p>示例：启用 MTU Path Discovery</p>
 <p>&lt;设备&gt;system-view</p>
 <p>&lt;设备&gt;ip mtu discovery</p>
 <p>**
 **</p>
-<p><strong>16、ACL规则检查</strong></p>
-<p>方法：检查访问控制列表(ACL)规则，确保允许或阻止了正确的流量</p>
+<h5 id="16acl规则检查" class="headerLink">
+    <a href="#16acl%e8%a7%84%e5%88%99%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>16、ACL规则检查</strong></h5><p>方法：检查访问控制列表(ACL)规则，确保允许或阻止了正确的流量</p>
 <p>示例：查看ACL规则</p>
 <p>&lt;设备&gt;display acl 2000</p>
 <p>**
 **</p>
-<p><strong>17、DHCP规则检查</strong></p>
-<p>方法：检查DHCP服务器分配的IP地址，确保正确配置</p>
+<h5 id="17dhcp规则检查" class="headerLink">
+    <a href="#17dhcp%e8%a7%84%e5%88%99%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>17、DHCP规则检查</strong></h5><p>方法：检查DHCP服务器分配的IP地址，确保正确配置</p>
 <p>示例：查看DHCP分配信息</p>
 <p>&lt;设备&gt; display dhcp server ip-in-use</p>
 <p>**
 **</p>
-<p><strong>18、链路聚合检查</strong></p>
-<p>方法：检查链路聚合组（LAG）配置，确保链路均衡正常。</p>
+<h5 id="18链路聚合检查" class="headerLink">
+    <a href="#18%e9%93%be%e8%b7%af%e8%81%9a%e5%90%88%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>18、链路聚合检查</strong></h5><p>方法：检查链路聚合组（LAG）配置，确保链路均衡正常。</p>
 <p>示例：查看LAG配置</p>
 <p>&lt;设备&gt;display link-aggregation verbose</p>
 <p>**
 **</p>
-<p><strong>19、MAC地址表检查</strong></p>
-<p>方法：查看交换机MAC地址表，确保MAC地址分发正确。</p>
+<h5 id="19mac地址表检查" class="headerLink">
+    <a href="#19mac%e5%9c%b0%e5%9d%80%e8%a1%a8%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>19、MAC地址表检查</strong></h5><p>方法：查看交换机MAC地址表，确保MAC地址分发正确。</p>
 <p>示例：查看MAC地址表</p>
 <p>&lt;设备&gt;display mac-address</p>
 <p>**
 **</p>
-<p><strong>20、系统资源利用率监控</strong></p>
-<p>方法：监控CPU、内存和存储等系统资源的利用率</p>
+<h5 id="20系统资源利用率监控" class="headerLink">
+    <a href="#20%e7%b3%bb%e7%bb%9f%e8%b5%84%e6%ba%90%e5%88%a9%e7%94%a8%e7%8e%87%e7%9b%91%e6%8e%a7" class="header-mark"></a><strong>20、系统资源利用率监控</strong></h5><p>方法：监控CPU、内存和存储等系统资源的利用率</p>
 <p>示例：查看系统资源利用率</p>
 <p>&lt;设备&gt;display resource usage</p>
 <p>**
 **</p>
-<p><strong>21、ACL日志分析</strong></p>
-<p>方法：查看ACL规则匹配日志，以检查是否有流量被ACL阻止</p>
+<h5 id="21acl日志分析" class="headerLink">
+    <a href="#21acl%e6%97%a5%e5%bf%97%e5%88%86%e6%9e%90" class="header-mark"></a><strong>21、ACL日志分析</strong></h5><p>方法：查看ACL规则匹配日志，以检查是否有流量被ACL阻止</p>
 <p>示例：查看ACL日志</p>
 <p>&lt;设备&gt;display acl log</p>
 <p>**
 **</p>
-<p><strong>22、链路状态检查</strong></p>
-<p>方法：检查链路状态，确保链路是否正常连接</p>
+<h5 id="22链路状态检查" class="headerLink">
+    <a href="#22%e9%93%be%e8%b7%af%e7%8a%b6%e6%80%81%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>22、链路状态检查</strong></h5><p>方法：检查链路状态，确保链路是否正常连接</p>
 <p>示例：查看链路状态</p>
 <p>&lt;设备&gt;display interface brief</p>
 <p>**
 **</p>
-<p><strong>23、DNS服务器可用性检查</strong></p>
-<p>方法：使用nslookup命令检查DNS服务器的可用性</p>
+<h5 id="23dns服务器可用性检查" class="headerLink">
+    <a href="#23dns%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%8f%af%e7%94%a8%e6%80%a7%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>23、DNS服务器可用性检查</strong></h5><p>方法：使用nslookup命令检查DNS服务器的可用性</p>
 <p>示例：测试DNS服务器可用性</p>
 <p>&lt;设备&gt;ping dns-server-ip</p>
 <p>**
 **</p>
-<p><strong>24、OSPF邻居状态检查</strong></p>
-<p>方法：检查OSPF邻居状态，确保路由协议正常工作。</p>
+<h5 id="24ospf邻居状态检查" class="headerLink">
+    <a href="#24ospf%e9%82%bb%e5%b1%85%e7%8a%b6%e6%80%81%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>24、OSPF邻居状态检查</strong></h5><p>方法：检查OSPF邻居状态，确保路由协议正常工作。</p>
 <p>示例：查看OSPF邻居状态</p>
 <p>&lt;设备&gt; display ospf peer</p>
 <p>**
 **</p>
-<p><strong>25、冗余路由和HA状态检查</strong></p>
-<p>方法：检查冗余路由和高可用性(HA)配置，确保备用设备正常工作</p>
+<h5 id="25冗余路由和ha状态检查" class="headerLink">
+    <a href="#25%e5%86%97%e4%bd%99%e8%b7%af%e7%94%b1%e5%92%8cha%e7%8a%b6%e6%80%81%e6%a3%80%e6%9f%a5" class="header-mark"></a><strong>25、冗余路由和HA状态检查</strong></h5><p>方法：检查冗余路由和高可用性(HA)配置，确保备用设备正常工作</p>
 <p>示例：查看HA状态</p>
 <p>&lt;设备&gt;display standby</p>
 <p>对于工作中遇到的网络故障，不仅仅是记住这些命令，重点是能够熟练的运用这些命令使用排除法来找到最终的网络故障原因。</p>

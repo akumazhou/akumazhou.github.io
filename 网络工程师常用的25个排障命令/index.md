@@ -9,7 +9,7 @@
 
 
 
-**1、Ping测试**
+##### **1、Ping测试**
 
 **方法：**使用Ping命令测试目标设备的连通性。
 
@@ -26,7 +26,7 @@ ping 目标设备的IP地址或域名
 **
 **
 
-**2、Traceroute/Tracepath**
+##### **2、Traceroute/Tracepath**
 
 方法：使用tracert命令（Windows）或traceroute命令（Linux）查看数据包的路由路径
 
@@ -44,7 +44,7 @@ tracert 目标设备的IP地址或域名
 **
 **
 
-**3、Telnet/SSH远程登录**
+##### **3、Telnet/SSH远程登录**
 
 方法：使用Telnet或SSH协议远程连接到目标设备，以查看和管理设备
 
@@ -61,7 +61,7 @@ ssh 用户名@目标设备的IP地址或域名
 **
 **
 
-**4、路由表和ARP表检查**
+##### **4、路由表和ARP表检查**
 
 方法：查看路由器上的路由表和ARP表
 
@@ -86,7 +86,7 @@ display arp
 **
 **
 
-**5、日志分析**
+##### **5、日志分析**
 
 **
 **方法：查看设备和服务器上的日志文件，以查找与网络问题相关的错误或异常信息
@@ -98,7 +98,7 @@ display arp
 **
 **
 
-**6、端口和服务检查**
+##### **6、端口和服务检查**
 
 方法：确认设备的端口和服务配置是否正确 ，包括防火墙规则和ACL
 
@@ -110,8 +110,8 @@ display current-configuration | include port-group
 
 <设备>display firewall configuration
 
+##### **7、更新和备份
 
-**7、更新和备份
 **
 方法：定期更新设备固件和备份配置，以防止故障和数据丢失。
 
@@ -123,7 +123,7 @@ display current-configuration | include port-group
 **
 **
 
-**8、DNS查询**
+##### **8、DNS查询**
 
 方法：使用ping 命令测试DNS解析是否正确
 
@@ -134,7 +134,8 @@ display current-configuration | include port-group
 **
 **
 
-**9、防火墙规则检查
+##### **9、防火墙规则检查
+
 **
 方法：查看防火墙规则配置，确保允许必要的流量通过
 
@@ -149,7 +150,7 @@ display current-configuration | include port-group
 **
 **
 
-**10、VLAN配置检查**
+##### **10、VLAN配置检查**
 
 方法：查看交换机上的VLAN配置，确保设备位于正确的VLAN中
 
@@ -157,11 +158,10 @@ display current-configuration | include port-group
 
 <设备>display vlan
 
-
 **
 **
 
-**11、MTU大小检查**
+##### **11、MTU大小检查**
 
 方法：检查网络设备的最大传输单元（MTU）设置，确保它们匹配
 
@@ -176,7 +176,7 @@ display interface GigabitEthernet0/0/1
 **
 **
 
-**12、负载均衡配置检查**
+##### **12、负载均衡配置检查**
 
 
 
@@ -191,7 +191,7 @@ display interface GigabitEthernet0/0/1
 
 
 
-**13、BGP邻居状态检查**
+##### **13、BGP邻居状态检查**
 
 
 
@@ -202,7 +202,8 @@ display interface GigabitEthernet0/0/1
 <设备>display bgp peer
 
 
-**14、子网掩码检查**
+
+##### **14、子网掩码检查**
 
 
 
@@ -220,7 +221,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-15、MTU Path Discovery
+##### 15、MTU Path Discovery
 
 方法：使用MTU Path Discovery检查网络路径的最大传输单元
 
@@ -236,7 +237,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-**16、ACL规则检查**
+##### **16、ACL规则检查**
 
 方法：检查访问控制列表(ACL)规则，确保允许或阻止了正确的流量
 
@@ -247,7 +248,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-**17、DHCP规则检查**
+##### **17、DHCP规则检查**
 
 方法：检查DHCP服务器分配的IP地址，确保正确配置
 
@@ -259,7 +260,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-**18、链路聚合检查**
+##### **18、链路聚合检查**
 
 方法：检查链路聚合组（LAG）配置，确保链路均衡正常。
 
@@ -270,7 +271,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-**19、MAC地址表检查**
+##### **19、MAC地址表检查**
 
 方法：查看交换机MAC地址表，确保MAC地址分发正确。
 
@@ -281,7 +282,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-**20、系统资源利用率监控**
+##### **20、系统资源利用率监控**
 
 方法：监控CPU、内存和存储等系统资源的利用率
 
@@ -292,7 +293,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-**21、ACL日志分析**
+##### **21、ACL日志分析**
 
 方法：查看ACL规则匹配日志，以检查是否有流量被ACL阻止
 
@@ -303,7 +304,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-**22、链路状态检查**
+##### **22、链路状态检查**
 
 方法：检查链路状态，确保链路是否正常连接
 
@@ -314,7 +315,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-**23、DNS服务器可用性检查**
+##### **23、DNS服务器可用性检查**
 
 方法：使用nslookup命令检查DNS服务器的可用性
 
@@ -325,7 +326,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-**24、OSPF邻居状态检查**
+##### **24、OSPF邻居状态检查**
 
 方法：检查OSPF邻居状态，确保路由协议正常工作。
 
@@ -336,7 +337,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-**25、冗余路由和HA状态检查**
+##### **25、冗余路由和HA状态检查**
 
 方法：检查冗余路由和高可用性(HA)配置，确保备用设备正常工作
 
