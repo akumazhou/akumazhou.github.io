@@ -110,9 +110,7 @@ display current-configuration | include port-group
 
 <设备>display firewall configuration
 
-##### **7、更新和备份
-
-**
+##### **7、更新和备份**
 方法：定期更新设备固件和备份配置，以防止故障和数据丢失。
 
 示例：执行备份和更新操作
@@ -134,9 +132,7 @@ display current-configuration | include port-group
 **
 **
 
-##### **9、防火墙规则检查
-
-**
+##### **9、防火墙规则检查**
 方法：查看防火墙规则配置，确保允许必要的流量通过
 
 
@@ -221,7 +217,7 @@ display ip interface GigabitEthernet0/0/1
 **
 **
 
-##### 15、MTU Path Discovery
+##### **15、MTU Path Discovery**
 
 方法：使用MTU Path Discovery检查网络路径的最大传输单元
 
