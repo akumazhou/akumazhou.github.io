@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>网络工程师常用的25个排障命令 - WJ BLOG</title><meta name="Description" content="网络工程师常用的25个排障命令"><meta property="og:title" content="网络工程师常用的25个排障命令" />
+<meta property="og:description" content="网络工程师常用的25个排障命令" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-05-09T10:50:45+08:00" />
+<meta property="article:modified_time" content="2024-05-09T10:50:45+08:00" /><meta property="og:site_name" content="我的全新 Hugo 网站" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="网络工程师常用的25个排障命令"/>
+<meta name="twitter:description" content="网络工程师常用的25个排障命令"/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/" /><link rel="prev" href="http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" /><link rel="next" href="http://example.org/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "网络工程师常用的25个排障命令",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4\/"
+        },"genre": "posts","keywords": "WINDOWS技巧","wordcount":  2113 ,
+        "url": "http:\/\/example.org\/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4\/","datePublished": "2024-05-09T10:50:45+08:00","dateModified": "2024-05-09T10:50:45+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "AKUMA"
+            },"description": "网络工程师常用的25个排障命令"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="WJ BLOG"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/series/"> 系列 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="WJ BLOG"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/series/" title="">系列</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents"></nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">网络工程师常用的25个排障命令</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">AKUMA</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-05-09">2024-05-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-05-09">2024-05-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2113 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>在网络运维工作中，掌握排障命令可以帮助我们快速定位和解决各种网络故障，确保网络稳定运行。</p>
+<p>今天要和大家分享的是关于<strong>网络排障中常用的25个命令</strong>。</p>
+<p><strong>1、Ping测试</strong></p>
+<p>**方法：**使用Ping命令测试目标设备的连通性。</p>
+<p>**命令：**在命令行界面中输入以下命令</p>
+<p>ping 目标设备的IP地址或域名</p>
+<p>示例: （假设目标IP地址为10.0.0.1）</p>
+<p>&lt;设备&gt; ping 10.0.0.1</p>
+<p>**
+**</p>
+<p><strong>2、Traceroute/Tracepath</strong></p>
+<p>方法：使用tracert命令（Windows）或traceroute命令（Linux）查看数据包的路由路径</p>
+<p>命令：在命令行界面中输入以下命令</p>
+<p>tracert 目标设备的IP地址或域名</p>
+<p>示例: （假设目标IP地址为10.0.0.1）</p>
+<p>&lt;设备&gt; tracert 10.0.0.1</p>
+<p>**
+**</p>
+<p><strong>3、Telnet/SSH远程登录</strong></p>
+<p>方法：使用Telnet或SSH协议远程连接到目标设备，以查看和管理设备</p>
+<p>命令（SSH）：在命令行界面输入以下命令</p>
+<p>ssh 用户名@目标设备的IP地址或域名</p>
+<p>示例: （假设用户名为admin，目标IP地址为10.0.0.1）</p>
+<p>&lt;设备&gt; ssh <a href="mailto:admin@10.0.0.1" rel="">admin@10.0.0.1</a></p>
+<p>**
+**</p>
+<p><strong>4、路由表和ARP表检查</strong></p>
+<p>方法：查看路由器上的路由表和ARP表</p>
+<p>命令（路由表）：在命令行界面中输入以下命令</p>
+<p>display ip routing-table</p>
+<p>&lt;设备&gt;display ip routing-table</p>
+<p>命令（ARP表）：在命令行界面中输入以下命令</p>
+<p>display arp</p>
+<p>&lt;设备&gt;display arp</p>
+<p>**
+**</p>
+<p><strong>5、日志分析</strong></p>
+<p>**
+**方法：查看设备和服务器上的日志文件，以查找与网络问题相关的错误或异常信息</p>
+<p>示例：使用命令查看设备上的日志文件</p>
+<p>&lt;设备&gt; display logbuffer</p>
+<p>**
+**</p>
+<p><strong>6、端口和服务检查</strong></p>
+<p>方法：确认设备的端口和服务配置是否正确 ，包括防火墙规则和ACL</p>
+<p>示例：查看设备的端口配置和防火墙规则</p>
+<p>&lt;设备&gt;</p>
+<p>display current-configuration | include port-group</p>
+<p>&lt;设备&gt;display firewall configuration</p>
+<p>**7、更新和备份
+**
+方法：定期更新设备固件和备份配置，以防止故障和数据丢失。</p>
+<p>示例：执行备份和更新操作</p>
+<p>&lt;设备&gt; save
+&lt;设备&gt;upgrade software filename.bin</p>
+<p>**
+**</p>
+<p><strong>8、DNS查询</strong></p>
+<p>方法：使用ping 命令测试DNS解析是否正确</p>
+<p>示例：使用ping测试域名解析</p>
+<p>&lt;设备&gt;ping <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">www.example.com</a></p>
+<p>**
+**</p>
+<p>**9、防火墙规则检查
+**
+方法：查看防火墙规则配置，确保允许必要的流量通过</p>
+<p>示例：查看防火墙规则</p>
+<p>&lt;设备&gt; display firewall zone</p>
+<p>&lt;设备&gt;display firewall rule</p>
+<p>**
+**</p>
+<p><strong>10、VLAN配置检查</strong></p>
+<p>方法：查看交换机上的VLAN配置，确保设备位于正确的VLAN中</p>
+<p>示例：查看VLAN配置</p>
+<p>&lt;设备&gt;display vlan</p>
+<p>**
+**</p>
+<p><strong>11、MTU大小检查</strong></p>
+<p>方法：检查网络设备的最大传输单元（MTU）设置，确保它们匹配</p>
+<p>示例：查看接口MTU配置</p>
+<p>&lt;设备&gt;</p>
+<p>display interface GigabitEthernet0/0/1</p>
+<p>**
+**</p>
+<p><strong>12、负载均衡配置检查</strong></p>
+<p>方法：查看负载均衡设备的配置，确保流量均匀分配</p>
+<p>示例：查看服务器农场配置</p>
+<p>&lt;设备&gt;display server-farm</p>
+<p>**
+**</p>
+<p><strong>13、BGP邻居状态检查</strong></p>
+<p>方法：检查BGP邻居状态，确保BGP路由正常传播</p>
+<p>示例：查看BGP邻居状态</p>
+<p>&lt;设备&gt;display bgp peer</p>
+<p><strong>14、子网掩码检查</strong></p>
+<p>方法：检查子网掩码是否正确配置，以确保IP地址分配正确</p>
+<p>示例：查看接口配置</p>
+<p>&lt;设备&gt;</p>
+<p>display ip interface GigabitEthernet0/0/1</p>
+<p>**
+**</p>
+<p>**
+**</p>
+<p>15、MTU Path Discovery</p>
+<p>方法：使用MTU Path Discovery检查网络路径的最大传输单元</p>
+<p>示例：启用 MTU Path Discovery</p>
+<p>&lt;设备&gt;system-view</p>
+<p>&lt;设备&gt;ip mtu discovery</p>
+<p>**
+**</p>
+<p><strong>16、ACL规则检查</strong></p>
+<p>方法：检查访问控制列表(ACL)规则，确保允许或阻止了正确的流量</p>
+<p>示例：查看ACL规则</p>
+<p>&lt;设备&gt;display acl 2000</p>
+<p>**
+**</p>
+<p><strong>17、DHCP规则检查</strong></p>
+<p>方法：检查DHCP服务器分配的IP地址，确保正确配置</p>
+<p>示例：查看DHCP分配信息</p>
+<p>&lt;设备&gt; display dhcp server ip-in-use</p>
+<p>**
+**</p>
+<p><strong>18、链路聚合检查</strong></p>
+<p>方法：检查链路聚合组（LAG）配置，确保链路均衡正常。</p>
+<p>示例：查看LAG配置</p>
+<p>&lt;设备&gt;display link-aggregation verbose</p>
+<p>**
+**</p>
+<p><strong>19、MAC地址表检查</strong></p>
+<p>方法：查看交换机MAC地址表，确保MAC地址分发正确。</p>
+<p>示例：查看MAC地址表</p>
+<p>&lt;设备&gt;display mac-address</p>
+<p>**
+**</p>
+<p><strong>20、系统资源利用率监控</strong></p>
+<p>方法：监控CPU、内存和存储等系统资源的利用率</p>
+<p>示例：查看系统资源利用率</p>
+<p>&lt;设备&gt;display resource usage</p>
+<p>**
+**</p>
+<p><strong>21、ACL日志分析</strong></p>
+<p>方法：查看ACL规则匹配日志，以检查是否有流量被ACL阻止</p>
+<p>示例：查看ACL日志</p>
+<p>&lt;设备&gt;display acl log</p>
+<p>**
+**</p>
+<p><strong>22、链路状态检查</strong></p>
+<p>方法：检查链路状态，确保链路是否正常连接</p>
+<p>示例：查看链路状态</p>
+<p>&lt;设备&gt;display interface brief</p>
+<p>**
+**</p>
+<p><strong>23、DNS服务器可用性检查</strong></p>
+<p>方法：使用nslookup命令检查DNS服务器的可用性</p>
+<p>示例：测试DNS服务器可用性</p>
+<p>&lt;设备&gt;ping dns-server-ip</p>
+<p>**
+**</p>
+<p><strong>24、OSPF邻居状态检查</strong></p>
+<p>方法：检查OSPF邻居状态，确保路由协议正常工作。</p>
+<p>示例：查看OSPF邻居状态</p>
+<p>&lt;设备&gt; display ospf peer</p>
+<p>**
+**</p>
+<p><strong>25、冗余路由和HA状态检查</strong></p>
+<p>方法：检查冗余路由和高可用性(HA)配置，确保备用设备正常工作</p>
+<p>示例：查看HA状态</p>
+<p>&lt;设备&gt;display standby</p>
+<p>对于工作中遇到的网络故障，不仅仅是记住这些命令，重点是能够熟练的运用这些命令使用排除法来找到最终的网络故障原因。</p>
+</div>
+
+        
+
+
+<h2>相关内容</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/">电脑cmd命令大全</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/">Windows自动登录</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-05-09</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/" data-title="网络工程师常用的25个排障命令" data-hashtags="WINDOWS技巧"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/" data-hashtag="WINDOWS技巧"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/" data-title="网络工程师常用的25个排障命令" data-web><span class="fab fa-whatsapp fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/" data-title="网络工程师常用的25个排障命令"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/" data-title="网络工程师常用的25个排障命令"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Myspace" data-sharer="myspace" data-url="http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/" data-title="网络工程师常用的25个排障命令" data-description="网络工程师常用的25个排障命令"><span data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></span></button><button title="分享到 Blogger" data-sharer="blogger" data-url="http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/" data-title="网络工程师常用的25个排障命令" data-description="网络工程师常用的25个排障命令"><span class="fab fa-blogger fa-fw"></span></button><button title="分享到 Evernote" data-sharer="evernote" data-url="http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/" data-title="网络工程师常用的25个排障命令"><span class="fab fa-evernote fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/windows%E6%8A%80%E5%B7%A7/">WINDOWS技巧</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/" class="prev" rel="prev" title="阿里云服务器ECS搭建个人网站新手教程（超详细）"><i class="fas fa-angle-left fa-fw"></i>阿里云服务器ECS搭建个人网站新手教程（超详细）</a>
+            <a href="/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/" class="next" rel="next" title="电脑cmd命令大全">电脑cmd命令大全<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.120.4">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">AKUMA</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"WJ BLOG","mobile-header-typeit":"WJ BLOG"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>
