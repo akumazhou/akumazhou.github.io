@@ -1,14 +1,28 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>web - 标签 - WJ BLOG</title>
+        <title>WEB - 标签 - WJ BLOG</title>
         <link>http://example.org/tags/web/</link>
-        <description>web - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 08 Apr 2024 11:30:25 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/web/" rel="self" type="application/rss+xml" /><item>
+        <description>WEB - 标签 - WJ BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 23 May 2024 10:21:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/web/" rel="self" type="application/rss+xml" /><item>
+    <title>ClouDNS永久免费域名向cloudflare迁移</title>
+    <link>http://example.org/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/</link>
+    <pubDate>Thu, 23 May 2024 10:21:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/</guid>
+    <description><![CDATA[ClouDNS永久免费域名向cloudflare迁移上一篇文章已经教大家如何白嫖一个ClouDNS免费服务下的永久域名，见教你免费注册一个C]]></description>
+</item><item>
+    <title>教你免费注册一个ClouDNS永久域名(保姆级教程)</title>
+    <link>http://example.org/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AAcloudns%E6%B0%B8%E4%B9%85%E5%9F%9F%E5%90%8D/</link>
+    <pubDate>Thu, 23 May 2024 10:20:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AAcloudns%E6%B0%B8%E4%B9%85%E5%9F%9F%E5%90%8D/</guid>
+    <description><![CDATA[教你免费注册一个ClouDNS永久域名(保姆级教程)“ 互联网人该给自己备个域名啦！” ClouDNS是欧洲最大的全球托管DNS服务提供商，包括]]></description>
+</item><item>
     <title>阿里云服务器ECS搭建个人网站新手教程（超详细）</title>
-    <link>http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/</link>
+    <link>http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</link>
     <pubDate>Mon, 08 Apr 2024 11:30:25 &#43;0800</pubDate><author>
         <name>AKUMA</name>
-    </author><guid>http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/</guid>
+    </author><guid>http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</guid>
     <description><![CDATA[简介： 阿里云服务器ECS搭建个人网站新手教程超详细，使用阿里云服务器快速搭建网站教程，先为云服务器安装宝塔面板，然后在宝塔面板上新建站点，阿]]></description>
 </item></channel>
 </rss>
