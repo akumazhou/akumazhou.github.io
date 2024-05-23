@@ -2,7 +2,6 @@
 
 
 
-# ClouDNS永久免费域名向cloudflare迁移
 
  上一篇文章已经教大家如何白嫖一个ClouDNS免费服务下的永久域名，见[教你免费注册一个ClouDNS永久域名(保姆级教程）](https://blog.csdn.net/qq_56204872/article/details/135296571?spm=1001.2014.3001.5501)
 
