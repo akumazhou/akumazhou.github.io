@@ -1,0 +1,430 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>在Linux上安装Warp - WJ BLOG</title><meta name="Description" content="在Linux上安装Warp"><meta property="og:title" content="在Linux上安装Warp" />
+<meta property="og:description" content="在Linux上安装Warp" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-05-27T16:21:12+08:00" />
+<meta property="article:modified_time" content="2024-05-27T16:21:12+08:00" /><meta property="og:site_name" content="我的全新 Hugo 网站" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="在Linux上安装Warp"/>
+<meta name="twitter:description" content="在Linux上安装Warp"/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" /><link rel="prev" href="http://example.org/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "在Linux上安装Warp",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp\/"
+        },"genre": "posts","keywords": "Linux","wordcount":  1069 ,
+        "url": "http:\/\/example.org\/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp\/","datePublished": "2024-05-27T16:21:12+08:00","dateModified": "2024-05-27T16:21:12+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "AKUMA"
+            },"description": "在Linux上安装Warp"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="WJ BLOG"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/series/"> 系列 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="WJ BLOG"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/series/" title="">系列</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#一在linux上安装warpwarp">一.在Linux上安装Warp/Warp+</a></li>
+    <li><a href="#二查询您当前在linux上使用的是warp还是warp">二.查询您当前在Linux上使用的是Warp还是Warp+</a></li>
+    <li><a href="#三断开并重新连接">三.断开并重新连接</a></li>
+    <li><a href="#四重启warp服务如果上述方法无效">四.重启Warp服务（如果上述方法无效）</a></li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">在Linux上安装Warp</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">AKUMA</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-05-27">2024-05-27</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-05-27">2024-05-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1069 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#一在linux上安装warpwarp">一.在Linux上安装Warp/Warp+</a></li>
+    <li><a href="#二查询您当前在linux上使用的是warp还是warp">二.查询您当前在Linux上使用的是Warp还是Warp+</a></li>
+    <li><a href="#三断开并重新连接">三.断开并重新连接</a></li>
+    <li><a href="#四重启warp服务如果上述方法无效">四.重启Warp服务（如果上述方法无效）</a></li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="一在linux上安装warpwarp" class="headerLink">
+    <a href="#%e4%b8%80%e5%9c%a8linux%e4%b8%8a%e5%ae%89%e8%a3%85warpwarp" class="header-mark"></a>一.在Linux上安装Warp/Warp+</h2><p>如果您想在Linux上安装Warp或Warp+，可以按照以下步骤操作：</p>
+<ol>
+<li>
+<p><strong>安装必要的软件包</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install curl
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>下载并安装Warp客户端</strong>：</p>
+<p>对于Warp免费版，您可以使用Cloudflare官方提供的安装脚本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl https://pkg.cloudflareclient.com/install.sh <span class="p">|</span> sudo bash
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>或者您可以按照以下手动步骤进行安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install apt-transport-https
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">curl -s https://pkg.cloudflareclient.com/pubkey.gpg <span class="p">|</span> sudo gpg --dearmor -o /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ </span><span class="k">$(</span>lsb_release -c -s<span class="k">)</span><span class="s2"> main&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/cloudflare-client.list
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo apt install cloudflare-warp
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>启动Warp</strong>：</p>
+<p>安装完成后，您可以启动Warp客户端：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo warp-cli register
+</span></span><span class="line"><span class="cl">sudo warp-cli connect
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>升级到Warp+（可选）</strong>：</p>
+<p>如果您已经订阅了Warp+，可以通过以下命令激活Warp+功能：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo warp-cli set-license &lt;LICENSE_KEY&gt;
+</span></span><span class="line"><span class="cl">sudo warp-cli connect
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>将 <code>&lt;LICENSE_KEY&gt;</code> 替换为您从Cloudflare获取的Warp+许可证密钥。</p>
+</li>
+</ol>
+<h2 id="二查询您当前在linux上使用的是warp还是warp" class="headerLink">
+    <a href="#%e4%ba%8c%e6%9f%a5%e8%af%a2%e6%82%a8%e5%bd%93%e5%89%8d%e5%9c%a8linux%e4%b8%8a%e4%bd%bf%e7%94%a8%e7%9a%84%e6%98%afwarp%e8%bf%98%e6%98%afwarp" class="header-mark"></a>二.查询您当前在Linux上使用的是Warp还是Warp+</h2><ol>
+<li>
+<p><strong>启动终端</strong>：</p>
+<p>打开一个终端窗口。</p>
+</li>
+<li>
+<p><strong>检查Warp状态</strong>：</p>
+<p>使用以下命令检查Warp客户端的状态：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">warp-cli status
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>该命令将显示Warp客户端的当前状态，包括连接状态和账户信息。</p>
+</li>
+<li>
+<p><strong>检查Warp+许可证</strong>：</p>
+<p>通过以下命令查看当前是否激活了Warp+许可证：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">warp-cli account
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果显示的信息中包含您的Warp+许可证密钥或相关信息，则表明您正在使用Warp+。如果没有显示许可证信息，则说明您使用的是免费的Warp版本。</p>
+</li>
+<li>
+<p><strong>示例输出</strong>：</p>
+<p>运行 <code>warp-cli status</code> 命令后，您可能会看到类似以下的输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="n">Status</span><span class="w"> </span><span class="k">update</span><span class="p">:</span><span class="w"> </span><span class="n">Connected</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行 <code>warp-cli account</code> 命令后，您可能会看到类似以下的输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">Account type: Warp+ (license key</span><span class="p">:</span><span class="w"> </span><span class="l">xxxxx-xxxxx-xxxxx-xxxxx)</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果输出中显示 &ldquo;Warp+&rdquo; 和您的许可证密钥，则说明您正在使用Warp+。如果输出中只显示 &ldquo;Warp&rdquo; 而没有许可证密钥信息，则说明您使用的是免费版的Warp。</p>
+</li>
+</ol>
+<ul>
+<li>使用 <code>warp-cli status</code> 命令检查连接状态。</li>
+<li>使用 <code>warp-cli account</code> 命令查看账户和许可证信息。</li>
+</ul>
+<h2 id="三断开并重新连接" class="headerLink">
+    <a href="#%e4%b8%89%e6%96%ad%e5%bc%80%e5%b9%b6%e9%87%8d%e6%96%b0%e8%bf%9e%e6%8e%a5" class="header-mark"></a>三.断开并重新连接</h2><ol>
+<li>
+<p><strong>断开当前连接</strong>：</p>
+<p>使用以下命令断开Warp+的当前连接：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo warp-cli disconnect
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>重新连接</strong>：</p>
+<p>使用以下命令重新连接Warp+：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo warp-cli connect
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>检查连接状态</strong>：</p>
+<p>确认连接是否成功，可以使用以下命令检查Warp客户端的状态：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">warp-cli status
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>该命令将显示当前的连接状态，确保显示 &ldquo;Connected&rdquo;。</p>
+</li>
+</ol>
+<h2 id="四重启warp服务如果上述方法无效" class="headerLink">
+    <a href="#%e5%9b%9b%e9%87%8d%e5%90%afwarp%e6%9c%8d%e5%8a%a1%e5%a6%82%e6%9e%9c%e4%b8%8a%e8%bf%b0%e6%96%b9%e6%b3%95%e6%97%a0%e6%95%88" class="header-mark"></a>四.重启Warp服务（如果上述方法无效）</h2><p>如果简单的断开和重新连接操作无法解决问题，可以尝试重启Warp服务：</p>
+<ol>
+<li>
+<p><strong>重启Warp服务</strong>：</p>
+<p>使用以下命令重启Warp服务：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl restart warp-svc
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>重新连接</strong>：</p>
+<p>再次尝试连接Warp+：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo warp-cli connect
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>检查连接状态</strong>：</p>
+<p>再次检查Warp客户端的状态：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">warp-cli status
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<ul>
+<li>使用 <code>sudo warp-cli disconnect</code> 断开连接。</li>
+<li>使用 <code>sudo warp-cli connect</code> 重新连接。</li>
+<li>使用 <code>warp-cli status</code> 检查连接状态。</li>
+<li>如果问题持续，尝试使用 <code>sudo systemctl restart warp-svc</code> 重启Warp服务，然后再连接。</li>
+</ul>
+<h2 id="总结" class="headerLink">
+    <a href="#%e6%80%bb%e7%bb%93" class="header-mark"></a>总结</h2><ul>
+<li><strong>Warp</strong> 是一个免费的VPN服务，适合一般用户使用。</li>
+<li><strong>Warp+</strong> 提供更高的速度和性能，适合需要更稳定和快速网络体验的用户。</li>
+</ul>
+</div>
+
+        
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-05-27</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" data-title="在Linux上安装Warp" data-hashtags="Linux"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" data-hashtag="Linux"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" data-title="在Linux上安装Warp" data-web><span class="fab fa-whatsapp fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" data-title="在Linux上安装Warp"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" data-title="在Linux上安装Warp"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Myspace" data-sharer="myspace" data-url="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" data-title="在Linux上安装Warp" data-description="在Linux上安装Warp"><span data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></span></button><button title="分享到 Blogger" data-sharer="blogger" data-url="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" data-title="在Linux上安装Warp" data-description="在Linux上安装Warp"><span class="fab fa-blogger fa-fw"></span></button><button title="分享到 Evernote" data-sharer="evernote" data-url="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" data-title="在Linux上安装Warp"><span class="fab fa-evernote fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/" class="prev" rel="prev" title="ClouDNS永久免费域名向cloudflare迁移"><i class="fas fa-angle-left fa-fw"></i>ClouDNS永久免费域名向cloudflare迁移</a></div>
+</div>
+<div id="comments"></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.120.4">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">AKUMA</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"WJ BLOG","mobile-header-typeit":"WJ BLOG"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

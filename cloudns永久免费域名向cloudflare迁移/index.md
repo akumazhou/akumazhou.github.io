@@ -3,7 +3,7 @@
 
 
 
- 上一篇文章已经教大家如何白嫖一个ClouDNS免费服务下的永久域名，见[教你免费注册一个ClouDNS永久域名(保姆级教程）](https://blog.csdn.net/qq_56204872/article/details/135296571?spm=1001.2014.3001.5501)
+ 上一篇文章已经教大家如何白嫖一个ClouDNS免费服务下的永久域名，见[教你免费注册一个ClouDNS永久域名(保姆级教程）](https://www.wenjie1018.cn/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AAcloudns%E6%B0%B8%E4%B9%85%E5%9F%9F%E5%90%8D/)
 
   现在再来教大家如何将ClouDNS账户下的域名迁移到cloudflare上，方便大家充分利用cloud flare提供的免费SSL证书、DDOS保护、DNS解析、网页防火墙、CDN加速等服务。
 

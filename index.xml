@@ -3,9 +3,16 @@
         <title>WJ BLOG</title>
         <link>http://example.org/</link>
         <description>这是我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 23 May 2024 10:21:12 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 27 May 2024 16:21:12 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>在Linux上安装Warp</title>
+    <link>http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</link>
+    <pubDate>Mon, 27 May 2024 16:21:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</guid>
+    <description><![CDATA[一.在Linux上安装Warp/Warp+如果您想在Linux上安装Warp或Warp+，可以按照以下步骤操作： 安装必要的软件包： 1 2 sudo apt update]]></description>
+</item><item>
     <title>ClouDNS永久免费域名向cloudflare迁移</title>
     <link>http://example.org/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/</link>
     <pubDate>Thu, 23 May 2024 10:21:12 &#43;0800</pubDate><author>
@@ -68,14 +75,5 @@
         <name>AKUMA</name>
     </author><guid>http://example.org/githubdesktop%E8%AE%BE%E7%BD%AE%E6%B1%89%E5%8C%96/</guid>
     <description><![CDATA[汉化步骤： 1.访问https://desktop.github.com/，下载GitHubDesktop安装程序。 2.安装完成之后删除安装包]]></description>
-</item><item>
-    <title>搭建自己的hugo博客站点</title>
-    <link>http://example.org/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84hugo%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9/</link>
-    <pubDate>Thu, 23 Nov 2023 17:45:25 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>http://example.org/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84hugo%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/hugo-posts.webp" referrerpolicy="no-referrer">
-            </div>实验环境 1 2 3 win10 git version 2.17.0.windows.1 hugo v0.98.0 hugo官网https://gohugo.io/ hugo安装 1.安装git实战：git安装 ————————————]]></description>
 </item></channel>
 </rss>
