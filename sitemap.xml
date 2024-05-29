@@ -2,9 +2,10 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://example.org/tags/linuxwarp/</loc><lastmod>2024-05-29T10:50:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/linux/</loc><lastmod>2024-05-29T10:50:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://example.org/posts/</loc><lastmod>2024-05-29T10:50:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://example.org/tags/</loc><lastmod>2024-05-29T10:50:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/warp/</loc><lastmod>2024-05-29T10:50:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://example.org/</loc><lastmod>2024-05-29T10:50:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</loc><lastmod>2024-05-29T10:50:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>http://example.org/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/</loc><lastmod>2024-05-23T10:21:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
