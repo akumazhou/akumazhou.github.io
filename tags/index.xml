@@ -3,7 +3,14 @@
         <title>Tags - 标签 - WJ BLOG</title>
         <link>http://example.org/tags/</link>
         <description>Tags - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 23 May 2024 10:21:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 May 2024 10:50:45 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>linux,warp</title>
+    <link>http://example.org/tags/linuxwarp/</link>
+    <pubDate>Wed, 29 May 2024 10:50:45 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/linuxwarp/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>WEB</title>
     <link>http://example.org/tags/web/</link>
     <pubDate>Thu, 23 May 2024 10:21:12 &#43;0800</pubDate><author>
@@ -65,13 +72,6 @@
     <pubDate>Mon, 10 May 2021 16:21:41 &#43;0100</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/tags/pwa/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>shortcodes</title>
-    <link>http://example.org/tags/shortcodes/</link>
-    <pubDate>Fri, 06 Mar 2020 16:29:59 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>http://example.org/tags/shortcodes/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
