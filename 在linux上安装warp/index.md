@@ -153,6 +153,30 @@ sudo warp-cli mode tunnel_only
 
 
 
+### 配置 WARP家庭模式
+
+家庭模式可以帮助管理员限制设备上的访问，以确保儿童安全使用互联网。以下是这些命令的解释：
+
+```bash
+warp-cli dns families off
+```
+
+关闭家庭模式。这意味着关闭了所有的家庭过滤和限制，所有的网站都可以访问，没有任何限制。
+
+```bash
+warp-cli dns families malware
+```
+
+启用家庭模式并选择了恶意软件保护。在此模式下，Cloudflare WARP 将过滤掉已知的恶意软件网站，保护设备免受恶意软件的攻击。
+
+```bash
+warp-cli dns families full
+```
+
+启用家庭模式并选择了恶意软件保护和成人内容过滤。在此模式下，Cloudflare WARP 不仅会过滤掉已知的恶意软件网站，还会过滤掉包含成人内容的网站，以确保设备上的用户免受不良内容的影响。
+
+
+
 ### 连接/断开 WARP 
 
 **连接**：

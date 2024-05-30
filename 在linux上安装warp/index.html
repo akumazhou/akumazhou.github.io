@@ -37,7 +37,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/example.org\/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp\/"
-        },"genre": "posts","keywords": "linux, warp","wordcount":  2025 ,
+        },"genre": "posts","keywords": "linux, warp","wordcount":  2290 ,
         "url": "http:\/\/example.org\/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp\/","datePublished": "2024-05-29T10:50:45+08:00","dateModified": "2024-05-29T10:50:45+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -129,6 +129,7 @@
         <li><a href="#检查-warp许可证">检查 Warp+许可证</a></li>
         <li><a href="#添加-warp许可证">添加 Warp+许可证</a></li>
         <li><a href="#切换-warp-的模式">切换 WARP 的模式</a></li>
+        <li><a href="#配置-warp家庭模式">配置 WARP家庭模式</a></li>
         <li><a href="#连接断开-warp">连接/断开 WARP</a></li>
         <li><a href="#重启warp服务">重启Warp服务</a></li>
         <li><a href="#解决ping-google时ping不通且显示ipv6地址">解决ping google时ping不通，且显示ipv6地址</a></li>
@@ -147,7 +148,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">AKUMA</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-05-29">2024-05-29</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-05-29">2024-05-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2025 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-05-29">2024-05-29</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-05-29">2024-05-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2290 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -163,6 +164,7 @@
         <li><a href="#检查-warp许可证">检查 Warp+许可证</a></li>
         <li><a href="#添加-warp许可证">添加 Warp+许可证</a></li>
         <li><a href="#切换-warp-的模式">切换 WARP 的模式</a></li>
+        <li><a href="#配置-warp家庭模式">配置 WARP家庭模式</a></li>
         <li><a href="#连接断开-warp">连接/断开 WARP</a></li>
         <li><a href="#重启warp服务">重启Warp服务</a></li>
         <li><a href="#解决ping-google时ping不通且显示ipv6地址">解决ping google时ping不通，且显示ipv6地址</a></li>
@@ -377,6 +379,35 @@
 <li><strong>需要代理功能</strong>：使用 <code>proxy</code>。</li>
 <li><strong>仅需要加密隧道，不影响 DNS</strong>：使用 <code>tunnel_only</code>。</li>
 </ul>
+<h3 id="配置-warp家庭模式" class="headerLink">
+    <a href="#%e9%85%8d%e7%bd%ae-warp%e5%ae%b6%e5%ba%ad%e6%a8%a1%e5%bc%8f" class="header-mark"></a>配置 WARP家庭模式</h3><p>家庭模式可以帮助管理员限制设备上的访问，以确保儿童安全使用互联网。以下是这些命令的解释：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">warp-cli dns families off
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>关闭家庭模式。这意味着关闭了所有的家庭过滤和限制，所有的网站都可以访问，没有任何限制。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">warp-cli dns families malware
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>启用家庭模式并选择了恶意软件保护。在此模式下，Cloudflare WARP 将过滤掉已知的恶意软件网站，保护设备免受恶意软件的攻击。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">warp-cli dns families full
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>启用家庭模式并选择了恶意软件保护和成人内容过滤。在此模式下，Cloudflare WARP 不仅会过滤掉已知的恶意软件网站，还会过滤掉包含成人内容的网站，以确保设备上的用户免受不良内容的影响。</p>
 <h3 id="连接断开-warp" class="headerLink">
     <a href="#%e8%bf%9e%e6%8e%a5%e6%96%ad%e5%bc%80-warp" class="header-mark"></a>连接/断开 WARP</h3><p><strong>连接</strong>：</p>
 <div class="highlight"><div class="chroma">
