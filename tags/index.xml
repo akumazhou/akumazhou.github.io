@@ -3,7 +3,14 @@
         <title>Tags - 标签 - WJ BLOG</title>
         <link>http://example.org/tags/</link>
         <description>Tags - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 May 2024 10:50:45 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>WINDOWS技巧</title>
+    <link>http://example.org/tags/windows%E6%8A%80%E5%B7%A7/</link>
+    <pubDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/windows%E6%8A%80%E5%B7%A7/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>linux</title>
     <link>http://example.org/tags/linux/</link>
     <pubDate>Wed, 29 May 2024 10:50:45 &#43;0800</pubDate><author>
@@ -23,13 +30,6 @@
     <pubDate>Thu, 23 May 2024 10:21:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/tags/web/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>WINDOWS技巧</title>
-    <link>http://example.org/tags/windows%E6%8A%80%E5%B7%A7/</link>
-    <pubDate>Thu, 09 May 2024 10:51:29 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>http://example.org/tags/windows%E6%8A%80%E5%B7%A7/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Synology</title>

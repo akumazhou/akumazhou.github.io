@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>WIN11绕过TPM和联网账号 - WJ BLOG</title><meta name="Description" content="WIN11绕过TPM和联网账号"><meta property="og:title" content="WIN11绕过TPM和联网账号" />
+<meta property="og:description" content="WIN11绕过TPM和联网账号" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-06-12T14:21:12+08:00" />
+<meta property="article:modified_time" content="2024-06-12T14:21:12+08:00" /><meta property="og:site_name" content="我的全新 Hugo 网站" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="WIN11绕过TPM和联网账号"/>
+<meta name="twitter:description" content="WIN11绕过TPM和联网账号"/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/" /><link rel="prev" href="http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "WIN11绕过TPM和联网账号",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7\/"
+        },"genre": "posts","keywords": "WINDOWS技巧","wordcount":  1123 ,
+        "url": "http:\/\/example.org\/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7\/","datePublished": "2024-06-12T14:21:12+08:00","dateModified": "2024-06-12T14:21:12+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "AKUMA"
+            },"description": "WIN11绕过TPM和联网账号"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="WJ BLOG"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/series/"> 系列 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="WJ BLOG"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/series/" title="">系列</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#这台电脑不符合安装此版本的windows">这台电脑不符合安装此版本的Windows</a></li>
+    <li><a href="#笔记本电脑win11第一次开机跳过联网激活方法">笔记本电脑win11第一次开机跳过联网激活方法</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">WIN11绕过TPM和联网账号</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">AKUMA</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-06-12">2024-06-12</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-06-12">2024-06-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1123 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#这台电脑不符合安装此版本的windows">这台电脑不符合安装此版本的Windows</a></li>
+    <li><a href="#笔记本电脑win11第一次开机跳过联网激活方法">笔记本电脑win11第一次开机跳过联网激活方法</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="这台电脑不符合安装此版本的windows" class="headerLink">
+    <a href="#%e8%bf%99%e5%8f%b0%e7%94%b5%e8%84%91%e4%b8%8d%e7%ac%a6%e5%90%88%e5%ae%89%e8%a3%85%e6%ad%a4%e7%89%88%e6%9c%ac%e7%9a%84windows" class="header-mark"></a>这台电脑不符合安装此版本的Windows</h2><p><strong>当电脑提示不符合安装此版本的Windows时，这通常意味着电脑的硬件配置不符合Windows 11的最低系统要求。</strong> 解决这个问题的方法包括通过注册表绕过硬件检测，但微软建议不符合要求的电脑最好不要安装，以避免出现问题。以下是具体的解决方法：</p>
+<ol>
+<li><strong>手动输入命令添加注册表项</strong>：
+<ul>
+<li>使用U盘安装Windows 11时，在安装界面点击左上角的箭头返回上一步。</li>
+<li>同时按下Shift+F10组合键调出管理员命令提示符窗口。</li>
+<li>输入命令依次执行，这些命令可以添加注册表项，绕过TPM、安全启动、CPU、内存和硬盘空间的检测。</li>
+</ul>
+</li>
+<li><strong>通过注册表绕过硬件检测</strong>：
+<ul>
+<li>进入注册表（regedit）。</li>
+<li>找到<code>HKEY_LOCAL_MACHINE\SYSTEM\Setup</code>，右键点击<code>Setup</code>新建项<code>LabConfig</code>。</li>
+<li>在<code>LabConfig</code>上右键新建DWORD(32位)值，共需要创建5个，分别命名为：<code>BypassSecureBootCheck</code>、<code>BypassTPMCheck</code>。</li>
+<li>依次双击打开上面的5个DWORD值，数值数据改成1，确定，就可以绕过硬件检测，继续安装。</li>
+</ul>
+</li>
+<li><strong>增加额外的DWORD值</strong>：
+<ul>
+<li>如果仅设置<code>BypassTPMCheck</code>和<code>BypassSecureBootCheck</code>无效，可以增加<code>BypassRAMCheck</code>、<code>BypassCPUCheck</code>、<code>BypassStorageCheck</code>再尝试安装。</li>
+</ul>
+</li>
+</ol>
+<h2 id="笔记本电脑win11第一次开机跳过联网激活方法" class="headerLink">
+    <a href="#%e7%ac%94%e8%ae%b0%e6%9c%ac%e7%94%b5%e8%84%91win11%e7%ac%ac%e4%b8%80%e6%ac%a1%e5%bc%80%e6%9c%ba%e8%b7%b3%e8%bf%87%e8%81%94%e7%bd%91%e6%bf%80%e6%b4%bb%e6%96%b9%e6%b3%95" class="header-mark"></a>笔记本电脑win11第一次开机跳过联网激活方法</h2><p>新买的<strong>笔记本电脑</strong>中都预装了win11系统。但是首次开机时，windows 11系统会要求联网登录microsoft账号，才能激活进入桌面。如果不想登录Microsoft账号，想要跳过联网激活电脑，以下方法可以试一下。</p>
+<p>跳过强制使用Microsoft登录的限制：</p>
+<p>方法：使用OOBE命令来安装，自从2022年9月底发布了Windows 11 22H2版本后，全新安装系统时再也无法使用本地账户登录了。以前的做法是断网就可以跳过强制使用Microsoft登录的限制，但新版本会提示要联网才能继续安装。</p>
+<p>在没有网络连接的情况下，“下一步”按钮是灰色不可点击的。这时候，按下 <strong>Shift + F10</strong> 键打开命令提示符（使用笔记本的朋友如果无法打开命令提示符，可以按 <strong>Fn + Shift + F10</strong>）。</p>
+<p>出现命令提示符后，输入**“oobe\bypassnro”**，然后按回车键。当按下回车键后，计算机会重新启动。</p>
+<p>重新启动后，将回到设置国家区域的界面，然后继续Windows 11的设置过程。这时在网络界面上终于出现了**“我没有 Internet 连接”的选项“**，点击进入。</p>
+<p>接下来，点击**“继续进行有限设置”**。当看到“输入你的姓名”时，恭喜你学会了一种在安装系统时不使用Microsoft账户登录的技巧。</p>
+</div>
+
+        
+
+
+<h2>相关内容</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/">电脑cmd命令大全</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/">网络工程师常用的25个排障命令</a>
+            </h2>
+        </div>
+    <div class="related-item-container">
+            <h2 class="related-title">
+                <a href="/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/">Windows自动登录</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-06-12</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/" data-title="WIN11绕过TPM和联网账号" data-hashtags="WINDOWS技巧"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/" data-hashtag="WINDOWS技巧"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/" data-title="WIN11绕过TPM和联网账号" data-web><span class="fab fa-whatsapp fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/" data-title="WIN11绕过TPM和联网账号"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/" data-title="WIN11绕过TPM和联网账号"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Myspace" data-sharer="myspace" data-url="http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/" data-title="WIN11绕过TPM和联网账号" data-description="WIN11绕过TPM和联网账号"><span data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></span></button><button title="分享到 Blogger" data-sharer="blogger" data-url="http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/" data-title="WIN11绕过TPM和联网账号" data-description="WIN11绕过TPM和联网账号"><span class="fab fa-blogger fa-fw"></span></button><button title="分享到 Evernote" data-sharer="evernote" data-url="http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/" data-title="WIN11绕过TPM和联网账号"><span class="fab fa-evernote fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/windows%E6%8A%80%E5%B7%A7/">WINDOWS技巧</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/" class="prev" rel="prev" title="在Linux上安装Warp"><i class="fas fa-angle-left fa-fw"></i>在Linux上安装Warp</a></div>
+</div>
+<div id="comments"></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.120.4">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">AKUMA</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"WJ BLOG","mobile-header-typeit":"WJ BLOG"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

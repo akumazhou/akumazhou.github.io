@@ -3,9 +3,16 @@
         <title>WJ BLOG</title>
         <link>http://example.org/</link>
         <description>这是我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 May 2024 10:50:45 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>WIN11绕过TPM和联网账号</title>
+    <link>http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</link>
+    <pubDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</guid>
+    <description><![CDATA[这台电脑不符合安装此版本的Windows当电脑提示不符合安装此版本的Windows时，这通常意味着电脑的硬件配置不符合Windows 11的最]]></description>
+</item><item>
     <title>在Linux上安装Warp</title>
     <link>http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</link>
     <pubDate>Wed, 29 May 2024 10:50:45 &#43;0800</pubDate><author>
@@ -68,12 +75,5 @@
         <name>AKUMA</name>
     </author><guid>http://example.org/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AE%89%E8%A3%851panel%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96%E5%BC%80%E6%BA%90%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF/</guid>
     <description><![CDATA[1.进入官网GitHub - 1Panel-dev/1Panel: 🔥 🔥 🔥 现代化、开源的 Linux 服务器运维管理面板。 2.一键安装 1 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh &amp;&amp; sudo bash quick_start.sh 执行中,可以看到会自动安装docker]]></description>
-</item><item>
-    <title>Github Desktop设置汉化</title>
-    <link>http://example.org/githubdesktop%E8%AE%BE%E7%BD%AE%E6%B1%89%E5%8C%96/</link>
-    <pubDate>Tue, 28 Nov 2023 13:30:25 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>http://example.org/githubdesktop%E8%AE%BE%E7%BD%AE%E6%B1%89%E5%8C%96/</guid>
-    <description><![CDATA[汉化步骤： 1.访问https://desktop.github.com/，下载GitHubDesktop安装程序。 2.安装完成之后删除安装包]]></description>
 </item></channel>
 </rss>

@@ -3,7 +3,14 @@
         <title>WINDOWS技巧 - 标签 - WJ BLOG</title>
         <link>http://example.org/tags/windows%E6%8A%80%E5%B7%A7/</link>
         <description>WINDOWS技巧 - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 09 May 2024 10:51:29 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/windows%E6%8A%80%E5%B7%A7/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/windows%E6%8A%80%E5%B7%A7/" rel="self" type="application/rss+xml" /><item>
+    <title>WIN11绕过TPM和联网账号</title>
+    <link>http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</link>
+    <pubDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</guid>
+    <description><![CDATA[这台电脑不符合安装此版本的Windows当电脑提示不符合安装此版本的Windows时，这通常意味着电脑的硬件配置不符合Windows 11的最]]></description>
+</item><item>
     <title>电脑cmd命令大全</title>
     <link>http://example.org/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</link>
     <pubDate>Thu, 09 May 2024 10:51:29 &#43;0800</pubDate><author>
