@@ -9,6 +9,8 @@
     <pubDate>Wed, 29 May 2024 10:50:45 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</guid>
-    <description><![CDATA[在Linux上安装Warp官网安装说明： pkg.cloudflareclient.com 官网使用手册： Linux desktop client · Cloudflare WARP client docs Ubuntu： 1 2 3 4 5 6 7 8 # Add cloudflare gpg key curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg # Add this repo]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/featured-image.png" referrerpolicy="no-referrer">
+            </div>在Linux上安装Warp官网安装说明： pkg.cloudflareclient.com 官网使用手册： Linux desktop client · Cloudflare WARP client docs Ubuntu： 1 2 3 4 5 6 7 8 # Add cloudflare gpg key curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg # Add this repo]]></description>
 </item></channel>
 </rss>

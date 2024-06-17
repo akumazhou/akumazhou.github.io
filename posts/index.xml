@@ -9,42 +9,54 @@
     <pubDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</guid>
-    <description><![CDATA[这台电脑不符合安装此版本的Windows当电脑提示不符合安装此版本的Windows时，这通常意味着电脑的硬件配置不符合Windows 11的最]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/featured-image.webp" referrerpolicy="no-referrer">
+            </div>这台电脑不符合安装此版本的Windows当电脑提示不符合安装此版本的Windows时，这通常意味着电脑的硬件配置不符合Windows 11的最]]></description>
 </item><item>
     <title>在Linux上安装Warp</title>
     <link>http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</link>
     <pubDate>Wed, 29 May 2024 10:50:45 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</guid>
-    <description><![CDATA[在Linux上安装Warp官网安装说明： pkg.cloudflareclient.com 官网使用手册： Linux desktop client · Cloudflare WARP client docs Ubuntu： 1 2 3 4 5 6 7 8 # Add cloudflare gpg key curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg # Add this repo]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/featured-image.png" referrerpolicy="no-referrer">
+            </div>在Linux上安装Warp官网安装说明： pkg.cloudflareclient.com 官网使用手册： Linux desktop client · Cloudflare WARP client docs Ubuntu： 1 2 3 4 5 6 7 8 # Add cloudflare gpg key curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg # Add this repo]]></description>
 </item><item>
     <title>ClouDNS永久免费域名向cloudflare迁移</title>
     <link>http://example.org/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/</link>
     <pubDate>Thu, 23 May 2024 10:21:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/</guid>
-    <description><![CDATA[上一篇文章已经教大家如何白嫖一个ClouDNS免费服务下的永久域名，见教你免费注册一个ClouDNS永久域名(保姆级教程） 现在再来教大家如何]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/featured-image.png" referrerpolicy="no-referrer">
+            </div>上一篇文章已经教大家如何白嫖一个ClouDNS免费服务下的永久域名，见教你免费注册一个ClouDNS永久域名(保姆级教程） 现在再来教大家如何]]></description>
 </item><item>
     <title>教你免费注册一个ClouDNS永久域名(保姆级教程)</title>
     <link>http://example.org/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AAcloudns%E6%B0%B8%E4%B9%85%E5%9F%9F%E5%90%8D/</link>
     <pubDate>Thu, 23 May 2024 10:20:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AAcloudns%E6%B0%B8%E4%B9%85%E5%9F%9F%E5%90%8D/</guid>
-    <description><![CDATA[“ 互联网人该给自己备个域名啦！” ClouDNS是欧洲最大的全球托管DNS服务提供商，包括GeoDNS，Anycast DNS和DDoS保护的D]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AAcloudns%E6%B0%B8%E4%B9%85%E5%9F%9F%E5%90%8D/featured-image.webp" referrerpolicy="no-referrer">
+            </div>“ 互联网人该给自己备个域名啦！” ClouDNS是欧洲最大的全球托管DNS服务提供商，包括GeoDNS，Anycast DNS和DDoS保护的D]]></description>
 </item><item>
     <title>电脑cmd命令大全</title>
     <link>http://example.org/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</link>
     <pubDate>Thu, 09 May 2024 10:51:29 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</guid>
-    <description><![CDATA[在不同的操作系统环境下，命令提示符各不相同，在Windows环境下，命令行程序为cmd.exe，是一个32 位的命令行程序。 cmd是指命令提示]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/featured-image.webp" referrerpolicy="no-referrer">
+            </div>在不同的操作系统环境下，命令提示符各不相同，在Windows环境下，命令行程序为cmd.exe，是一个32 位的命令行程序。 cmd是指命令提示]]></description>
 </item><item>
     <title>网络工程师常用的25个排障命令</title>
     <link>http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/</link>
     <pubDate>Thu, 09 May 2024 10:50:45 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/</guid>
-    <description><![CDATA[在网络运维工作中，掌握排障命令可以帮助我们快速定位和解决各种网络故障，确保网络稳定运行。 今天要和大家分享的是关于网络排障中常用的25个命令。]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>在网络运维工作中，掌握排障命令可以帮助我们快速定位和解决各种网络故障，确保网络稳定运行。 今天要和大家分享的是关于网络排障中常用的25个命令。]]></description>
 </item><item>
     <title>阿里云服务器ECS搭建个人网站新手教程（超详细）</title>
     <link>http://example.org/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</link>
@@ -58,14 +70,18 @@
     <pubDate>Mon, 25 Mar 2024 10:55:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/%E9%BB%91%E7%BE%A4%E6%99%96-active-backup-for-business-%E5%A5%97%E4%BB%B6%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/</guid>
-    <description><![CDATA[黑群晖 Active Backup for Business 套件激活方法 首先我们先安装好Active Backup for Business套件 这时候打开会显示需要激活 我们到【控制面板】 - 【信息中心】 找到【]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%E9%BB%91%E7%BE%A4%E6%99%96-active-backup-for-business-%E5%A5%97%E4%BB%B6%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/featured-image.png" referrerpolicy="no-referrer">
+            </div>黑群晖 Active Backup for Business 套件激活方法 首先我们先安装好Active Backup for Business套件 这时候打开会显示需要激活 我们到【控制面板】 - 【信息中心】 找到【]]></description>
 </item><item>
     <title>Windows自动登录</title>
     <link>http://example.org/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</link>
     <pubDate>Thu, 18 Jan 2024 14:21:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</guid>
-    <description><![CDATA[一.设置自动登录的方法找到运行窗口后输入control userpasswords2或者netplwiz代码并按下回车键 图片1 在跳转界面中点击]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/featured-image.webp" referrerpolicy="no-referrer">
+            </div>一.设置自动登录的方法找到运行窗口后输入control userpasswords2或者netplwiz代码并按下回车键 图片1 在跳转界面中点击]]></description>
 </item><item>
     <title>手把手教你安装1Panel,一个现代化开源的服务器管理面板</title>
     <link>http://example.org/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AE%89%E8%A3%851panel%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96%E5%BC%80%E6%BA%90%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF/</link>
