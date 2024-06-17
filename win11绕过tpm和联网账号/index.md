@@ -9,17 +9,19 @@
 
 1. **手动输入命令添加注册表项**：
    - 使用U盘安装Windows 11时，在安装界面点击左上角的箭头返回上一步。
-   - 同时按下Shift+F10组合键调出管理员命令提示符窗口。
+   - 同时按下`Shift+F10`组合键调出管理员命令提示符窗口。
    - 输入命令依次执行，这些命令可以添加注册表项，绕过TPM、安全启动、CPU、内存和硬盘空间的检测。
 2. **通过注册表绕过硬件检测**：
    - 进入注册表（regedit）。
    - 找到`HKEY_LOCAL_MACHINE\SYSTEM\Setup`，右键点击`Setup`新建项`LabConfig`。
-   - 在`LabConfig`上右键新建DWORD(32位)值，共需要创建5个，分别命名为：`BypassSecureBootCheck`、`BypassTPMCheck`。
-   - 依次双击打开上面的5个DWORD值，数值数据改成1，确定，就可以绕过硬件检测，继续安装。
+   - 在`LabConfig`上右键新建`DWORD(32位)`值，共需要创建2个，分别命名为：`BypassSecureBootCheck`、`BypassTPMCheck`。
+   - 依次双击打开上面的2个DWORD值，数值数据改成1，确定，就可以绕过硬件检测，继续安装。
 3. **增加额外的DWORD值**：
    - 如果仅设置`BypassTPMCheck`和`BypassSecureBootCheck`无效，可以增加`BypassRAMCheck`、`BypassCPUCheck`、`BypassStorageCheck`再尝试安装。
 
 
+
+<br>
 
 ## 笔记本电脑win11第一次开机跳过联网激活方法
 

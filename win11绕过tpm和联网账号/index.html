@@ -147,7 +147,7 @@
 <li><strong>手动输入命令添加注册表项</strong>：
 <ul>
 <li>使用U盘安装Windows 11时，在安装界面点击左上角的箭头返回上一步。</li>
-<li>同时按下Shift+F10组合键调出管理员命令提示符窗口。</li>
+<li>同时按下<code>Shift+F10</code>组合键调出管理员命令提示符窗口。</li>
 <li>输入命令依次执行，这些命令可以添加注册表项，绕过TPM、安全启动、CPU、内存和硬盘空间的检测。</li>
 </ul>
 </li>
@@ -155,8 +155,8 @@
 <ul>
 <li>进入注册表（regedit）。</li>
 <li>找到<code>HKEY_LOCAL_MACHINE\SYSTEM\Setup</code>，右键点击<code>Setup</code>新建项<code>LabConfig</code>。</li>
-<li>在<code>LabConfig</code>上右键新建DWORD(32位)值，共需要创建5个，分别命名为：<code>BypassSecureBootCheck</code>、<code>BypassTPMCheck</code>。</li>
-<li>依次双击打开上面的5个DWORD值，数值数据改成1，确定，就可以绕过硬件检测，继续安装。</li>
+<li>在<code>LabConfig</code>上右键新建<code>DWORD(32位)</code>值，共需要创建2个，分别命名为：<code>BypassSecureBootCheck</code>、<code>BypassTPMCheck</code>。</li>
+<li>依次双击打开上面的2个DWORD值，数值数据改成1，确定，就可以绕过硬件检测，继续安装。</li>
 </ul>
 </li>
 <li><strong>增加额外的DWORD值</strong>：
@@ -165,6 +165,7 @@
 </ul>
 </li>
 </ol>
+<br>
 <h2 id="笔记本电脑win11第一次开机跳过联网激活方法" class="headerLink">
     <a href="#%e7%ac%94%e8%ae%b0%e6%9c%ac%e7%94%b5%e8%84%91win11%e7%ac%ac%e4%b8%80%e6%ac%a1%e5%bc%80%e6%9c%ba%e8%b7%b3%e8%bf%87%e8%81%94%e7%bd%91%e6%bf%80%e6%b4%bb%e6%96%b9%e6%b3%95" class="header-mark"></a>笔记本电脑win11第一次开机跳过联网激活方法</h2><p>新买的<strong>笔记本电脑</strong>中都预装了win11系统。但是首次开机时，windows 11系统会要求联网登录microsoft账号，才能激活进入桌面。如果不想登录Microsoft账号，想要跳过联网激活电脑，以下方法可以试一下。</p>
 <p>跳过强制使用Microsoft登录的限制：</p>
