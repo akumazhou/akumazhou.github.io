@@ -19,7 +19,7 @@
         <name>AKUMA</name>
     </author><guid>http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/featured-image.webp" referrerpolicy="no-referrer">
+                <img src="/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/featured-image.png" referrerpolicy="no-referrer">
             </div>在Linux上安装Warp官网安装说明： pkg.cloudflareclient.com 官网使用手册： Linux desktop client · Cloudflare WARP client docs Ubuntu： 1 2 3 4 5 6 7 8 # Add cloudflare gpg key curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg # Add this repo]]></description>
 </item><item>
     <title>ClouDNS永久免费域名向cloudflare迁移</title>
@@ -37,7 +37,7 @@
         <name>AKUMA</name>
     </author><guid>http://example.org/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AAcloudns%E6%B0%B8%E4%B9%85%E5%9F%9F%E5%90%8D/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AAcloudns%E6%B0%B8%E4%B9%85%E5%9F%9F%E5%90%8D/featured-image.webp" referrerpolicy="no-referrer">
+                <img src="/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AAcloudns%E6%B0%B8%E4%B9%85%E5%9F%9F%E5%90%8D/featured-image.jpg" referrerpolicy="no-referrer">
             </div>“ 互联网人该给自己备个域名啦！” ClouDNS是欧洲最大的全球托管DNS服务提供商，包括GeoDNS，Anycast DNS和DDoS保护的D]]></description>
 </item><item>
     <title>电脑cmd命令大全</title>
