@@ -8,9 +8,9 @@
 | **个人博客，欢迎交流**
 
 ## 关于作者
-|AKUMA
+| **AKUMA**
 
-|Email:wenjie1018@gmail.com
+| **Email:wenjie1018@gmail.com**
 
 
 
