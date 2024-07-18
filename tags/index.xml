@@ -3,7 +3,14 @@
         <title>Tags - 标签 - WJ BLOG</title>
         <link>http://example.org/tags/</link>
         <description>Tags - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Jul 2024 11:21:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>python</title>
+    <link>http://example.org/tags/python/</link>
+    <pubDate>Thu, 18 Jul 2024 11:21:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/tags/python/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>WINDOWS技巧</title>
     <link>http://example.org/tags/windows%E6%8A%80%E5%B7%A7/</link>
     <pubDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</pubDate><author>
@@ -65,13 +72,6 @@
     <pubDate>Mon, 28 Feb 2022 14:27:14 &#43;0000</pubDate><author>
         <name>AKUMA</name>
     </author><guid>http://example.org/tags/diagram/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Markdown</title>
-    <link>http://example.org/tags/markdown/</link>
-    <pubDate>Mon, 28 Feb 2022 14:27:14 &#43;0000</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>http://example.org/tags/markdown/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

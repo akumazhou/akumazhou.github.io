@@ -3,7 +3,16 @@
         <title>所有文章 - WJ BLOG</title>
         <link>http://example.org/posts/</link>
         <description>所有文章 | WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Jul 2024 11:21:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>100道Python练习题</title>
+    <link>http://example.org/100%E9%81%93python%E7%BB%83%E4%B9%A0%E9%A2%98/</link>
+    <pubDate>Thu, 18 Jul 2024 11:21:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>http://example.org/100%E9%81%93python%E7%BB%83%E4%B9%A0%E9%A2%98/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/100%E9%81%93python%E7%BB%83%E4%B9%A0%E9%A2%98/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>100道Python练习题，看看你会几道题！？本文较长，如果你不是一个能够耐住性子，一下子就看完的性格，强烈建议收藏一波哟～ 实例001：数字]]></description>
+</item><item>
     <title>WIN11绕过TPM和联网账号</title>
     <link>http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</link>
     <pubDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</pubDate><author>
@@ -84,14 +93,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/featured-image.webp" referrerpolicy="no-referrer">
             </div>一.设置自动登录的方法找到运行窗口后输入control userpasswords2或者netplwiz代码并按下回车键 图片1 在跳转界面中点击]]></description>
-</item><item>
-    <title>手把手教你安装1Panel,一个现代化开源的服务器管理面板</title>
-    <link>http://example.org/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AE%89%E8%A3%851panel%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96%E5%BC%80%E6%BA%90%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF/</link>
-    <pubDate>Wed, 29 Nov 2023 17:41:12 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>http://example.org/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AE%89%E8%A3%851panel%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96%E5%BC%80%E6%BA%90%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%AE%89%E8%A3%851panel%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96%E5%BC%80%E6%BA%90%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF/featured-image.jpg" referrerpolicy="no-referrer">
-            </div>1.进入官网GitHub - 1Panel-dev/1Panel: 🔥 🔥 🔥 现代化、开源的 Linux 服务器运维管理面板。 2.一键安装 1 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh &amp;&amp; sudo bash quick_start.sh 执行中,可以看到会自动安装docker]]></description>
 </item></channel>
 </rss>
