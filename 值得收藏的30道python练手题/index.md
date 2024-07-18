@@ -432,7 +432,7 @@ adfjl
 
 **17. 打印出如下图案（菱形）:**
 
-{{< image src="./640.webp">}} 
+{{< image src="./640.webp" height="225px" width="217px">}} 
 
 ```python
 def test():
