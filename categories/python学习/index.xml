@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>python - 标签 - WJ BLOG</title>
-        <link>http://example.org/tags/python/</link>
-        <description>python - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Jul 2024 13:10:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/python/" rel="self" type="application/rss+xml" /><item>
+        <title>Python学习 - 分类 - WJ BLOG</title>
+        <link>http://example.org/categories/python%E5%AD%A6%E4%B9%A0/</link>
+        <description>Python学习 - 分类 - WJ BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Jul 2024 13:10:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/python%E5%AD%A6%E4%B9%A0/" rel="self" type="application/rss+xml" /><item>
     <title>值得收藏的30道Python练手题（附详解）</title>
     <link>http://example.org/%E5%80%BC%E5%BE%97%E6%94%B6%E8%97%8F%E7%9A%8430%E9%81%93python%E7%BB%83%E6%89%8B%E9%A2%98/</link>
     <pubDate>Thu, 18 Jul 2024 13:10:12 &#43;0800</pubDate><author>
