@@ -1,92 +1,92 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Hugo - 标签 - WJ BLOG</title>
-        <link>http://example.org/tags/hugo/</link>
+        <link>https://www.wenjie1018.cn/tags/hugo/</link>
         <description>Hugo - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 23 Nov 2023 17:45:25 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 23 Nov 2023 17:45:25 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/hugo/" rel="self" type="application/rss+xml" /><item>
     <title>搭建自己的hugo博客站点</title>
-    <link>http://example.org/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84hugo%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9/</link>
+    <link>https://www.wenjie1018.cn/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84hugo%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9/</link>
     <pubDate>Thu, 23 Nov 2023 17:45:25 &#43;0800</pubDate><author>
         <name>AKUMA</name>
-    </author><guid>http://example.org/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84hugo%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9/</guid>
+    </author><guid>https://www.wenjie1018.cn/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84hugo%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/hugo-posts.webp" referrerpolicy="no-referrer">
             </div>实验环境 1 2 3 win10 git version 2.17.0.windows.1 hugo v0.98.0 hugo官网https://gohugo.io/ hugo安装 1.安装git实战：git安装 ————————————]]></description>
 </item><item>
     <title>如何在 DoIt 中创建图表</title>
-    <link>http://example.org/create-diagrams/</link>
+    <link>https://www.wenjie1018.cn/create-diagrams/</link>
     <pubDate>Mon, 28 Feb 2022 14:27:14 &#43;0000</pubDate><author>
                     <name>PCloud</name>
-                </author><guid>http://example.org/create-diagrams/</guid>
+                </author><guid>https://www.wenjie1018.cn/create-diagrams/</guid>
     <description><![CDATA[这篇文档将展示如何在 DoIt 中使用 GoAT 和 Mermaid 创建 SVG 图表。]]></description>
 </item><item>
     <title>PWA 支持</title>
-    <link>http://example.org/pwa-support/</link>
+    <link>https://www.wenjie1018.cn/pwa-support/</link>
     <pubDate>Mon, 10 May 2021 16:21:41 &#43;0100</pubDate><author>
                     <name>PCloud</name>
-                </author><guid>http://example.org/pwa-support/</guid>
+                </author><guid>https://www.wenjie1018.cn/pwa-support/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/pwa-support/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>了解如何在 DoIt 主题中配置渐进式网络应用程序 (PWA).</p>]]></description>
 </item><item>
     <title>主题文档 - 扩展 Shortcodes</title>
-    <link>http://example.org/theme-documentation-extended-shortcodes/</link>
+    <link>https://www.wenjie1018.cn/theme-documentation-extended-shortcodes/</link>
     <pubDate>Fri, 06 Mar 2020 16:29:59 &#43;0800</pubDate><author>
                     <name>Dillon</name>
                 </author><author>
                     <name>PCloud</name>
-                </author><guid>http://example.org/theme-documentation-extended-shortcodes/</guid>
+                </author><guid>https://www.wenjie1018.cn/theme-documentation-extended-shortcodes/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/theme-documentation-extended-shortcodes/featured-image-preview.webp" referrerpolicy="no-referrer">
             </div><p><strong>DoIt</strong> 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode.</p>]]></description>
 </item><item>
     <title>主题文档 - 内置 Shortcodes</title>
-    <link>http://example.org/theme-documentation-built-in-shortcodes/</link>
+    <link>https://www.wenjie1018.cn/theme-documentation-built-in-shortcodes/</link>
     <pubDate>Thu, 05 Mar 2020 16:29:59 &#43;0800</pubDate><author>
                     <name>Dillon</name>
                 </author><author>
                     <name>PCloud</name>
-                </author><guid>http://example.org/theme-documentation-built-in-shortcodes/</guid>
+                </author><guid>https://www.wenjie1018.cn/theme-documentation-built-in-shortcodes/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/theme-documentation-built-in-shortcodes/featured-image.webp" referrerpolicy="no-referrer">
             </div><p><strong>Hugo</strong> 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁.</p>]]></description>
 </item><item>
     <title>主题文档 - 内容</title>
-    <link>http://example.org/theme-documentation-content/</link>
+    <link>https://www.wenjie1018.cn/theme-documentation-content/</link>
     <pubDate>Wed, 04 Mar 2020 16:30:05 &#43;0800</pubDate><author>
                     <name>Dillon</name>
                 </author><author>
                     <name>PCloud</name>
-                </author><guid>http://example.org/theme-documentation-content/</guid>
+                </author><guid>https://www.wenjie1018.cn/theme-documentation-content/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/theme-documentation-content/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>了解如何在 <strong>DoIt</strong> 主题中快速, 直观地创建和组织内容.</p>]]></description>
 </item><item>
     <title>主题文档 - 基本概念</title>
-    <link>http://example.org/theme-documentation-basics/</link>
+    <link>https://www.wenjie1018.cn/theme-documentation-basics/</link>
     <pubDate>Tue, 03 Mar 2020 21:40:32 &#43;0800</pubDate><author>
                     <name>Dillon</name>
                 </author><author>
                     <name>PCloud</name>
-                </author><guid>http://example.org/theme-documentation-basics/</guid>
+                </author><guid>https://www.wenjie1018.cn/theme-documentation-basics/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/theme-documentation-basics/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>探索 Hugo - <strong>DoIt</strong> 主题的全部内容和背后的核心概念.</p>]]></description>
 </item><item>
     <title>Markdown 基本语法</title>
-    <link>http://example.org/basic-markdown-syntax/</link>
+    <link>https://www.wenjie1018.cn/basic-markdown-syntax/</link>
     <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate><author>
                     <name>Dillon</name>
-                </author><guid>http://example.org/basic-markdown-syntax/</guid>
+                </author><guid>https://www.wenjie1018.cn/basic-markdown-syntax/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/basic-markdown-syntax/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>这篇文章提供了可以在 Hugo 的文章中使用的基本 Markdown 语法示例.</p>]]></description>
 </item><item>
     <title>Emoji 支持</title>
-    <link>http://example.org/emoji-support/</link>
+    <link>https://www.wenjie1018.cn/emoji-support/</link>
     <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate><author>
                     <name>Dillon</name>
-                </author><guid>http://example.org/emoji-support/</guid>
+                </author><guid>https://www.wenjie1018.cn/emoji-support/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/emoji-support/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>Emoji 可以通过多种方式在 Hugo 项目中启用.</p>]]></description>

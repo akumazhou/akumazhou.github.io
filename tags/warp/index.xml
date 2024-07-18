@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>warp - 标签 - WJ BLOG</title>
-        <link>http://example.org/tags/warp/</link>
+        <link>https://www.wenjie1018.cn/tags/warp/</link>
         <description>warp - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 May 2024 10:50:45 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/warp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 29 May 2024 10:50:45 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/warp/" rel="self" type="application/rss+xml" /><item>
     <title>在Linux上安装Warp</title>
-    <link>http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</link>
+    <link>https://www.wenjie1018.cn/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</link>
     <pubDate>Wed, 29 May 2024 10:50:45 &#43;0800</pubDate><author>
         <name>AKUMA</name>
-    </author><guid>http://example.org/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</guid>
+    </author><guid>https://www.wenjie1018.cn/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/featured-image.png" referrerpolicy="no-referrer">
             </div>在Linux上安装Warp官网安装说明： pkg.cloudflareclient.com 官网使用手册： Linux desktop client · Cloudflare WARP client docs Ubuntu： 1 2 3 4 5 6 7 8 # Add cloudflare gpg key curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg # Add this repo]]></description>

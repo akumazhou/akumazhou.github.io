@@ -1,16 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>content - 标签 - WJ BLOG</title>
-        <link>http://example.org/tags/content/</link>
+        <link>https://www.wenjie1018.cn/tags/content/</link>
         <description>content - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 04 Mar 2020 16:30:05 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/content/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 04 Mar 2020 16:30:05 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/content/" rel="self" type="application/rss+xml" /><item>
     <title>主题文档 - 内容</title>
-    <link>http://example.org/theme-documentation-content/</link>
+    <link>https://www.wenjie1018.cn/theme-documentation-content/</link>
     <pubDate>Wed, 04 Mar 2020 16:30:05 &#43;0800</pubDate><author>
                     <name>Dillon</name>
                 </author><author>
                     <name>PCloud</name>
-                </author><guid>http://example.org/theme-documentation-content/</guid>
+                </author><guid>https://www.wenjie1018.cn/theme-documentation-content/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/theme-documentation-content/featured-image.webp" referrerpolicy="no-referrer">
             </div><p>了解如何在 <strong>DoIt</strong> 主题中快速, 直观地创建和组织内容.</p>]]></description>

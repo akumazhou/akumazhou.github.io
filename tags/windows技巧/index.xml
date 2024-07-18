@@ -1,41 +1,41 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>WINDOWS技巧 - 标签 - WJ BLOG</title>
-        <link>http://example.org/tags/windows%E6%8A%80%E5%B7%A7/</link>
+        <link>https://www.wenjie1018.cn/tags/windows%E6%8A%80%E5%B7%A7/</link>
         <description>WINDOWS技巧 - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/windows%E6%8A%80%E5%B7%A7/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/windows%E6%8A%80%E5%B7%A7/" rel="self" type="application/rss+xml" /><item>
     <title>WIN11绕过TPM和联网账号</title>
-    <link>http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</link>
+    <link>https://www.wenjie1018.cn/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</link>
     <pubDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
-    </author><guid>http://example.org/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</guid>
+    </author><guid>https://www.wenjie1018.cn/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/featured-image.webp" referrerpolicy="no-referrer">
             </div>这台电脑不符合安装此版本的Windows当电脑提示不符合安装此版本的Windows时，这通常意味着电脑的硬件配置不符合Windows 11的最]]></description>
 </item><item>
     <title>电脑cmd命令大全</title>
-    <link>http://example.org/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</link>
+    <link>https://www.wenjie1018.cn/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</link>
     <pubDate>Thu, 09 May 2024 10:51:29 &#43;0800</pubDate><author>
         <name>AKUMA</name>
-    </author><guid>http://example.org/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</guid>
+    </author><guid>https://www.wenjie1018.cn/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/featured-image.webp" referrerpolicy="no-referrer">
             </div>在不同的操作系统环境下，命令提示符各不相同，在Windows环境下，命令行程序为cmd.exe，是一个32 位的命令行程序。 cmd是指命令提示]]></description>
 </item><item>
     <title>网络工程师常用的25个排障命令</title>
-    <link>http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/</link>
+    <link>https://www.wenjie1018.cn/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/</link>
     <pubDate>Thu, 09 May 2024 10:50:45 &#43;0800</pubDate><author>
         <name>AKUMA</name>
-    </author><guid>http://example.org/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/</guid>
+    </author><guid>https://www.wenjie1018.cn/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/featured-image.jpg" referrerpolicy="no-referrer">
             </div>在网络运维工作中，掌握排障命令可以帮助我们快速定位和解决各种网络故障，确保网络稳定运行。 今天要和大家分享的是关于网络排障中常用的25个命令。]]></description>
 </item><item>
     <title>Windows自动登录</title>
-    <link>http://example.org/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</link>
+    <link>https://www.wenjie1018.cn/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</link>
     <pubDate>Thu, 18 Jan 2024 14:21:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
-    </author><guid>http://example.org/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</guid>
+    </author><guid>https://www.wenjie1018.cn/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/win10%E5%92%8C11%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95/featured-image.webp" referrerpolicy="no-referrer">
             </div>一.设置自动登录的方法找到运行窗口后输入control userpasswords2或者netplwiz代码并按下回车键 图片1 在跳转界面中点击]]></description>
