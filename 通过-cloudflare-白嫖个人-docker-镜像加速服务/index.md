@@ -9,7 +9,7 @@
 
 **注意：** 此方案需要有域名才行，后续需要给域名绑定到 Cloudflare，建议直接在[腾讯云-域名注册](https://curl.qcloud.com/Q1uoJ9MM)上面搞一个，选最便宜的就行。
 
-{< image src="./0bb6564d48ec973cee8731d2503679e8.png" >}
+{{< image src="./0bb6564d48ec973cee8731d2503679e8.png" >}}
 
 ### 1、注册 cloudflare
 
@@ -19,20 +19,22 @@ https://dash.cloudflare.com/
 #### 1.1 修改 DNS
 
 找到你的域名注册商，然后修改 DNS 为`phil.ns.cloudflare.com` 和 `marjory.ns.cloudflare.com`，这样才能绑定到 cloudflare
-![干货助手](https://img-blog.csdnimg.cn/img_convert/257887c9c854d668c9d8f224c5418a6f.png)
+{{< image src="./257887c9c854d668c9d8f224c5418a6f.png" >}}
 
 #### 1.2 绑定域名
 
 打开 cloudflare，绑定站点，选择免费。
 注册后绑定一个域名，这个域名的 DNS 需要设置 cloudflare 的才能绑定成功。
-![干货助手](https://img-blog.csdnimg.cn/img_convert/7c333f3a9f07d224bcbdc8cd9678f367.png)
+{{< image src="./7c333f3a9f07d224bcbdc8cd9678f367.png" >}}
 
 ### 2、新建 workers
 
 在左侧 workers and pages，然后新建，名字随便起。没有过多的配置，直接完成！
-![干货助手](https://img-blog.csdnimg.cn/img_convert/1daf110d43fd12cdad3f714e2a179b69.png)
-![干货助手](https://img-blog.csdnimg.cn/img_convert/8fc13146f8afb99edf5d8398d916418d.png)
-![干货助手](https://img-blog.csdnimg.cn/img_convert/f26b22f27b08dc9849b9d3872e2f0308.png)
+{{< image src="./1daf110d43fd12cdad3f714e2a179b69.png" >}}
+
+{{< image src="./8fc13146f8afb99edf5d8398d916418d.png" >}}
+
+{{< image src="./f26b22f27b08dc9849b9d3872e2f0308.png" >}}
 
 ### 3、编辑代码
 
@@ -40,13 +42,13 @@ https://dash.cloudflare.com/
 
 点击右上角的`编辑代码`，进入
 
-![干货助手](https://img-blog.csdnimg.cn/img_convert/72ddc80bc0dc1115f2cfb9b9c696b4da.png)
+{{< image src="./72ddc80bc0dc1115f2cfb9b9c696b4da.png" >}}
 
 #### 3.2 新建 index.html
 
 如果所示，**代码里面的`docker.xxoo.team`请替换成你自己的域名**。
 
-![干货助手](https://img-blog.csdnimg.cn/img_convert/bf4cdde3981ecb00808eb6e245052d15.png)
+{{< image src="./bf4cdde3981ecb00808eb6e245052d15.png" >}}
 
 ```html
 <!DOCTYPE html>
@@ -154,7 +156,7 @@ docker pull docker.xxoo.team/halohub/halo:latest # 拉取 halo 镜像
 
 #### 3.3 修改 worker.js
 
-![干货助手](https://img-blog.csdnimg.cn/img_convert/e6bff7e63dafb7fc2a0ef7c26547060b.png)
+{{< image src="./e6bff7e63dafb7fc2a0ef7c26547060b.png" >}}
 
 ```js
 import HTML from './index.html';
@@ -201,28 +203,30 @@ export default {
 > 一定要保存！！！一定要保存！！！一定要保存！！！一定要保存！！！
 
 **方法一(推荐):** 选点左上角返回，会提示你保存
-![干货助手](https://img-blog.csdnimg.cn/img_convert/ae4ea8eeccbde8d96d8633a7d6d37a8d.png)
+{{< image src="./ae4ea8eeccbde8d96d8633a7d6d37a8d.png" >}}
 
 **方法二：** 点击右上角的下拉保存
-![干货助手](https://img-blog.csdnimg.cn/img_convert/c82c58e38c44e42dc104047a7604b7c5.png)
+{{< image src="./c82c58e38c44e42dc104047a7604b7c5.png" >}}
 
 ### 4、部署
 
 直接弹出部署，不用填任何东西，即可
-![干货助手](https://img-blog.csdnimg.cn/img_convert/7242776aa741443e39a4add520481325.png)
+{{< image src="./7242776aa741443e39a4add520481325.png" >}}
 
-![干货助手](https://img-blog.csdnimg.cn/img_convert/b2f72bdee218fff8ed47aef3c3287bb0.png)
+{{< image src="./b2f72bdee218fff8ed47aef3c3287bb0.png" >}}
 
 ### 5、绑定域名
 
 系统默认分配的有域名，被墙无法访问，所以只能用自己的域名才行。
-![干货助手](https://img-blog.csdnimg.cn/img_convert/0c5d4137f92d690fc8aca395fbcd5b5a.png)
+{{< image src="./0c5d4137f92d690fc8aca395fbcd5b5a.png" >}}
 
 绑定成功需要等待几分钟，访问你的域名，如果出现如下页面就完成！
 
-![干货助手](https://img-blog.csdnimg.cn/img_convert/5731bb4cc1193e9e8446f0acc7d1287c.png)
+{{< image src="./5731bb4cc1193e9e8446f0acc7d1287c.png" >}}
 
 在宝塔中试一下，没问题~~
 ![干货助手](https://img-blog.csdnimg.cn/img_convert/2fc9427f6b5c9042e0e1c6d1929340e1.png)
+{{< image src="./2fc9427f6b5c9042e0e1c6d1929340e1.png" >}}
+
 
 
