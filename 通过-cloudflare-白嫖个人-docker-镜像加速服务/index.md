@@ -9,7 +9,7 @@
 
 **注意：** 此方案需要有域名才行，后续需要给域名绑定到 Cloudflare，建议直接在[腾讯云-域名注册](https://curl.qcloud.com/Q1uoJ9MM)上面搞一个，选最便宜的就行。
 
-{{< image src="./0bb6564d48ec973cee8731d2503679e8.png"  style="zoom:50%;" >}}
+{{< image src="./0bb6564d48ec973cee8731d2503679e8.png" >}}
 
 ### 1、注册 cloudflare
 

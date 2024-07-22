@@ -35,15 +35,17 @@
 
 ## 02迁移
 
-1. cloudns中双击域名进入解析列表
 
-   点击删除符号，删除已有的NS记录
 
-   
+1.cloudns中双击域名进入解析列表
 
-   {{< image src="./cee2f5bc13afb8b166549493fc489b6d.png">}}
-   
-   
+点击删除符号，删除已有的NS记录
+
+
+
+{{< image src="./cee2f5bc13afb8b166549493fc489b6d.png">}}
+
+
 
 2.cloudflare点击添加站点
 

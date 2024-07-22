@@ -3,7 +3,8 @@
         <title>Docker - 标签 - WJ BLOG</title>
         <link>https://www.wenjie1018.cn/tags/docker/</link>
         <description>Docker - 标签 - WJ BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 22 Jul 2024 10:19:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/docker/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wenjie1018@gmail.com (AKUMA)</managingEditor>
+            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Mon, 22 Jul 2024 10:19:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/docker/" rel="self" type="application/rss+xml" /><item>
     <title>通过 cloudflare 白嫖个人 docker 镜像加速服务</title>
     <link>https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/</link>
     <pubDate>Mon, 22 Jul 2024 10:19:12 &#43;0800</pubDate><author>
