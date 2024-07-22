@@ -1,0 +1,713 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>通过 cloudflare 白嫖个人 docker 镜像加速服务 - WJ BLOG</title><meta name="Description" content="通过 cloudflare 白嫖个人 docker 镜像加速服务"><meta property="og:title" content="通过 cloudflare 白嫖个人 docker 镜像加速服务" />
+<meta property="og:description" content="通过 cloudflare 白嫖个人 docker 镜像加速服务" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/" /><meta property="og:image" content="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-07-22T10:19:12+08:00" />
+<meta property="article:modified_time" content="2024-07-22T10:19:12+08:00" /><meta property="og:site_name" content="我的全新 Hugo 网站" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/featured-image.png"/>
+<meta name="twitter:title" content="通过 cloudflare 白嫖个人 docker 镜像加速服务"/>
+<meta name="twitter:description" content="通过 cloudflare 白嫖个人 docker 镜像加速服务"/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/" /><link rel="prev" href="https://www.wenjie1018.cn/%E5%80%BC%E5%BE%97%E6%94%B6%E8%97%8F%E7%9A%8430%E9%81%93python%E7%BB%83%E6%89%8B%E9%A2%98/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "通过 cloudflare 白嫖个人 docker 镜像加速服务",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.wenjie1018.cn\/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1\/"
+        },"genre": "posts","keywords": "Docker, cloudflare","wordcount":  1306 ,
+        "url": "https:\/\/www.wenjie1018.cn\/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1\/","datePublished": "2024-07-22T10:19:12+08:00","dateModified": "2024-07-22T10:19:12+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "AKUMA"
+            },"description": "通过 cloudflare 白嫖个人 docker 镜像加速服务"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="WJ BLOG"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/series/"> 系列 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="WJ BLOG"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/series/" title="">系列</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#0必看">0、必看！！！</a></li>
+        <li><a href="#1注册-cloudflare">1、注册 cloudflare</a>
+          <ul>
+            <li><a href="#11-修改-dns">1.1 修改 DNS</a></li>
+            <li><a href="#12-绑定域名">1.2 绑定域名</a></li>
+          </ul>
+        </li>
+        <li><a href="#2新建-workers">2、新建 workers</a></li>
+        <li><a href="#3编辑代码">3、编辑代码</a>
+          <ul>
+            <li><a href="#31-编辑代码">3.1 编辑代码</a></li>
+            <li><a href="#32-新建-indexhtml">3.2 新建 index.html</a></li>
+            <li><a href="#33-修改-workerjs">3.3 修改 worker.js</a></li>
+            <li><a href="#34-保存">3.4 保存</a></li>
+          </ul>
+        </li>
+        <li><a href="#4部署">4、部署</a></li>
+        <li><a href="#5绑定域名">5、绑定域名</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">通过 cloudflare 白嫖个人 docker 镜像加速服务</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">AKUMA</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-07-22">2024-07-22</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-07-22">2024-07-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1306 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/featured-image.png"
+        srcset="/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/featured-image.png, /%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/featured-image.png 1.5x, /%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/featured-image.png 2x"
+        sizes="auto"
+        alt="通过 cloudflare 白嫖个人 docker 镜像加速服务"
+        title="通过 cloudflare 白嫖个人 docker 镜像加速服务" height="441"   width="1840" ></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#0必看">0、必看！！！</a></li>
+        <li><a href="#1注册-cloudflare">1、注册 cloudflare</a>
+          <ul>
+            <li><a href="#11-修改-dns">1.1 修改 DNS</a></li>
+            <li><a href="#12-绑定域名">1.2 绑定域名</a></li>
+          </ul>
+        </li>
+        <li><a href="#2新建-workers">2、新建 workers</a></li>
+        <li><a href="#3编辑代码">3、编辑代码</a>
+          <ul>
+            <li><a href="#31-编辑代码">3.1 编辑代码</a></li>
+            <li><a href="#32-新建-indexhtml">3.2 新建 index.html</a></li>
+            <li><a href="#33-修改-workerjs">3.3 修改 worker.js</a></li>
+            <li><a href="#34-保存">3.4 保存</a></li>
+          </ul>
+        </li>
+        <li><a href="#4部署">4、部署</a></li>
+        <li><a href="#5绑定域名">5、绑定域名</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><blockquote>
+<p>不知为何，现在大多数的 docker hub 镜像加速站都停止服务，而官方站点又因某些原因访问不到或延迟很高。所以，今天来记录一种通过 CloudFlare 搭建一个自己的镜像加速服务。</p>
+</blockquote>
+<h3 id="0必看" class="headerLink">
+    <a href="#0%e5%bf%85%e7%9c%8b" class="header-mark"></a>0、必看！！！</h3><p><strong>注意：</strong> 此方案需要有域名才行，后续需要给域名绑定到 Cloudflare，建议直接在<a href="https://curl.qcloud.com/Q1uoJ9MM" target="_blank" rel="noopener noreferrer">腾讯云-域名注册</a>上面搞一个，选最便宜的就行。</p>
+<p>&lt; image src=&quot;./0bb6564d48ec973cee8731d2503679e8.png&quot;</p>
+<h3 id="1注册-cloudflare" class="headerLink">
+    <a href="#1%e6%b3%a8%e5%86%8c-cloudflare" class="header-mark"></a>1、注册 cloudflare</h3><p>进入官网，自行进行注册操作
+<a href="https://dash.cloudflare.com/" target="_blank" rel="noopener noreferrer">https://dash.cloudflare.com/</a></p>
+<h4 id="11-修改-dns" class="headerLink">
+    <a href="#11-%e4%bf%ae%e6%94%b9-dns" class="header-mark"></a>1.1 修改 DNS</h4><p>找到你的域名注册商，然后修改 DNS 为<code>phil.ns.cloudflare.com</code> 和 <code>marjory.ns.cloudflare.com</code>，这样才能绑定到 cloudflare
+<figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/257887c9c854d668c9d8f224c5418a6f.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/257887c9c854d668c9d8f224c5418a6f.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/257887c9c854d668c9d8f224c5418a6f.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/257887c9c854d668c9d8f224c5418a6f.png, https://img-blog.csdnimg.cn/img_convert/257887c9c854d668c9d8f224c5418a6f.png 1.5x, https://img-blog.csdnimg.cn/img_convert/257887c9c854d668c9d8f224c5418a6f.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<h4 id="12-绑定域名" class="headerLink">
+    <a href="#12-%e7%bb%91%e5%ae%9a%e5%9f%9f%e5%90%8d" class="header-mark"></a>1.2 绑定域名</h4><p>打开 cloudflare，绑定站点，选择免费。
+注册后绑定一个域名，这个域名的 DNS 需要设置 cloudflare 的才能绑定成功。
+<figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/7c333f3a9f07d224bcbdc8cd9678f367.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/7c333f3a9f07d224bcbdc8cd9678f367.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/7c333f3a9f07d224bcbdc8cd9678f367.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/7c333f3a9f07d224bcbdc8cd9678f367.png, https://img-blog.csdnimg.cn/img_convert/7c333f3a9f07d224bcbdc8cd9678f367.png 1.5x, https://img-blog.csdnimg.cn/img_convert/7c333f3a9f07d224bcbdc8cd9678f367.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<h3 id="2新建-workers" class="headerLink">
+    <a href="#2%e6%96%b0%e5%bb%ba-workers" class="header-mark"></a>2、新建 workers</h3><p>在左侧 workers and pages，然后新建，名字随便起。没有过多的配置，直接完成！
+<figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/1daf110d43fd12cdad3f714e2a179b69.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/1daf110d43fd12cdad3f714e2a179b69.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/1daf110d43fd12cdad3f714e2a179b69.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/1daf110d43fd12cdad3f714e2a179b69.png, https://img-blog.csdnimg.cn/img_convert/1daf110d43fd12cdad3f714e2a179b69.png 1.5x, https://img-blog.csdnimg.cn/img_convert/1daf110d43fd12cdad3f714e2a179b69.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure>
+<figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/8fc13146f8afb99edf5d8398d916418d.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/8fc13146f8afb99edf5d8398d916418d.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/8fc13146f8afb99edf5d8398d916418d.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/8fc13146f8afb99edf5d8398d916418d.png, https://img-blog.csdnimg.cn/img_convert/8fc13146f8afb99edf5d8398d916418d.png 1.5x, https://img-blog.csdnimg.cn/img_convert/8fc13146f8afb99edf5d8398d916418d.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure>
+<figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/f26b22f27b08dc9849b9d3872e2f0308.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/f26b22f27b08dc9849b9d3872e2f0308.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/f26b22f27b08dc9849b9d3872e2f0308.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/f26b22f27b08dc9849b9d3872e2f0308.png, https://img-blog.csdnimg.cn/img_convert/f26b22f27b08dc9849b9d3872e2f0308.png 1.5x, https://img-blog.csdnimg.cn/img_convert/f26b22f27b08dc9849b9d3872e2f0308.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<h3 id="3编辑代码" class="headerLink">
+    <a href="#3%e7%bc%96%e8%be%91%e4%bb%a3%e7%a0%81" class="header-mark"></a>3、编辑代码</h3><h4 id="31-编辑代码" class="headerLink">
+    <a href="#31-%e7%bc%96%e8%be%91%e4%bb%a3%e7%a0%81" class="header-mark"></a>3.1 编辑代码</h4><p>点击右上角的<code>编辑代码</code>，进入</p>
+<p><figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/72ddc80bc0dc1115f2cfb9b9c696b4da.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/72ddc80bc0dc1115f2cfb9b9c696b4da.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/72ddc80bc0dc1115f2cfb9b9c696b4da.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/72ddc80bc0dc1115f2cfb9b9c696b4da.png, https://img-blog.csdnimg.cn/img_convert/72ddc80bc0dc1115f2cfb9b9c696b4da.png 1.5x, https://img-blog.csdnimg.cn/img_convert/72ddc80bc0dc1115f2cfb9b9c696b4da.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<h4 id="32-新建-indexhtml" class="headerLink">
+    <a href="#32-%e6%96%b0%e5%bb%ba-indexhtml" class="header-mark"></a>3.2 新建 index.html</h4><p>如果所示，<strong>代码里面的<code>docker.xxoo.team</code>请替换成你自己的域名</strong>。</p>
+<p><figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/bf4cdde3981ecb00808eb6e245052d15.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/bf4cdde3981ecb00808eb6e245052d15.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/bf4cdde3981ecb00808eb6e245052d15.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/bf4cdde3981ecb00808eb6e245052d15.png, https://img-blog.csdnimg.cn/img_convert/bf4cdde3981ecb00808eb6e245052d15.png 1.5x, https://img-blog.csdnimg.cn/img_convert/bf4cdde3981ecb00808eb6e245052d15.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1.0&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>镜像使用说明<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">body</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">font-family</span><span class="p">:</span> <span class="o">-</span><span class="n">apple-system</span><span class="p">,</span> <span class="n">BlinkMacSystemFont</span><span class="p">,</span> <span class="s2">&#34;Segoe UI&#34;</span><span class="p">,</span> <span class="n">Roboto</span><span class="p">,</span> <span class="s2">&#34;Helvetica Neue&#34;</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">background-color</span><span class="p">:</span> <span class="mh">#f0f2f5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">flex-direction</span><span class="p">:</span> <span class="kc">column</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">min-height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">header</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">background</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="mi">90</span><span class="kt">deg</span><span class="p">,</span> <span class="mh">#4e54c8</span> <span class="mi">0</span><span class="kt">%</span><span class="p">,</span> <span class="mh">#8f94fb</span> <span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">container</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">flex</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">content</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">background</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">10</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">max-width</span><span class="p">:</span> <span class="mi">800</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* 调整后的宽度 */</span>
+</span></span><span class="line"><span class="cl">      <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* 放大字体 */</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">code-block</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">background</span><span class="p">:</span> <span class="mh">#2d2d2d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">color</span><span class="p">:</span> <span class="mh">#f8f8f2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">overflow-x</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;Courier New&#34;</span><span class="p">,</span> <span class="n">Courier</span><span class="p">,</span> <span class="kc">monospace</span><span class="p">;</span> <span class="c">/* 保持代码块的字体 */</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">footer</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">background</span><span class="p">:</span> <span class="mh">#444</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">padding</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span> <span class="c">/* 调低高度 */</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">footer</span> <span class="nt">a</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">color</span><span class="p">:</span> <span class="mh">#4caf50</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">600px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="p">.</span><span class="nc">content</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span> <span class="c">/* 在小屏幕上稍微减小字体 */</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;header&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>镜像使用说明<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;content&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>要设置加速镜像服务，你可以执行下面命令：<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;code-block&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">sudo tee /etc/docker/daemon.json <span class="ni">&amp;lt;&amp;lt;</span>EOF
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">	&#34;registry-mirrors&#34;: [&#34;https://docker.xxoo.team&#34;]
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">EOF
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>如果执行了上述命令，配置了镜像加速服务，可以直接 pull 镜像：<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;code-block&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">docker pull halohub/halo:latest # 拉取 halo 镜像
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>因为Workers用量有限，在使用加速镜像服务时，你可以手动 pull 镜像然后 re-tag 之后 push 至本地镜像仓库:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;code-block&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">docker pull docker.xxoo.team/halohub/halo:latest # 拉取 halo 镜像
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;footer&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Powered by Cloudflare Workers<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.xxoo.team&#34;</span><span class="p">&gt;</span>www.xxoo.team<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="33-修改-workerjs" class="headerLink">
+    <a href="#33-%e4%bf%ae%e6%94%b9-workerjs" class="header-mark"></a>3.3 修改 worker.js</h4><p><figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/e6bff7e63dafb7fc2a0ef7c26547060b.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/e6bff7e63dafb7fc2a0ef7c26547060b.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/e6bff7e63dafb7fc2a0ef7c26547060b.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/e6bff7e63dafb7fc2a0ef7c26547060b.png, https://img-blog.csdnimg.cn/img_convert/e6bff7e63dafb7fc2a0ef7c26547060b.png 1.5x, https://img-blog.csdnimg.cn/img_convert/e6bff7e63dafb7fc2a0ef7c26547060b.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">HTML</span> <span class="nx">from</span> <span class="s1">&#39;./index.html&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">async</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">request</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">URL</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">url</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">url</span><span class="p">.</span><span class="nx">pathname</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">originalHost</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;host&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">registryHost</span> <span class="o">=</span> <span class="s2">&#34;registry-1.docker.io&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s2">&#34;/v2/&#34;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Headers</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">headers</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">headers</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&#34;host&#34;</span><span class="p">,</span> <span class="nx">registryHost</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">registryUrl</span> <span class="o">=</span> <span class="sb">`https://</span><span class="si">${</span><span class="nx">registryHost</span><span class="si">}${</span><span class="nx">path</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">registryRequest</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Request</span><span class="p">(</span><span class="nx">registryUrl</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">method</span><span class="o">:</span> <span class="nx">request</span><span class="p">.</span><span class="nx">method</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">headers</span><span class="o">:</span> <span class="nx">headers</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">body</span><span class="o">:</span> <span class="nx">request</span><span class="p">.</span><span class="nx">body</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">redirect</span><span class="o">:</span> <span class="s2">&#34;follow&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">registryResponse</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">registryRequest</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">registryResponse</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">responseHeaders</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Headers</span><span class="p">(</span><span class="nx">registryResponse</span><span class="p">.</span><span class="nx">headers</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">responseHeaders</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&#34;access-control-allow-origin&#34;</span><span class="p">,</span> <span class="nx">originalHost</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">responseHeaders</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&#34;access-control-allow-headers&#34;</span><span class="p">,</span> <span class="s2">&#34;Authorization&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">new</span> <span class="nx">Response</span><span class="p">(</span><span class="nx">registryResponse</span><span class="p">.</span><span class="nx">body</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">status</span><span class="o">:</span> <span class="nx">registryResponse</span><span class="p">.</span><span class="nx">status</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">statusText</span><span class="o">:</span> <span class="nx">registryResponse</span><span class="p">.</span><span class="nx">statusText</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">headers</span><span class="o">:</span> <span class="nx">responseHeaders</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">new</span> <span class="nx">Response</span><span class="p">(</span><span class="nx">HTML</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/{{host}}/g</span><span class="p">,</span> <span class="nx">originalHost</span><span class="p">),</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">status</span><span class="o">:</span> <span class="mi">200</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;content-type&#34;</span><span class="o">:</span> <span class="s2">&#34;text/html&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="34-保存" class="headerLink">
+    <a href="#34-%e4%bf%9d%e5%ad%98" class="header-mark"></a>3.4 保存</h4><blockquote>
+<p>一定要保存！！！一定要保存！！！一定要保存！！！一定要保存！！！</p>
+</blockquote>
+<p><strong>方法一(推荐):</strong> 选点左上角返回，会提示你保存
+<figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/ae4ea8eeccbde8d96d8633a7d6d37a8d.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/ae4ea8eeccbde8d96d8633a7d6d37a8d.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/ae4ea8eeccbde8d96d8633a7d6d37a8d.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/ae4ea8eeccbde8d96d8633a7d6d37a8d.png, https://img-blog.csdnimg.cn/img_convert/ae4ea8eeccbde8d96d8633a7d6d37a8d.png 1.5x, https://img-blog.csdnimg.cn/img_convert/ae4ea8eeccbde8d96d8633a7d6d37a8d.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<p><strong>方法二：</strong> 点击右上角的下拉保存
+<figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/c82c58e38c44e42dc104047a7604b7c5.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/c82c58e38c44e42dc104047a7604b7c5.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/c82c58e38c44e42dc104047a7604b7c5.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/c82c58e38c44e42dc104047a7604b7c5.png, https://img-blog.csdnimg.cn/img_convert/c82c58e38c44e42dc104047a7604b7c5.png 1.5x, https://img-blog.csdnimg.cn/img_convert/c82c58e38c44e42dc104047a7604b7c5.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<h3 id="4部署" class="headerLink">
+    <a href="#4%e9%83%a8%e7%bd%b2" class="header-mark"></a>4、部署</h3><p>直接弹出部署，不用填任何东西，即可
+<figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/7242776aa741443e39a4add520481325.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/7242776aa741443e39a4add520481325.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/7242776aa741443e39a4add520481325.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/7242776aa741443e39a4add520481325.png, https://img-blog.csdnimg.cn/img_convert/7242776aa741443e39a4add520481325.png 1.5x, https://img-blog.csdnimg.cn/img_convert/7242776aa741443e39a4add520481325.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<p><figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/b2f72bdee218fff8ed47aef3c3287bb0.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/b2f72bdee218fff8ed47aef3c3287bb0.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/b2f72bdee218fff8ed47aef3c3287bb0.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/b2f72bdee218fff8ed47aef3c3287bb0.png, https://img-blog.csdnimg.cn/img_convert/b2f72bdee218fff8ed47aef3c3287bb0.png 1.5x, https://img-blog.csdnimg.cn/img_convert/b2f72bdee218fff8ed47aef3c3287bb0.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<h3 id="5绑定域名" class="headerLink">
+    <a href="#5%e7%bb%91%e5%ae%9a%e5%9f%9f%e5%90%8d" class="header-mark"></a>5、绑定域名</h3><p>系统默认分配的有域名，被墙无法访问，所以只能用自己的域名才行。
+<figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/0c5d4137f92d690fc8aca395fbcd5b5a.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/0c5d4137f92d690fc8aca395fbcd5b5a.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/0c5d4137f92d690fc8aca395fbcd5b5a.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/0c5d4137f92d690fc8aca395fbcd5b5a.png, https://img-blog.csdnimg.cn/img_convert/0c5d4137f92d690fc8aca395fbcd5b5a.png 1.5x, https://img-blog.csdnimg.cn/img_convert/0c5d4137f92d690fc8aca395fbcd5b5a.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<p>绑定成功需要等待几分钟，访问你的域名，如果出现如下页面就完成！</p>
+<p><figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/5731bb4cc1193e9e8446f0acc7d1287c.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/5731bb4cc1193e9e8446f0acc7d1287c.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/5731bb4cc1193e9e8446f0acc7d1287c.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/5731bb4cc1193e9e8446f0acc7d1287c.png, https://img-blog.csdnimg.cn/img_convert/5731bb4cc1193e9e8446f0acc7d1287c.png 1.5x, https://img-blog.csdnimg.cn/img_convert/5731bb4cc1193e9e8446f0acc7d1287c.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+<p>在宝塔中试一下，没问题~~
+<figure><a class="lightgallery" href="https://img-blog.csdnimg.cn/img_convert/2fc9427f6b5c9042e0e1c6d1929340e1.png" title="干货助手" data-thumbnail="https://img-blog.csdnimg.cn/img_convert/2fc9427f6b5c9042e0e1c6d1929340e1.png">
+        <img
+            
+            loading="lazy"
+            src="https://img-blog.csdnimg.cn/img_convert/2fc9427f6b5c9042e0e1c6d1929340e1.png"
+            srcset="https://img-blog.csdnimg.cn/img_convert/2fc9427f6b5c9042e0e1c6d1929340e1.png, https://img-blog.csdnimg.cn/img_convert/2fc9427f6b5c9042e0e1c6d1929340e1.png 1.5x, https://img-blog.csdnimg.cn/img_convert/2fc9427f6b5c9042e0e1c6d1929340e1.png 2x"
+            sizes="auto"
+            alt="干货助手">
+    </a></figure></p>
+</div>
+
+        
+
+
+<h2>相关内容</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <div class="related-image">
+                <a href="/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/"><img
+        
+        loading="lazy"
+        src="/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/featured-image.png"
+        srcset="/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/featured-image.png, /cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/featured-image.png 1.5x, /cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/featured-image.png 2x"
+        sizes="auto"
+        alt="通过 cloudflare 白嫖个人 docker 镜像加速服务"
+        title="通过 cloudflare 白嫖个人 docker 镜像加速服务" height="200"   width="400" ></a>
+            </div><h2 class="related-title">
+                <a href="/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/">ClouDNS永久免费域名向cloudflare迁移</a>
+            </h2>
+        </div>
+    
+
+</div>
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-07-22</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/" data-title="通过 cloudflare 白嫖个人 docker 镜像加速服务" data-hashtags="Docker,cloudflare"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/" data-hashtag="Docker"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/" data-title="通过 cloudflare 白嫖个人 docker 镜像加速服务" data-web><span class="fab fa-whatsapp fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/" data-title="通过 cloudflare 白嫖个人 docker 镜像加速服务"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/" data-title="通过 cloudflare 白嫖个人 docker 镜像加速服务" data-image="featured-image.png"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Myspace" data-sharer="myspace" data-url="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/" data-title="通过 cloudflare 白嫖个人 docker 镜像加速服务" data-description="通过 cloudflare 白嫖个人 docker 镜像加速服务"><span data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></span></button><button title="分享到 Blogger" data-sharer="blogger" data-url="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/" data-title="通过 cloudflare 白嫖个人 docker 镜像加速服务" data-description="通过 cloudflare 白嫖个人 docker 镜像加速服务"><span class="fab fa-blogger fa-fw"></span></button><button title="分享到 Evernote" data-sharer="evernote" data-url="https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/" data-title="通过 cloudflare 白嫖个人 docker 镜像加速服务"><span class="fab fa-evernote fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/cloudflare/">cloudflare</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E5%80%BC%E5%BE%97%E6%94%B6%E8%97%8F%E7%9A%8430%E9%81%93python%E7%BB%83%E6%89%8B%E9%A2%98/" class="prev" rel="prev" title="值得收藏的30道Python练手题（附详解）"><i class="fas fa-angle-left fa-fw"></i>值得收藏的30道Python练手题（附详解）</a></div>
+</div>
+<div id="comments"></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">AKUMA</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"WJ BLOG","mobile-header-typeit":"WJ BLOG"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

@@ -3,9 +3,18 @@
         <title>WJ BLOG</title>
         <link>https://www.wenjie1018.cn/</link>
         <description>这是我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 18 Jul 2024 13:10:12 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 22 Jul 2024 10:19:12 &#43;0800</lastBuildDate>
             <atom:link href="https://www.wenjie1018.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>通过 cloudflare 白嫖个人 docker 镜像加速服务</title>
+    <link>https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/</link>
+    <pubDate>Mon, 22 Jul 2024 10:19:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/featured-image.png" referrerpolicy="no-referrer">
+            </div>不知为何，现在大多数的 docker hub 镜像加速站都停止服务，而官方站点又因某些原因访问不到或延迟很高。所以，今天来记录一种通过 CloudFlare 搭建一个自己的镜像加速服]]></description>
+</item><item>
     <title>值得收藏的30道Python练手题（附详解）</title>
     <link>https://www.wenjie1018.cn/%E5%80%BC%E5%BE%97%E6%94%B6%E8%97%8F%E7%9A%8430%E9%81%93python%E7%BB%83%E6%89%8B%E9%A2%98/</link>
     <pubDate>Thu, 18 Jul 2024 13:10:12 &#43;0800</pubDate><author>
@@ -86,14 +95,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/featured-image.webp" referrerpolicy="no-referrer">
             </div>简介： 阿里云服务器ECS搭建个人网站新手教程超详细，使用阿里云服务器快速搭建网站教程，先为云服务器安装宝塔面板，然后在宝塔面板上新建站点，阿]]></description>
-</item><item>
-    <title>黑群晖 Active Backup for Business 套件激活方法</title>
-    <link>https://www.wenjie1018.cn/%E9%BB%91%E7%BE%A4%E6%99%96-active-backup-for-business-%E5%A5%97%E4%BB%B6%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/</link>
-    <pubDate>Mon, 25 Mar 2024 10:55:12 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>https://www.wenjie1018.cn/%E9%BB%91%E7%BE%A4%E6%99%96-active-backup-for-business-%E5%A5%97%E4%BB%B6%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/%E9%BB%91%E7%BE%A4%E6%99%96-active-backup-for-business-%E5%A5%97%E4%BB%B6%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/featured-image.png" referrerpolicy="no-referrer">
-            </div>黑群晖 Active Backup for Business 套件激活方法 首先我们先安装好Active Backup for Business套件 这时候打开会显示需要激活 我们到【控制面板】 - 【信息中心】 找到【]]></description>
 </item></channel>
 </rss>
