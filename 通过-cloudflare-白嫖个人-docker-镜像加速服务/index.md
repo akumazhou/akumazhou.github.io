@@ -9,7 +9,7 @@
 
 **注意：** 此方案需要有域名才行，后续需要给域名绑定到 Cloudflare，建议直接在[腾讯云-域名注册](https://curl.qcloud.com/Q1uoJ9MM)上面搞一个，选最便宜的就行。
 
-{{< image src="./0bb6564d48ec973cee8731d2503679e8.png" >}}
+{{< image src="./0bb6564d48ec973cee8731d2503679e8.png" width="770px">}}
 
 ### 1、注册 cloudflare
 
@@ -225,8 +225,6 @@ export default {
 {{< image src="./5731bb4cc1193e9e8446f0acc7d1287c.png" >}}
 
 在宝塔中试一下，没问题~~
-![干货助手](https://img-blog.csdnimg.cn/img_convert/2fc9427f6b5c9042e0e1c6d1929340e1.png)
 {{< image src="./2fc9427f6b5c9042e0e1c6d1929340e1.png" >}}
-
 
 
