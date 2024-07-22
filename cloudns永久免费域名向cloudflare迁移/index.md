@@ -21,7 +21,7 @@
 
 
 
-{{< image src="./a3b8ca68a882066ed5375ca00dde1755.png">}}
+{{< figure src="./a3b8ca68a882066ed5375ca00dde1755.png">}}
 
 
 
@@ -29,7 +29,7 @@
 
 
 
-{{< image src="./8a8356d27cbf9811d40839288c7ce931.png">}}
+{{< figure src="./8a8356d27cbf9811d40839288c7ce931.png">}}
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-{{< image src="./cee2f5bc13afb8b166549493fc489b6d.png">}}
+{{< figure src="./cee2f5bc13afb8b166549493fc489b6d.png">}}
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-{{< image src="./b96d715628ed0f9558b156c43b9d198a.png">}}
+{{< figure src="./b96d715628ed0f9558b156c43b9d198a.png">}}
 
 
 
@@ -59,7 +59,7 @@
 
 
 
-{{< image src="./3031a613e4b1601f786f6f252783d63b.png">}}
+{{< figure src="./3031a613e4b1601f786f6f252783d63b.png">}}
 
 
 
@@ -69,7 +69,7 @@
 
 
 
-{{< image src="./609ca360f2b654b1eb2384d6773e9ebe.png">}}
+{{< figure src="./609ca360f2b654b1eb2384d6773e9ebe.png">}}
 
 
 
@@ -77,7 +77,7 @@
 
 
 
-{{< image src="./8b0b0c6dc2dd8085d2c83caffd6244ac.png">}}
+{{< figure src="./8b0b0c6dc2dd8085d2c83caffd6244ac.png">}}
 
 
 
@@ -85,7 +85,7 @@
 
 
 
-{{< image src="./c7dcab01cf0729442688008ecc39ecf2.png">}}
+{{< figure src="./c7dcab01cf0729442688008ecc39ecf2.png">}}
 
 
 
@@ -93,7 +93,7 @@
 
 
 
-{{< image src="./c7dcab01cf0729442688008ecc39ecf2.png">}}
+{{< figure src="./c7dcab01cf0729442688008ecc39ecf2.png">}}
 
 
 
@@ -101,7 +101,7 @@
 
 
 
-{{< image src="./94a11942e22b633d2c73d5d29bf2f413.png">}}
+{{< figure src="./94a11942e22b633d2c73d5d29bf2f413.png">}}
 
 
 
@@ -109,7 +109,7 @@
 
 
 
-{{< image src="./b1f41ea291d30e2a7725cefbe7aae583.png">}}
+{{< figure src="./b1f41ea291d30e2a7725cefbe7aae583.png">}}
 
 
 
@@ -117,7 +117,7 @@
 
 
 
-{{< image src="./43c03bf8b65d45f0d67e67f90161a991.png">}}
+{{< figure src="./43c03bf8b65d45f0d67e67f90161a991.png">}}
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-{{< image src="./dd0e5b1ea99d37195f3f5e8c7bceef68.png">}}
+{{< figure src="./dd0e5b1ea99d37195f3f5e8c7bceef68.png">}}
 
 
 
@@ -133,7 +133,7 @@
 
 
 
-{{< image src="./e34a485c8502fed04a52e8db6c81ce99.png">}}
+{{< figure src="./e34a485c8502fed04a52e8db6c81ce99.png">}}
 
 
 
@@ -141,11 +141,11 @@
 
 
 
-{{< image src="./a95eed6d61905bf86b30902c5bb3b4f4.png">}}
+{{< figure src="./a95eed6d61905bf86b30902c5bb3b4f4.png">}}
 
 
 
-{{< image src="./e9464e7d0bba7a033137b8ba80fd8ddc.png">}}
+{{< figure src="./e9464e7d0bba7a033137b8ba80fd8ddc.png">}}
 
 
 

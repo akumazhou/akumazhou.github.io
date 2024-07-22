@@ -46,7 +46,7 @@ win + R，输入：`sysdm.cpl`快速打开pc的环境变量配置：
 
 至此，hugo的环境变量就配置好了，我们打开`cmd`，输入`hugo version`查看是否有效果：
 
-{{< image src="./1372287443.png" >}}
+{{< figure src="./1372287443.png" >}}
 有结果输出，表示hugo安装正常。
 
 <br>
@@ -171,7 +171,7 @@ win + R，输入：`sysdm.cpl`快速打开pc的环境变量配置：
 
    在浏览器打开如下链接，http://localhost:1313/ 观察效果：
 
-   {{< image src="./1962752334.png" >}}
+   {{< figure src="./1962752334.png" >}}
    完美。😘
 
 
@@ -184,19 +184,19 @@ win + R，输入：`sysdm.cpl`快速打开pc的环境变量配置：
 
 点击`Your repositories`：
 
-{{< image src="./3204874867.png" >}}
+{{< figure src="./3204874867.png" >}}
 
 点击`new`：
 
-{{< image src="./3661351239.png" >}}
+{{< figure src="./3661351239.png" >}}
 
 填写仓库名，选择`Public`，添加一个Readme文件：
 
-{{< image src="./1665340691.png" >}}
+{{< figure src="./1665340691.png" >}}
 
 点击`Create respository`：
 
-{{< image src="./3340248009.png" >}}
+{{< figure src="./3340248009.png" >}}
 
 完成仓库创建。
 
@@ -209,7 +209,7 @@ win + R，输入：`sysdm.cpl`快速打开pc的环境变量配置：
    ```
    此时，你能看到public目录下，生成可很多文件，这个就是后续生成网站所需要的数据。
 
-{{< image src="./775782341.png" >}}
+{{< figure src="./775782341.png" >}}
 
  - 此时，来到public目录下，执行如下命令
 
@@ -227,7 +227,7 @@ $ gs
 
 
 
-{{< image src="./1894604204.png" >}}
+{{< figure src="./1894604204.png" >}}
 
 🍀 关于这里如何配置git客户端到github的公私钥方法，请看如下方法：
 
@@ -235,7 +235,7 @@ Git配置ssh登录GitHub管理自己的代码
 
 检测本地pc是否已存在ssh秘钥(不存在可忽略次步骤)
 
-{{< image src="./3176942945.png" >}}
+{{< figure src="./3176942945.png" >}}
 
 
 #### 1️⃣ `设置签名`
@@ -259,21 +259,21 @@ ssh-keygen -t rsa -C "2675263825@qq.com"
 2.也可以添加-b选项 # ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
    ```
 
-{{< image src="./2007847329.png" >}}
+{{< figure src="./2007847329.png" >}}
 
 #### 3️⃣ `复制ssh公钥到github`
 
 现在密钥已经生成，一般存放在（/c/Users/you/.ssh/id_rsa.pub.），我们运行下面的命令将密钥复制为粘贴板，等会儿会粘贴到github上去：
 
-{{< image src="./2638915209.png" >}}
+{{< figure src="./2638915209.png" >}}
 
-{{< image src="./3309677345.png" >}}
+{{< figure src="./3309677345.png" >}}
 
 复制 id_rsa.pub 文件内容，登录 GitHub，点击用户头像→Settings→SSH and GPG keys，New SSH Key，输入复制的密钥信息，保存：
 
-{{< image src="./2673046767.png" >}}
+{{< figure src="./2673046767.png" >}}
 
-{{< image src="./4143490167.png" >}}
+{{< figure src="./4143490167.png" >}}
 
 #### 4️⃣ 验证：本地连接Github
 
@@ -282,20 +282,20 @@ ssh-keygen -t rsa -C "2675263825@qq.com"
    ```
 $ ssh -T git@github.com
    ```
-{{< image src="./3819990255.png" >}}
+{{< figure src="./3819990255.png" >}}
 
  - 此时来到github仓库下，观看数据已经被推送上来了：
 
-{{< image src="./4221396841.png" >}}
+{{< figure src="./4221396841.png" >}}
 
 最后记得在github上设置下gitpages功能
 
 点击`Settings`，`Pages`:
 
-{{< image src="./3941394697.png" >}}
+{{< figure src="./3941394697.png" >}}
 
 选择`master`分支，点击`Save`：
-{{< image src="./3801776621.png" >}}
+{{< figure src="./3801776621.png" >}}
 
  - 验证效果：
 
@@ -310,13 +310,13 @@ https://onlyonexl.github.io/hugoblog/
  - 配置域名解析
  - 配置GitHub Pages
 
-{{< image src="./978785839.png" >}}
+{{< figure src="./978785839.png" >}}
 
  - 验证
 
 公网访问域名：http://www.onlyyou520.com/
 
-{{< image src="./232267345.png" >}}
+{{< figure src="./232267345.png" >}}
 
 大功告成，接下来就可以开心写自己博客了！😘
 
@@ -350,13 +350,13 @@ https://onlyonexl.github.io/hugoblog/
  - 测试效果
 
 在content/post目录下创建新文件：
-{{< image src="./2544668146.png" >}}
+{{< figure src="./2544668146.png" >}}
 一键发布：
-{{< image src="./1590257231.png" >}}
+{{< figure src="./1590257231.png" >}}
 
-{{< image src="./2919408003.png" >}}
+{{< figure src="./2919408003.png" >}}
 
-{{< image src="./282804715.png" >}}
+{{< figure src="./282804715.png" >}}
 
 📍 注意：本地仓库推送到github，数据是有一定延时的！😥
 
@@ -364,23 +364,23 @@ https://onlyonexl.github.io/hugoblog/
 
  - 问题现象
 
-{{< image src="./2096459959.png" >}}
+{{< figure src="./2096459959.png" >}}
 
  - 解决办法
 
 默认配置：
-{{< image src="./1580723510.png" >}}
+{{< figure src="./1580723510.png" >}}
 
-{{< image src="./1178313654.png" >}}
+{{< figure src="./1178313654.png" >}}
 
 修改后配置：
-{{< image src="./1815973137.png" >}}
+{{< figure src="./1815973137.png" >}}
 
-{{< image src="./1216972174.png" >}}
+{{< figure src="./1216972174.png" >}}
 
  - 验证(完美)😘
 
-   {{< image src="./4290606701.png" >}}
+   {{< figure src="./4290606701.png" >}}
 
 📍 如何修改站点名称(已解决)-2022.5.4
 
@@ -388,15 +388,15 @@ https://onlyonexl.github.io/hugoblog/
    ```
    title = "Onlyyou"
    ```
-   {{< image src="./2062306389.png" >}}
+   {{< figure src="./2062306389.png" >}}
 
  - 效果
 
-   {{< image src="./2844540220.png" >}}
+   {{< figure src="./2844540220.png" >}}
 
 📍 hugo目录结构
 
-{{< image src="./858327912.png" >}}
+{{< figure src="./858327912.png" >}}
 
    ```
 hg@LAPTOP-G8TUFE0T MINGW64 /d
@@ -446,14 +446,14 @@ $ rm config.toml && cp themes/meme/config-examples/en/config.toml config.toml
 
  - 故障现象：在关闭这个GitHub Pages功能时报错
 
-{{< image src="./506951495.png" >}}
+{{< figure src="./506951495.png" >}}
 
  - 解决办法
 
-{{< image src="./3089627671.png" >}}
+{{< figure src="./3089627671.png" >}}
 
 本次直接删除仓库了：
 
-{{< image src="./352935857.png" >}}
+{{< figure src="./352935857.png" >}}
 
 [实战：手把手带你从0到1搭建自己的hugo博客站点(持续更新)-2022.5.4](https://blog.csdn.net/weixin_39246554/article/details/124573538)

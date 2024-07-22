@@ -11,11 +11,11 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 执行中,可以看到会自动安装docker-compose和docker
 
-{{< image src="./4085218651.png" caption="图片1" >}}
+{{< figure src="./4085218651.png" caption="图片1" >}}
 
 安装完后访问即可,注意http协议:
 
-{{< image src="./4043262894.png" caption="图片2" >}}
+{{< figure src="./4043262894.png" caption="图片2" >}}
 
 
 ## 1 1pctl
@@ -59,4 +59,5 @@ Commands:
 ————————————————<br>
 版权声明：本文为CSDN博主「生生世世是所说的」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/qq_42901723/article/details/132641580
+
 

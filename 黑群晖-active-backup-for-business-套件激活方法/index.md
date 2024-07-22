@@ -74,3 +74,5 @@ https://群晖地址:5001/webapi/entry.cgi?api=SYNO.ActiveBackup.Activation&meth
 ## 在线激活：
 
 http://mi-d.cn/d/ABB.html 支持浏览器[firefox](https://423down.lanzouo.com/b0f3f48yf)、[theworld6](http://download.theworld.cn/ver/TWInst_6.2.0.128.exe)、[theworld7](http://download.theworld.cn/ver/TWInst_7.0.0.108.exe) 其他浏览器不支持
+
+

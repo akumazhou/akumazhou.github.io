@@ -28,7 +28,7 @@ Web环境是网站运行所依赖的环境，阿里云百科是用来搭建WordP
 
 首先登录到云服务器ECS管理控制台，左侧栏【实例与镜像】>>【实例】，找到目标云服务器ECS实例，然后点击右侧的【远程连接】，如下图：
 
-{{< image src="./gwu3lhygmapgi_7f2a540201554efca023f04b21b76ae5.jpg" >}}
+{{< figure src="./gwu3lhygmapgi_7f2a540201554efca023f04b21b76ae5.jpg" >}}
 
 可以选择SSH密码登录或密匙证书登录，如果没有密码，可以[重置密码](https://help.aliyun.com/document_detail/25439.html?source=5176.11533457&userCode=r3yteowb)。
 
@@ -48,7 +48,7 @@ Do you want to install Bt-Panel to the /www directory now?(y/n): y
 
 保持默认，回复个字母“y”，如下图：
 
-{{< image src="./gwu3lhygmapgi_587a0b985252458d9d93f9b9846bbf7e.jpg" >}}
+{{< figure src="./gwu3lhygmapgi_587a0b985252458d9d93f9b9846bbf7e.jpg" >}}
 
 然后回车，系统会自动安装，大约1分钟左右会自动安装完成。
 
@@ -56,7 +56,7 @@ Do you want to install Bt-Panel to the /www directory now?(y/n): y
 
 宝塔面板自动安装完成后，会显示宝塔后台登录地址、username和password，如下图：
 
-{{< image src="./gwu3lhygmapgi_2052ebb6352b46f3aa789e8846311ad8.jpg" >}}
+{{< figure src="./gwu3lhygmapgi_2052ebb6352b46f3aa789e8846311ad8.jpg" >}}
 如上图所示，保存好上述信息，如果是通过外网登录宝塔后台，就是用外网面板地址，如果是在云服务器上登录宝塔可以使用内网面板地址。
 
 ## 4、在阿里云服务器控制台开通宝塔面板端口
@@ -71,7 +71,7 @@ Do you want to install Bt-Panel to the /www directory now?(y/n): y
 
 然后会弹出推荐安装套件窗口，选择LNMP(推荐)，点击【一键安装】，如下图：
 
-{{< image src="./gwu3lhygmapgi_d9fb80055cc14b86b0bd8fe36915d11e.jpg" >}}
+{{< figure src="./gwu3lhygmapgi_d9fb80055cc14b86b0bd8fe36915d11e.jpg" >}}
 
 会弹出消息盒子，显示安装进度，大约等待5分钟左右，即可自动安装WordPress博客程序所需的Web环境。
 
@@ -79,7 +79,7 @@ Do you want to install Bt-Panel to the /www directory now?(y/n): y
 
 登录到宝塔面板管理后台，点击左侧栏的【网站】>>【添加站点】，如下图：
 
-{{< image src="./gwu3lhygmapgi_ad7df6da40994b7f90558685d096fa88.jpg" >}}
+{{< figure src="./gwu3lhygmapgi_ad7df6da40994b7f90558685d096fa88.jpg" >}}
 域名：输入域名，www和不带www都的域名均可填写
 根目录：根目录会根据域名自动生成，默认即可
 FTP账号：需要FTP就选择创建，系统会自动生成FTP账号和密码，也可以自己自定义设置
@@ -95,7 +95,7 @@ FTP账号：需要FTP就选择创建，系统会自动生成FTP账号和密码�
 
 点击左侧栏【文件】>>【上传】，将你的WordPress安装包程序上传到网站根目录。网站根目录路径为：/www/wwwroot/你的域名，如下图：
 
-{{< image src="./gwu3lhygmapgi_f1746b01365d40739a9e045cbc656df8.jpg" >}}
+{{< figure src="./gwu3lhygmapgi_f1746b01365d40739a9e045cbc656df8.jpg" >}}
 
 # 步骤六：域名解析到你的云服务器公网IP地址
 
@@ -105,18 +105,18 @@ FTP账号：需要FTP就选择创建，系统会自动生成FTP账号和密码�
 
 域名解析到云服务器生效后，在浏览器中输入你的域名，并打开网站，就可以看到熟悉的WordPress安装界面，如下图：
 
-{{< image src="./gwu3lhygmapgi_1696a62d1b2945feb9e8c98b7b574530.jpg" >}}
+{{< figure src="./gwu3lhygmapgi_1696a62d1b2945feb9e8c98b7b574530.jpg" >}}
 如上图，点击现在就开始！
 填写数据库名、数据库用户名和密码信息，该信息是在步骤三中，在宝塔面板上添加站点时生成的用户名和密码信息，此步骤填写的是数据库信息，填写完成后点击提交。如下图：
 
-{{< image src="./gwu3lhygmapgi_e70ecfe04f194cfba4b18acf1344e206.jpg" >}}
+{{< figure src="./gwu3lhygmapgi_e70ecfe04f194cfba4b18acf1344e206.jpg" >}}
 
 数据库信息通过后，然后填写WordPress站点标题、用户名、密码及电子邮件信息，然后点击安装WordPress，如下图：
 
-{{< image src="./gwu3lhygmapgi_cbd3fbb29fc04bb7829b8cdf3a09c69c.jpg" >}}
+{{< figure src="./gwu3lhygmapgi_cbd3fbb29fc04bb7829b8cdf3a09c69c.jpg" >}}
 提示：成功！WordPress安装完成。谢谢！
 
-{{< image src="./gwu3lhygmapgi_52f8071921ac49239f85f0eb58aa17fd.jpg" >}}
+{{< figure src="./gwu3lhygmapgi_52f8071921ac49239f85f0eb58aa17fd.jpg" >}}
 
 至此，使用阿里云服务器搭建WordPress网站博客教程完毕，现在云服务器安装WordPress所需的Web环境，本文阿里云百科选择通过宝塔面板的方式来安装Web环境，然后在宝塔面板上新建WordPress网站。
 

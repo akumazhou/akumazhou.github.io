@@ -19,7 +19,7 @@
 
 
 
-{{< image src="./89ca12ddb58649ee5efc34152183816b.png">}}
+{{< figure src="./89ca12ddb58649ee5efc34152183816b.png">}}
 
 
 
@@ -31,11 +31,11 @@
 
 
 
-{{< image src="./7d77d7163a7849aea4f6785422094f59.png">}}
+{{< figure src="./7d77d7163a7849aea4f6785422094f59.png">}}
 
 
 
-{{< image src="./982ec09e03e9d2890967cd6234a52f17.png">}}
+{{< figure src="./982ec09e03e9d2890967cd6234a52f17.png">}}
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-{{< image src="./e665c6d958b34e80b03b1588e5e4d0e3.png">}}
+{{< figure src="./e665c6d958b34e80b03b1588e5e4d0e3.png">}}
 
 
 
@@ -57,7 +57,7 @@
 
 
 
-{{< image src="./fbe1531e29972aec1b519318bfbdabc9.png">}}
+{{< figure src="./fbe1531e29972aec1b519318bfbdabc9.png">}}
 
 
 
@@ -65,7 +65,7 @@
 
 
 
-{{< image src="./2a27794b54c596ec7cbf36d6711109a1.png">}}
+{{< figure src="./2a27794b54c596ec7cbf36d6711109a1.png">}}
 
 
 
@@ -77,7 +77,7 @@
 
 
 
-{{< image src="./538c0838366d5a5bef4ce5323fe075d7.png">}}
+{{< figure src="./538c0838366d5a5bef4ce5323fe075d7.png">}}
 
 ​              
 
@@ -87,7 +87,7 @@
 
 
 
-{{< image src="./6a81978e316eb058dc4aa0267283f4fd.png">}}
+{{< figure src="./6a81978e316eb058dc4aa0267283f4fd.png">}}
 
 
 
@@ -105,6 +105,6 @@
 
 
 
-{{< image src="./12af9d2d3a732e6cedbdf99af7ff0145.png">}}
+{{< figure src="./12af9d2d3a732e6cedbdf99af7ff0145.png">}}
 
 
