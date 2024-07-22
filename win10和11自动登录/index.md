@@ -9,10 +9,6 @@
 
 {{< figure src="./20231012042328133.jpg" >}}
 
-{{< figure src="./20231012042328133.jpg" title="Lighthouse (figure)" >}}
-
-{{< figure src="/images/lighthouse.webp" title="Lighthouse (figure)" >}}
-
 在跳转界面中点击用户属性一览，如下图所示取消对用户名密码输入的勾选
 
 {{< figure src="./20231012042328412.jpg" >}}
