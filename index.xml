@@ -4,9 +4,18 @@
         <link>https://www.wenjie1018.cn/</link>
         <description>这是我的全新 Hugo 网站</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wenjie1018@gmail.com (AKUMA)</managingEditor>
-            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Mon, 22 Jul 2024 10:19:12 &#43;0800</lastBuildDate>
+            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Wed, 31 Jul 2024 14:12:12 &#43;0800</lastBuildDate>
             <atom:link href="https://www.wenjie1018.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>CloudFlare内网穿透教程</title>
+    <link>https://www.wenjie1018.cn/cloudflare%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%95%99%E7%A8%8B/</link>
+    <pubDate>Wed, 31 Jul 2024 14:12:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/cloudflare%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%95%99%E7%A8%8B/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cloudflare%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%95%99%E7%A8%8B/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>CloudFlare内网穿透 内网穿透：让其他人可以通过公网访问到内网服务； CloudFlare免费提供内网穿透服务和HTTPS服务，但是需要]]></description>
+</item><item>
     <title>通过 cloudflare 白嫖个人 docker 镜像加速服务</title>
     <link>https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/</link>
     <pubDate>Mon, 22 Jul 2024 10:19:12 &#43;0800</pubDate><author>
@@ -87,14 +96,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/featured-image.jpg" referrerpolicy="no-referrer">
             </div>在网络运维工作中，掌握排障命令可以帮助我们快速定位和解决各种网络故障，确保网络稳定运行。 今天要和大家分享的是关于网络排障中常用的25个命令。]]></description>
-</item><item>
-    <title>阿里云服务器ECS搭建个人网站新手教程（超详细）</title>
-    <link>https://www.wenjie1018.cn/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</link>
-    <pubDate>Mon, 08 Apr 2024 11:30:25 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>https://www.wenjie1018.cn/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ecs%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B0%E6%89%8B%E6%95%99%E7%A8%8B/featured-image.webp" referrerpolicy="no-referrer">
-            </div>简介： 阿里云服务器ECS搭建个人网站新手教程超详细，使用阿里云服务器快速搭建网站教程，先为云服务器安装宝塔面板，然后在宝塔面板上新建站点，阿]]></description>
 </item></channel>
 </rss>
