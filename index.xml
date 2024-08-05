@@ -4,9 +4,18 @@
         <link>https://www.wenjie1018.cn/</link>
         <description>这是我的全新 Hugo 网站</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wenjie1018@gmail.com (AKUMA)</managingEditor>
-            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Wed, 31 Jul 2024 14:12:12 &#43;0800</lastBuildDate>
+            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Mon, 05 Aug 2024 10:55:12 &#43;0800</lastBuildDate>
             <atom:link href="https://www.wenjie1018.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>NAS导航面板Sun-Panel</title>
+    <link>https://www.wenjie1018.cn/nas%E5%AF%BC%E8%88%AA%E9%9D%A2%E6%9D%BFsun-panel/</link>
+    <pubDate>Mon, 05 Aug 2024 10:55:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/nas%E5%AF%BC%E8%88%AA%E9%9D%A2%E6%9D%BFsun-panel/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/nas%E5%AF%BC%E8%88%AA%E9%9D%A2%E6%9D%BFsun-panel/featured-image.png" referrerpolicy="no-referrer">
+            </div>什么是 Sun-Panel ？ Sun-Panel 是一个服务器、NAS 导航面板、Homepage、浏览器首页。 软件主要特点： 🍉 界面简洁，功能强大，资源消耗低 🍊 简单易用，可视化操作]]></description>
+</item><item>
     <title>CloudFlare内网穿透教程</title>
     <link>https://www.wenjie1018.cn/cloudflare%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%95%99%E7%A8%8B/</link>
     <pubDate>Wed, 31 Jul 2024 14:12:12 &#43;0800</pubDate><author>
@@ -87,14 +96,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/featured-image.webp" referrerpolicy="no-referrer">
             </div>在不同的操作系统环境下，命令提示符各不相同，在Windows环境下，命令行程序为cmd.exe，是一个32 位的命令行程序。 cmd是指命令提示]]></description>
-</item><item>
-    <title>网络工程师常用的25个排障命令</title>
-    <link>https://www.wenjie1018.cn/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/</link>
-    <pubDate>Thu, 09 May 2024 10:50:45 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>https://www.wenjie1018.cn/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B8%B8%E7%94%A8%E7%9A%8425%E4%B8%AA%E6%8E%92%E9%9A%9C%E5%91%BD%E4%BB%A4/featured-image.jpg" referrerpolicy="no-referrer">
-            </div>在网络运维工作中，掌握排障命令可以帮助我们快速定位和解决各种网络故障，确保网络稳定运行。 今天要和大家分享的是关于网络排障中常用的25个命令。]]></description>
 </item></channel>
 </rss>

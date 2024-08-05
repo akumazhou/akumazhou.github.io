@@ -4,7 +4,14 @@
         <link>https://www.wenjie1018.cn/tags/</link>
         <description>Tags - 标签 - WJ BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wenjie1018@gmail.com (AKUMA)</managingEditor>
-            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Wed, 31 Jul 2024 14:12:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Mon, 05 Aug 2024 10:55:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>NAS</title>
+    <link>https://www.wenjie1018.cn/tags/nas/</link>
+    <pubDate>Mon, 05 Aug 2024 10:55:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/tags/nas/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>cloudflare</title>
     <link>https://www.wenjie1018.cn/tags/cloudflare/</link>
     <pubDate>Wed, 31 Jul 2024 14:12:12 &#43;0800</pubDate><author>
@@ -66,13 +73,6 @@
     <pubDate>Wed, 29 Nov 2023 17:41:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>https://www.wenjie1018.cn/tags/1panel/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Github</title>
-    <link>https://www.wenjie1018.cn/tags/github/</link>
-    <pubDate>Tue, 28 Nov 2023 13:30:25 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>https://www.wenjie1018.cn/tags/github/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
