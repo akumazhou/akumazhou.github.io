@@ -1,129 +1,416 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noodp" />
-    <title>404 页面没找到 - WJ BLOG</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="这是我的全新 Hugo 网站" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.wenjie1018.cn/404.html" /><meta property="og:image" content="https://www.wenjie1018.cn/logo.png"/><meta property="og:site_name" content="我的全新 Hugo 网站" />
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.wenjie1018.cn/logo.png"/>
-
-<meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content="这是我的全新 Hugo 网站"/>
-<meta name="application-name" content="DoIt">
-<meta name="apple-mobile-web-app-title" content="DoIt">
-
-<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://www.wenjie1018.cn/404.html" />
-<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript></head>
-
-<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
-        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
-        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
-        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
-        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
-        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
-        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
-        window.switchThemeEventSet = new Set()
-    </script>
-    <div id="back-to-top"></div>
-    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="WJ BLOG"><span id="desktop-header-typeit" class="typeit"></span></a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/series/"> 系列 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
-                            <i class="fas fa-times-circle fa-fw"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                    <i class="fas fa-adjust fa-fw"></i>
-                </a></div>
-        </div>
-    </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="WJ BLOG"><span id="mobile-header-typeit" class="typeit"></span></a>
+    <meta charset="UTF-8">
+    <title>WJ BLOG - 404 Page</title>
+    <script src="https://www.wenjie1018.cn/404/jquery-3.0.0.min.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap");
+        h1,h2,h3,h4,h5,h6,p,ul,li,button,a,i,input,body {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 0;
+            -webkit-tap-highlight-color: transparent;
+            text-decoration: none;
+            color: inherit;
+        }
+ 
+        html, body, .wrapper{
+            height: auto;
+            font-family: "Barlow", sans-serif;
+            background: #695681;
+            overflow-x:hidden;
+            overflow-y:hidden;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+        .wrapper .container {
+            margin: 0 auto;
+            transition: all 0.4s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .wrapper .container .scene {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            vertical-align: middle;
+        }
+        .wrapper .container .one,
+        .wrapper .container .two,
+        .wrapper .container .three,
+        .wrapper .container .circle,
+        .wrapper .container .p404 {
+            width: 60%;
+            height: 60%;
+            top: 20% !important;
+            left: 20% !important;
+            min-width: 400px;
+            min-height: 400px;
+        }
+        .wrapper .container .one .content,
+        .wrapper .container .two .content,
+        .wrapper .container .three .content,
+        .wrapper .container .circle .content,
+        .wrapper .container .p404 .content {
+            width: 600px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: content 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
+        }
+        @keyframes content {
+            0% {
+                width: 0;
+            }
+        }
+        .wrapper .container .one .content .piece,
+        .wrapper .container .two .content .piece,
+        .wrapper .container .three .content .piece,
+        .wrapper .container .circle .content .piece,
+        .wrapper .container .p404 .content .piece {
+            width: 200px;
+            height: 80px;
+            display: flex;
+            position: absolute;
+            border-radius: 80px;
+            z-index: 1;
+            animation: pieceLeft 8s cubic-bezier(1, 0.06, 0.25, 1) infinite both;
+        }
+        @keyframes pieceLeft {
+            50% {
+                left: 80%;
+                width: 10%;
+            }
+        }
+        @keyframes pieceRight {
+            50% {
+                right: 80%;
+                width: 10%;
+            }
+        }
+        @media screen and (max-width: 799px) {
+            .wrapper .container .one,
+            .wrapper .container .two,
+            .wrapper .container .three,
+            .wrapper .container .circle,
+            .wrapper .container .p404 {
+                width: 90%;
+                height: 90%;
+                top: 5% !important;
+                left: 5% !important;
+                min-width: 280px;
+                min-height: 280px;
+            }
+        }
+        @media screen and (max-height: 660px) {
+            .wrapper .container .one,
+            .wrapper .container .two,
+            .wrapper .container .three,
+            .wrapper .container .circle,
+            .wrapper .container .p404 {
+                min-width: 280px;
+                min-height: 280px;
+                width: 60%;
+                height: 60%;
+                top: 20% !important;
+                left: 20% !important;
+            }
+        }
+        .wrapper .container .text {
+            width: 60%;
+            height: 40%;
+            min-width: 400px;
+            min-height: 500px;
+            position: absolute;
+            margin: 40px 0;
+            animation: text 0.6s 1.8s ease backwards;
+        }
+        @keyframes text {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+        }
+        @media screen and (max-width: 799px) {
+            .wrapper .container .text {
+                min-height: 400px;
+                height: 80%;
+            }
+        }
+        .wrapper .container .text article {
+            width: 400px;
+            position: absolute;
+            bottom: 0;
+            z-index: 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media screen and (max-width: 799px) {
+            .wrapper .container .text article {
+                width: 100%;
+            }
+        }
+        .wrapper .container .text article p {
+            color: white;
+            font-size: 18px;
+            letter-spacing: 0.6px;
+            margin-bottom: 40px;
+            text-shadow: 6px 6px 10px #32243E;
+        }
+        .wrapper .container .text article button {
+            height: 40px;
+            padding: 0 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0px 15px 20px rgba(54, 24, 79, 0.5);
+            z-index: 3;
+            color: #695681;
+            background-color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+        .wrapper .container .text article button:hover {
+            box-shadow: 0px 10px 10px -10px rgba(54, 24, 79, 0.5);
+            transform: translateY(5px);
+            background: #FB8A8A;
+            color: white;
+        }
+        .wrapper .container .p404 {
+            font-size: 200px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: white;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 2;
+            animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;
+            animation-delay: 1.2s;
+        }
+        @media screen and (max-width: 799px) {
+            .wrapper .container .p404 {
+                font-size: 100px;
+            }
+        }
+        @keyframes anime404 {
+            0% {
+                opacity: 0;
+                transform: scale(10) skew(20deg, 20deg);
+            }
+        }
+        .wrapper .container .p404:nth-of-type(2) {
+            color: #36184F;
+            z-index: 1;
+            animation-delay: 1s;
+            filter: blur(10px);
+            opacity: 0.8;
+        }
+        .wrapper .container .circle {
+            position: absolute;
+        }
+        .wrapper .container .circle:before {
+            content: "";
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            background-color: rgba(54, 24, 79, 0.2);
+            border-radius: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);
+            animation: circle 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
+        }
+        @keyframes circle {
+            0% {
+                width: 0;
+                height: 0;
+            }
+        }
+        @media screen and (max-width: 799px) {
+            .wrapper .container .circle:before {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        .wrapper .container .one .content:before {
+            content: "";
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background-color: rgba(54, 24, 79, 0.3);
+            border-radius: 100%;
+            box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);
+            animation: circle 0.8s 0.4s cubic-bezier(1, 0.06, 0.25, 1) backwards;
+        }
+        @media screen and (max-width: 799px) {
+            .wrapper .container .one .content:before {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .wrapper .container .one .content .piece {
+            background: linear-gradient(90deg, #8077EA 13.7%, #EB73FF 94.65%);
+        }
+        .wrapper .container .one .content .piece:nth-child(1) {
+            right: 15%;
+            top: 18%;
+            height: 30px;
+            width: 120px;
+            animation-delay: 0.5s;
+            animation-name: pieceRight;
+        }
+        .wrapper .container .one .content .piece:nth-child(2) {
+            left: 15%;
+            top: 45%;
+            width: 150px;
+            height: 50px;
+            animation-delay: 1s;
+            animation-name: pieceLeft;
+        }
+        .wrapper .container .one .content .piece:nth-child(3) {
+            left: 10%;
+            top: 75%;
+            height: 20px;
+            width: 70px;
+            animation-delay: 1.5s;
+            animation-name: pieceLeft;
+        }
+        .wrapper .container .two .content .piece {
+            background: linear-gradient(90deg, #FFEDC0 0%, #FF9D87 100%);
+        }
+        .wrapper .container .two .content .piece:nth-child(1) {
+            left: 0%;
+            top: 25%;
+            height: 40px;
+            width: 120px;
+            animation-delay: 2s;
+            animation-name: pieceLeft;
+        }
+        .wrapper .container .two .content .piece:nth-child(2) {
+            right: 15%;
+            top: 35%;
+            width: 180px;
+            height: 50px;
+            animation-delay: 2.5s;
+            animation-name: pieceRight;
+        }
+        .wrapper .container .two .content .piece:nth-child(3) {
+            right: 10%;
+            top: 80%;
+            height: 20px;
+            width: 160px;
+            animation-delay: 3s;
+            animation-name: pieceRight;
+        }
+        .wrapper .container .three .content .piece {
+            background: #FB8A8A;
+        }
+        .wrapper .container .three .content .piece:nth-child(1) {
+            left: 25%;
+            top: 35%;
+            height: 20px;
+            width: 80px;
+            animation-name: pieceLeft;
+            animation-delay: 3.5s;
+        }
+        .wrapper .container .three .content .piece:nth-child(2) {
+            right: 10%;
+            top: 55%;
+            width: 140px;
+            height: 40px;
+            animation-name: pieceRight;
+            animation-delay: 4s;
+        }
+        .wrapper .container .three .content .piece:nth-child(3) {
+            left: 40%;
+            top: 68%;
+            height: 20px;
+            width: 80px;
+            animation-name: pieceLeft;
+            animation-delay: 4.5s;
+        }
+    </style>
+ 
+</head>
+<body>
+<section class="wrapper">
+ 
+    <div class="container">
+ 
+        <div id="scene" class="scene" data-hover-only="false">
+ 
+ 
+            <div class="circle" data-depth="1.2"></div>
+ 
+            <div class="one" data-depth="0.9">
+                <div class="content">
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                </div>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
+ 
+            <div class="two" data-depth="0.60">
+                <div class="content">
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                </div>
             </div>
+ 
+            <div class="three" data-depth="0.40">
+                <div class="content">
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                    <span class="piece"></span>
+                </div>
+            </div>
+ 
+            <p class="p404" data-depth="0.50">404</p>
+            <p class="p404" data-depth="0.10">404</p>
+ 
         </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
-                            <i class="fas fa-times-circle fa-fw"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        取消
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/series/" title="">系列</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                <i class="fas fa-adjust fa-fw"></i>
-            </a></div>
+ 
+        <div class="text">
+            <article>
+                <p>Uh oh! Looks like you got lost. <br>Go back to the homepage if you dare!</p>
+                <a href="https://www.wenjie1018.cn"><button>i dare!</button></a>
+            </article>
+        </div>
+ 
     </div>
-</header>
-<div class="search-dropdown desktop">
-    <div id="search-dropdown-desktop"></div>
-</div>
-<div class="search-dropdown mobile">
-    <div id="search-dropdown-mobile"></div>
-</div>
-<main class="main">
-            <div class="container"><div class="page" id="content-404">
-        <h1 id="error-emoji"></h1>
-        <p class="error-text">抱歉, 您要查找的页面不存在.&nbsp;
-            <a href="javascript:void(0);" title="返回" onclick="window.history.back();"><i class="far fa-hand-point-left fa-fw"></i></a>
-        </p>
-    </div>
-    <script type="text/javascript">
-        (function() {
-            var emojiArray = ['\\(o_o)/', '(˚Δ˚)b', '(^-^*)', '(≥o≤)', '(^_^)b', '(·_·)','(=\'X\'=)', '(>_<)', '(;-;)'];
-            document.getElementById('error-emoji').appendChild(document.createTextNode(emojiArray[Math.floor(Math.random() * emojiArray.length)]));
-        })();
-    </script></div>
-        </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">AKUMA</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
-            <div class="footer-line"></div>
-            <div class="footer-line">
-            </div>
-        </div></footer></div>
-
-    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
-            <i class="fas fa-arrow-up fa-fw"></i>
-        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
-            <i class="fas fa-comment fa-fw"></i>
-        </a>
-    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
-        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"WJ BLOG","mobile-header-typeit":"WJ BLOG"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</section>
+<!-- partial -->
+<script src='https://www.wenjie1018.cn/404/3.1.0/parallax.min.js'></script>
+ 
+<script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+</script>
+ 
 </body>
-
 </html>
