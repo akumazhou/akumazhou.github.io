@@ -125,7 +125,6 @@
 {{< figure src="./c803ef55f647fd8ddbc6279926bccf34.png" >}}
 
 5. 重新连接服务器隧道
-
    - 进入到第一次使用中的16步所在页面，点击刷新token（Refresh token）
 
 {{< figure src="./c4d722458249860f4ce0bc24538b3518.png" >}}
@@ -133,4 +132,35 @@
    - 复制命令，到命令行窗口中执行
 
 {{< figure src="./9b6112a3576c9ef0989ea786064ede3b.png" >}}
+
+
+
+### 使用Docker连接
+
+在群晖docker找到cloudflare后进行下载
+
+{{< figure src="./1164ad3c1a53e4127ceacbe2ca228a77.png" >}}
+
+然后开始配置cloudflare，选择高级设置
+
+{{< figure src="./0daf6ca1dc3c1b4949717d548659f2a2.png" >}}
+
+网络--勾选使用于Docker Host相同的网络
+
+{{< figure src="./123bcf1afe8510b12fed932cc0f09124.png" >}}
+
+在执行命令的位置贴上复制下来的命令，如下：（token后面改为你的token值）
+
+```
+tunnel --no-autoupdate run --token eyJhIjoixxxxxx
+```
+
+{{< figure src="./ba0eaa2feeb3ec27794d3c96347eadef.png" >}}
+
+然后启动docker，可以看到cloudflare已经是正常使用了，直接访问域名可以访问到内网地址
+
+{{< figure src="./3772adfb9382697eef5b357814ac4ade.png" >}}
+
+{{< figure src="./741bcf1afe8510b821ed932cc0f09124.png" >}}
+
 

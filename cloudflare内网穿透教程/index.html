@@ -36,7 +36,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.wenjie1018.cn\/cloudflare%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%95%99%E7%A8%8B\/"
-        },"genre": "posts","keywords": "cloudflare","wordcount":  748 ,
+        },"genre": "posts","keywords": "cloudflare","wordcount":  931 ,
         "url": "https:\/\/www.wenjie1018.cn\/cloudflare%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%95%99%E7%A8%8B\/","datePublished": "2024-07-31T14:12:12+08:00","dateModified": "2024-07-31T14:12:12+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -124,6 +124,7 @@
       <ul>
         <li><a href="#第一次使用">第一次使用</a></li>
         <li><a href="#再次连接">再次连接</a></li>
+        <li><a href="#使用docker连接">使用Docker连接</a></li>
       </ul>
     </li>
   </ul>
@@ -132,7 +133,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">AKUMA</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-07-31">2024-07-31</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-07-31">2024-07-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 748 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-07-31">2024-07-31</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-07-31">2024-07-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 931 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -151,6 +152,7 @@
       <ul>
         <li><a href="#第一次使用">第一次使用</a></li>
         <li><a href="#再次连接">再次连接</a></li>
+        <li><a href="#使用docker连接">使用Docker连接</a></li>
       </ul>
     </li>
   </ul>
@@ -341,8 +343,7 @@
 </figure>
 
 <ol start="5">
-<li>
-<p>重新连接服务器隧道</p>
+<li>重新连接服务器隧道
 <ul>
 <li>进入到第一次使用中的16步所在页面，点击刷新token（Refresh token）</li>
 </ul>
@@ -355,6 +356,38 @@
 <li>复制命令，到命令行窗口中执行</li>
 </ul>
 <figure><img src="./9b6112a3576c9ef0989ea786064ede3b.png"/>
+</figure>
+
+<h3 id="使用docker连接" class="headerLink">
+    <a href="#%e4%bd%bf%e7%94%a8docker%e8%bf%9e%e6%8e%a5" class="header-mark"></a>使用Docker连接</h3><p>在群晖docker找到cloudflare后进行下载</p>
+<figure><img src="./1164ad3c1a53e4127ceacbe2ca228a77.png"/>
+</figure>
+
+<p>然后开始配置cloudflare，选择高级设置</p>
+<figure><img src="./0daf6ca1dc3c1b4949717d548659f2a2.png"/>
+</figure>
+
+<p>网络&ndash;勾选使用于Docker Host相同的网络</p>
+<figure><img src="./123bcf1afe8510b12fed932cc0f09124.png"/>
+</figure>
+
+<p>在执行命令的位置贴上复制下来的命令，如下：（token后面改为你的token值）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tunnel --no-autoupdate run --token eyJhIjoixxxxxx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><figure><img src="./ba0eaa2feeb3ec27794d3c96347eadef.png"/>
+</figure>
+
+<p>然后启动docker，可以看到cloudflare已经是正常使用了，直接访问域名可以访问到内网地址</p>
+<figure><img src="./3772adfb9382697eef5b357814ac4ade.png"/>
+</figure>
+
+<figure><img src="./741bcf1afe8510b821ed932cc0f09124.png"/>
 </figure>
 
 </div>
