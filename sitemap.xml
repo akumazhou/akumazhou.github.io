@@ -2,13 +2,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://www.wenjie1018.cn/tags/dns/</loc><lastmod>2024-08-07T11:11:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.wenjie1018.cn/posts/</loc><lastmod>2024-08-07T11:11:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.wenjie1018.cn/tags/</loc><lastmod>2024-08-07T11:11:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.wenjie1018.cn/</loc><lastmod>2024-08-07T11:11:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc><lastmod>2024-08-07T11:11:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.wenjie1018.cn/tags/nas/</loc><lastmod>2024-08-05T10:55:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.wenjie1018.cn/nas%E5%AF%BC%E8%88%AA%E9%9D%A2%E6%9D%BFsun-panel/</loc><lastmod>2024-08-05T10:55:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.wenjie1018.cn/posts/</loc><lastmod>2024-08-05T10:55:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.wenjie1018.cn/tags/</loc><lastmod>2024-08-05T10:55:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.wenjie1018.cn/</loc><lastmod>2024-08-05T10:55:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.wenjie1018.cn/tags/cloudflare/</loc><lastmod>2024-07-31T14:12:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.wenjie1018.cn/cloudflare%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%95%99%E7%A8%8B/</loc><lastmod>2024-07-31T14:12:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.wenjie1018.cn/tags/cloudflare/</loc><lastmod>2024-07-31T14:12:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.wenjie1018.cn/cloudflare%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%95%99%E7%A8%8B/</loc><lastmod>2024-07-31T14:12:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://www.wenjie1018.cn/tags/docker/</loc><lastmod>2024-07-22T10:19:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87-cloudflare-%E7%99%BD%E5%AB%96%E4%B8%AA%E4%BA%BA-docker-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1/</loc><lastmod>2024-07-22T10:19:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://www.wenjie1018.cn/categories/</loc><lastmod>2024-07-18T13:10:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
@@ -17,7 +19,7 @@
             <loc>https://www.wenjie1018.cn/categories/python%E5%AD%A6%E4%B9%A0/</loc><lastmod>2024-07-18T13:10:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://www.wenjie1018.cn/series/</loc><lastmod>2024-07-18T13:10:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://www.wenjie1018.cn/%E5%80%BC%E5%BE%97%E6%94%B6%E8%97%8F%E7%9A%8430%E9%81%93python%E7%BB%83%E6%89%8B%E9%A2%98/</loc><lastmod>2024-07-18T13:10:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://www.wenjie1018.cn/100%E9%81%93python%E7%BB%83%E4%B9%A0%E9%A2%98/</loc><lastmod>2024-07-18T11:21:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://www.wenjie1018.cn/100%E9%81%93python%E7%BB%83%E4%B9%A0%E9%A2%98/</loc><lastmod>2024-07-18T11:21:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
             <loc>https://www.wenjie1018.cn/win11%E7%BB%95%E8%BF%87tpm%E5%92%8C%E8%81%94%E7%BD%91%E8%B4%A6%E5%8F%B7/</loc><lastmod>2024-06-12T14:21:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.wenjie1018.cn/tags/windows%E6%8A%80%E5%B7%A7/</loc><lastmod>2024-06-12T14:21:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.wenjie1018.cn/tags/linux/</loc><lastmod>2024-05-29T10:50:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

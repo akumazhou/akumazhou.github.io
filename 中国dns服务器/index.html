@@ -1,0 +1,644 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>中国DNS服务器 - WJ BLOG</title><meta name="Description" content="中国DNS服务器"><meta property="og:title" content="中国DNS服务器" />
+<meta property="og:description" content="中国DNS服务器" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" /><meta property="og:image" content="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-08-07T11:11:12+08:00" />
+<meta property="article:modified_time" content="2024-08-07T11:11:12+08:00" /><meta property="og:site_name" content="我的全新 Hugo 网站" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/featured-image.png"/>
+<meta name="twitter:title" content="中国DNS服务器"/>
+<meta name="twitter:description" content="中国DNS服务器"/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" /><link rel="prev" href="https://www.wenjie1018.cn/nas%E5%AF%BC%E8%88%AA%E9%9D%A2%E6%9D%BFsun-panel/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "中国DNS服务器",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.wenjie1018.cn\/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8\/"
+        },"genre": "posts","keywords": "DNS","wordcount":  1319 ,
+        "url": "https:\/\/www.wenjie1018.cn\/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8\/","datePublished": "2024-08-07T11:11:12+08:00","dateModified": "2024-08-07T11:11:12+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "AKUMA"
+            },"description": "中国DNS服务器"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="WJ BLOG"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/series/"> 系列 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="WJ BLOG"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/series/" title="">系列</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#背景">背景</a></li>
+        <li><a href="#公共dns服务器">公共DNS服务器</a></li>
+        <li><a href="#电信dns服务器ip地址大全全国各地">电信DNS服务器IP地址大全（全国各地）</a></li>
+        <li><a href="#联通dns服务器ip地址大全全国各地">联通DNS服务器IP地址大全（全国各地）</a></li>
+        <li><a href="#移动dns服务器ip地址大全全国各地">移动DNS服务器IP地址大全（全国各地）</a></li>
+        <li><a href="#参考链接">参考链接</a></li>
+        <li><a href="#国内dns服务">国内DNS服务</a>
+          <ul>
+            <li><a href="#1推荐114dns">1、【推荐】114DNS</a></li>
+            <li><a href="#2推荐腾讯-dnspod">2、【推荐】腾讯 DNSPod</a></li>
+            <li><a href="#3强烈推荐阿里云公共dns">3、【强烈推荐】阿里云公共DNS</a></li>
+            <li><a href="#4百度公共dns">4、百度公共DNS</a></li>
+            <li><a href="#5cnnic-dns">5、CNNIC DNS</a></li>
+            <li><a href="#6清华大学tuna-dns666">6、清华大学TUNA DNS666</a></li>
+            <li><a href="#7onedns">7、OneDNS</a></li>
+          </ul>
+        </li>
+        <li><a href="#国外dns服务">国外DNS服务</a>
+          <ul>
+            <li><a href="#1国外首选cloudflare-dns">1、【国外首选】Cloudflare DNS</a></li>
+            <li><a href="#2国外推荐谷歌公共dns">2、【国外推荐】谷歌公共DNS</a></li>
+            <li><a href="#3国外推荐cisco-opendns">3、【国外推荐】Cisco OpenDNS</a></li>
+            <li><a href="#4微软dns">4、微软DNS</a></li>
+          </ul>
+        </li>
+        <li><a href="#加密dns">加密DNS：</a>
+          <ul>
+            <li><a href="#1阿里">1.阿里</a></li>
+            <li><a href="#2腾讯">2.腾讯</a></li>
+            <li><a href="#3cloudflare">3.Cloudflare</a></li>
+            <li><a href="#4360">4.360</a></li>
+            <li><a href="#5onedns">5.oneDNS</a></li>
+            <li><a href="#6google">6.Google</a></li>
+          </ul>
+        </li>
+        <li><a href="#协议类型知识点">协议类型知识点:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">中国DNS服务器</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">AKUMA</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-08-07">2024-08-07</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-08-07">2024-08-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1319 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/featured-image.png"
+        srcset="/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/featured-image.png, /%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/featured-image.png 1.5x, /%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/featured-image.png 2x"
+        sizes="auto"
+        alt="中国DNS服务器"
+        title="中国DNS服务器" height="447"   width="1363" ></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#背景">背景</a></li>
+        <li><a href="#公共dns服务器">公共DNS服务器</a></li>
+        <li><a href="#电信dns服务器ip地址大全全国各地">电信DNS服务器IP地址大全（全国各地）</a></li>
+        <li><a href="#联通dns服务器ip地址大全全国各地">联通DNS服务器IP地址大全（全国各地）</a></li>
+        <li><a href="#移动dns服务器ip地址大全全国各地">移动DNS服务器IP地址大全（全国各地）</a></li>
+        <li><a href="#参考链接">参考链接</a></li>
+        <li><a href="#国内dns服务">国内DNS服务</a>
+          <ul>
+            <li><a href="#1推荐114dns">1、【推荐】114DNS</a></li>
+            <li><a href="#2推荐腾讯-dnspod">2、【推荐】腾讯 DNSPod</a></li>
+            <li><a href="#3强烈推荐阿里云公共dns">3、【强烈推荐】阿里云公共DNS</a></li>
+            <li><a href="#4百度公共dns">4、百度公共DNS</a></li>
+            <li><a href="#5cnnic-dns">5、CNNIC DNS</a></li>
+            <li><a href="#6清华大学tuna-dns666">6、清华大学TUNA DNS666</a></li>
+            <li><a href="#7onedns">7、OneDNS</a></li>
+          </ul>
+        </li>
+        <li><a href="#国外dns服务">国外DNS服务</a>
+          <ul>
+            <li><a href="#1国外首选cloudflare-dns">1、【国外首选】Cloudflare DNS</a></li>
+            <li><a href="#2国外推荐谷歌公共dns">2、【国外推荐】谷歌公共DNS</a></li>
+            <li><a href="#3国外推荐cisco-opendns">3、【国外推荐】Cisco OpenDNS</a></li>
+            <li><a href="#4微软dns">4、微软DNS</a></li>
+          </ul>
+        </li>
+        <li><a href="#加密dns">加密DNS：</a>
+          <ul>
+            <li><a href="#1阿里">1.阿里</a></li>
+            <li><a href="#2腾讯">2.腾讯</a></li>
+            <li><a href="#3cloudflare">3.Cloudflare</a></li>
+            <li><a href="#4360">4.360</a></li>
+            <li><a href="#5onedns">5.oneDNS</a></li>
+            <li><a href="#6google">6.Google</a></li>
+          </ul>
+        </li>
+        <li><a href="#协议类型知识点">协议类型知识点:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="背景" class="headerLink">
+    <a href="#%e8%83%8c%e6%99%af" class="header-mark"></a>背景</h3><p>日常工作中，会需要用到一些DNS服务器的链接，更新等。这里记录一些收集回来的公开的DNS服务器。</p>
+<h3 id="公共dns服务器" class="headerLink">
+    <a href="#%e5%85%ac%e5%85%b1dns%e6%9c%8d%e5%8a%a1%e5%99%a8" class="header-mark"></a>公共DNS服务器</h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>各省公共DNS服务器IP大全</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>114 DNS</td>
+<td>114.114.114.114/114.114.115.115</td>
+</tr>
+<tr>
+<td>阿里 AliDNS</td>
+<td>223.5.5.5/223.6.6.6.6</td>
+</tr>
+<tr>
+<td>百度 BaiduDNS</td>
+<td>180.76.76.76</td>
+</tr>
+<tr>
+<td>腾讯云 DNS</td>
+<td>183.60.83.19/183.60.82.98</td>
+</tr>
+<tr>
+<td>Google DNS</td>
+<td>8.8.8.8/8.8.4.4</td>
+</tr>
+<tr>
+<td>DNSPod DNS+</td>
+<td>119.29.29.29/182.254.116.116</td>
+</tr>
+<tr>
+<td>CNNIC SDNS</td>
+<td>1.2.4.8/210.2.4.8</td>
+</tr>
+<tr>
+<td>oneDNS</td>
+<td>117.50.11.11/52.80.66.66</td>
+</tr>
+<tr>
+<td>DNS 派电信/移动/铁通</td>
+<td>101.226.4.6/218.30.118.6</td>
+</tr>
+<tr>
+<td>DNS 派联通</td>
+<td>123.125.81.6/140.207.198.6</td>
+</tr>
+<tr>
+<td>CloudflareDNS</td>
+<td>1.1.1.1/1.0.0.1</td>
+</tr>
+<tr>
+<td>IBM Quad</td>
+<td>9.9.9.9</td>
+</tr>
+<tr>
+<td>DNS.SB</td>
+<td>185.222.222.222/185.184.222.222</td>
+</tr>
+<tr>
+<td>OpenDNS</td>
+<td>208.67.222.222/208.67.220.220</td>
+</tr>
+<tr>
+<td>V2EX DNS</td>
+<td>199.91.73.222/178.79.131.110</td>
+</tr>
+</tbody>
+</table>
+<h3 id="电信dns服务器ip地址大全全国各地" class="headerLink">
+    <a href="#%e7%94%b5%e4%bf%a1dns%e6%9c%8d%e5%8a%a1%e5%99%a8ip%e5%9c%b0%e5%9d%80%e5%a4%a7%e5%85%a8%e5%85%a8%e5%9b%bd%e5%90%84%e5%9c%b0" class="header-mark"></a>电信DNS服务器IP地址大全（全国各地）</h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>各省电信DNS服务器IP大全</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>安徽电信 DNS</td>
+<td>61.132.163.68/202.102.213.68</td>
+</tr>
+<tr>
+<td>北京电信 DNS</td>
+<td>219.141.136.10/219.141.140.10</td>
+</tr>
+<tr>
+<td>重庆电信 DNS</td>
+<td>61.128.192.68/61.128.128.68</td>
+</tr>
+<tr>
+<td>福建电信 DNS</td>
+<td>218.85.152.99/218.85.157.99</td>
+</tr>
+<tr>
+<td>甘肃电信 DNS</td>
+<td>202.100.64.68/61.178.0.93</td>
+</tr>
+<tr>
+<td>广东电信 DNS</td>
+<td>202.96.128.86/202.96.128.166/202.96.134.33/202.96.128.68</td>
+</tr>
+<tr>
+<td>广西电信 DNS</td>
+<td>202.103.225.68/202.103.224.68</td>
+</tr>
+<tr>
+<td>贵州电信 DNS</td>
+<td>202.98.192.67/202.98.198.167</td>
+</tr>
+<tr>
+<td>河南电信 DNS</td>
+<td>222.88.88.88/222.85.85.85</td>
+</tr>
+<tr>
+<td>黑龙江电信</td>
+<td>219.147.198.230/219.147.198.242</td>
+</tr>
+<tr>
+<td>湖北电信 DNS</td>
+<td>202.103.24.68/202.103.0.68</td>
+</tr>
+<tr>
+<td>湖南电信 DNS</td>
+<td>222.246.129.80/59.51.78.211</td>
+</tr>
+<tr>
+<td>江苏电信 DNS</td>
+<td>218.2.2.2/218.4.4.4/61.147.37.1/218.2.135.1</td>
+</tr>
+<tr>
+<td>江西电信 DNS</td>
+<td>202.101.224.69/202.101.226.68</td>
+</tr>
+<tr>
+<td>内蒙古电信 DNS</td>
+<td>219.148.162.31/222.74.39.50</td>
+</tr>
+<tr>
+<td>山东电信 DNS</td>
+<td>219.146.1.66/219.147.1.66</td>
+</tr>
+<tr>
+<td>陕西电信 DNS</td>
+<td>218.30.19.40/61.134.1.4</td>
+</tr>
+<tr>
+<td>上海电信 DNS</td>
+<td>202.96.209.133/116.228.111.118/202.96.209.5/180.168.255.118</td>
+</tr>
+<tr>
+<td>四川电信 DNS</td>
+<td>61.139.2.69/218.6.200.139</td>
+</tr>
+<tr>
+<td>天津电信 DNS</td>
+<td>219.150.32.132/219.146.0.132</td>
+</tr>
+<tr>
+<td>云南电信 DNS</td>
+<td>222.172.200.68/61.166.150.123</td>
+</tr>
+<tr>
+<td>浙江电信 DNS</td>
+<td>202.101.172.35/61.153.177.196/61.153.81.75/60.191.244.5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="联通dns服务器ip地址大全全国各地" class="headerLink">
+    <a href="#%e8%81%94%e9%80%9adns%e6%9c%8d%e5%8a%a1%e5%99%a8ip%e5%9c%b0%e5%9d%80%e5%a4%a7%e5%85%a8%e5%85%a8%e5%9b%bd%e5%90%84%e5%9c%b0" class="header-mark"></a>联通DNS服务器IP地址大全（全国各地）</h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>各省联通DNS服务器IP大全</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>北京联通 DNS</td>
+<td>123.123.123.123/123.123.123.124/202.106.0.20/202.106.195.68</td>
+</tr>
+<tr>
+<td>重庆联通 DNS</td>
+<td>221.5.203.98/221.7.92.98</td>
+</tr>
+<tr>
+<td>广东联通 DNS</td>
+<td>210.21.196.6/221.5.88.88</td>
+</tr>
+<tr>
+<td>河北联通 DNS</td>
+<td>202.99.160.68/202.99.166.4</td>
+</tr>
+<tr>
+<td>河南联通 DNS</td>
+<td>202.102.224.68/202.102.227.68</td>
+</tr>
+<tr>
+<td>黑龙江联通 DNS</td>
+<td>202.97.224.69/202.97.224.68</td>
+</tr>
+<tr>
+<td>吉林联通 DNS</td>
+<td>202.98.0.68/202.98.5.68</td>
+</tr>
+<tr>
+<td>江苏联通 DNS</td>
+<td>221.6.4.66/221.6.4.67</td>
+</tr>
+<tr>
+<td>内蒙古联通 DNS</td>
+<td>202.99.224.68/202.99.224.8</td>
+</tr>
+<tr>
+<td>山东联通 DNS</td>
+<td>202.102.128.68/202.102.152.3/202.102.134.68/202.102.154.3</td>
+</tr>
+<tr>
+<td>山西联通 DNS</td>
+<td>202.99.192.66/202.99.192.68</td>
+</tr>
+<tr>
+<td>陕西联通 DNS</td>
+<td>221.11.1.67/221.11.1.68</td>
+</tr>
+<tr>
+<td>上海联通 DNS</td>
+<td>210.22.70.3/210.22.84.3</td>
+</tr>
+<tr>
+<td>四川联通 DNS</td>
+<td>119.6.6.6/124.161.87.155</td>
+</tr>
+<tr>
+<td>天津联通 DNS</td>
+<td>202.99.104.68/202.99.96.68</td>
+</tr>
+<tr>
+<td>浙江联通 DNS</td>
+<td>221.12.1.227/221.12.33.227</td>
+</tr>
+<tr>
+<td>辽宁联通 DNS</td>
+<td>202.96.69.38/202.96.64.68</td>
+</tr>
+</tbody>
+</table>
+<h3 id="移动dns服务器ip地址大全全国各地" class="headerLink">
+    <a href="#%e7%a7%bb%e5%8a%a8dns%e6%9c%8d%e5%8a%a1%e5%99%a8ip%e5%9c%b0%e5%9d%80%e5%a4%a7%e5%85%a8%e5%85%a8%e5%9b%bd%e5%90%84%e5%9c%b0" class="header-mark"></a>移动DNS服务器IP地址大全（全国各地）</h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>各省移动DNS服务器IP大全</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>江苏移动 DNS</td>
+<td>221.131.143.69/112.4.0.55</td>
+</tr>
+<tr>
+<td>安徽移动 DNS</td>
+<td>211.138.180.2/211.138.180.3</td>
+</tr>
+<tr>
+<td>山东移动 DNS</td>
+<td>218.201.96.130/211.137.191.26</td>
+</tr>
+<tr>
+<td>广东移动 DNS</td>
+<td>211.139.163.6/211.136.192.6/218.204.254.77</td>
+</tr>
+</tbody>
+</table>
+<h3 id="参考链接" class="headerLink">
+    <a href="#%e5%8f%82%e8%80%83%e9%93%be%e6%8e%a5" class="header-mark"></a>参考链接</h3><p><a href="https://dnsdaquan.com/" target="_blank" rel="noopener noreferrer">全国DNS查询网站</a></p>
+<h3 id="国内dns服务" class="headerLink">
+    <a href="#%e5%9b%bd%e5%86%85dns%e6%9c%8d%e5%8a%a1" class="header-mark"></a>国内DNS服务</h3><h4 id="1推荐114dns" class="headerLink">
+    <a href="#1%e6%8e%a8%e8%8d%90114dns" class="header-mark"></a>1、【推荐】114DNS</h4><p>公共DNS
+主：114.114.114.114
+备：114.114.115.115
+网银安全DNS
+主：114.114.114.119
+备：114.114.115.119
+儿童保护DNS
+主：114.114.114.110
+备：114.114.115.110</p>
+<h4 id="2推荐腾讯-dnspod" class="headerLink">
+    <a href="#2%e6%8e%a8%e8%8d%90%e8%85%be%e8%ae%af-dnspod" class="header-mark"></a>2、【推荐】腾讯 DNSPod</h4><p>IPv4
+主：119.29.29.29
+备：182.254.116.116</p>
+<h4 id="3强烈推荐阿里云公共dns" class="headerLink">
+    <a href="#3%e5%bc%ba%e7%83%88%e6%8e%a8%e8%8d%90%e9%98%bf%e9%87%8c%e4%ba%91%e5%85%ac%e5%85%b1dns" class="header-mark"></a>3、【强烈推荐】阿里云公共DNS</h4><p>IPv4
+主：223.5.5.5
+备：223.6.6.6
+IPv6
+主：2400:3200::1
+备：2400:3200:baba::1</p>
+<h4 id="4百度公共dns" class="headerLink">
+    <a href="#4%e7%99%be%e5%ba%a6%e5%85%ac%e5%85%b1dns" class="header-mark"></a>4、百度公共DNS</h4><p>IPv4
+主：180.76.76.76
+备：无
+IPv6
+主：2400:da00::6666
+备：无</p>
+<h4 id="5cnnic-dns" class="headerLink">
+    <a href="#5cnnic-dns" class="header-mark"></a>5、CNNIC DNS</h4><p>IPv4
+主：1.2.4.8
+备：210.2.4.8</p>
+<h4 id="6清华大学tuna-dns666" class="headerLink">
+    <a href="#6%e6%b8%85%e5%8d%8e%e5%a4%a7%e5%ad%a6tuna-dns666" class="header-mark"></a>6、清华大学TUNA DNS666</h4><p>IPv4
+主：101.6.6.6
+备：无
+IPv6
+主：2001:da8::666
+备：无</p>
+<h4 id="7onedns" class="headerLink">
+    <a href="#7onedns" class="header-mark"></a>7、OneDNS</h4><p>IPv4拦截版
+主：117.50.11.11
+备：52.80.66.66
+IPv4纯净版
+主：117.50.10.10
+备：52.80.52.52</p>
+<h3 id="国外dns服务" class="headerLink">
+    <a href="#%e5%9b%bd%e5%a4%96dns%e6%9c%8d%e5%8a%a1" class="header-mark"></a>国外DNS服务</h3><h4 id="1国外首选cloudflare-dns" class="headerLink">
+    <a href="#1%e5%9b%bd%e5%a4%96%e9%a6%96%e9%80%89cloudflare-dns" class="header-mark"></a>1、【国外首选】Cloudflare DNS</h4><p>IPv4
+主：1.1.1.1
+备：1.0.0.1
+IPv6
+主：2606:4700:4700::1111
+备：2606:4700:4700::1001</p>
+<h4 id="2国外推荐谷歌公共dns" class="headerLink">
+    <a href="#2%e5%9b%bd%e5%a4%96%e6%8e%a8%e8%8d%90%e8%b0%b7%e6%ad%8c%e5%85%ac%e5%85%b1dns" class="header-mark"></a>2、【国外推荐】谷歌公共DNS</h4><p>IPv4
+主：8.8.8.8
+辅：8.8.4.4
+IPv6
+主：2001:4860:4860::8888
+备：2001:4860:4860::8844</p>
+<h4 id="3国外推荐cisco-opendns" class="headerLink">
+    <a href="#3%e5%9b%bd%e5%a4%96%e6%8e%a8%e8%8d%90cisco-opendns" class="header-mark"></a>3、【国外推荐】Cisco OpenDNS</h4><p>IPv4
+主：208.67.222.222
+辅：208.67.220.220</p>
+<h4 id="4微软dns" class="headerLink">
+    <a href="#4%e5%be%ae%e8%bd%afdns" class="header-mark"></a>4、微软DNS</h4><p>IPv4
+主：4.2.2.1
+备：4.2.2.2</p>
+<h3 id="加密dns" class="headerLink">
+    <a href="#%e5%8a%a0%e5%af%86dns" class="header-mark"></a>加密DNS：</h3><h4 id="1阿里" class="headerLink">
+    <a href="#1%e9%98%bf%e9%87%8c" class="header-mark"></a>1.阿里</h4><p>tls://159654.alidns.com
+<a href="https://159654.alidns.com/dns-query" target="_blank" rel="noopener noreferrer">https://159654.alidns.com/dns-query</a>
+tls://dns.alidns.com
+<a href="https://dns.alidns.com/dns-query" target="_blank" rel="noopener noreferrer">https://dns.alidns.com/dns-query</a></p>
+<h4 id="2腾讯" class="headerLink">
+    <a href="#2%e8%85%be%e8%ae%af" class="header-mark"></a>2.腾讯</h4><p>tls://dot.pub
+<a href="https://doh.pub/dns-query" target="_blank" rel="noopener noreferrer">https://doh.pub/dns-query</a>
+<a href="https://sm2.doh.pub/dns-queryDoH" target="_blank" rel="noopener noreferrer">https://sm2.doh.pub/dns-queryDoH</a> (国密 SM2,基于腾讯云政企国密解决方案)</p>
+<h4 id="3cloudflare" class="headerLink">
+    <a href="#3cloudflare" class="header-mark"></a>3.Cloudflare</h4><p>tls://1.1.1.1/dns-query
+tls://cloudflare-dns.com
+<a href="https://1dot1dot1dot1.cloudflare-dns.com/" target="_blank" rel="noopener noreferrer">https://1dot1dot1dot1.cloudflare-dns.com/</a></p>
+<h4 id="4360" class="headerLink">
+    <a href="#4360" class="header-mark"></a>4.360</h4><p><a href="https://doh.360.cn/dns-query" target="_blank" rel="noopener noreferrer">https://doh.360.cn/dns-query</a></p>
+<h4 id="5onedns" class="headerLink">
+    <a href="#5onedns" class="header-mark"></a>5.oneDNS</h4><p><a href="https://doh-pure.onedns.net/dns-query" target="_blank" rel="noopener noreferrer">https://doh-pure.onedns.net/dns-query</a></p>
+<h4 id="6google" class="headerLink">
+    <a href="#6google" class="header-mark"></a>6.Google</h4><p>tls://dns.google
+<a href="https://dns.google/dns-query" target="_blank" rel="noopener noreferrer">https://dns.google/dns-query</a></p>
+<h3 id="协议类型知识点" class="headerLink">
+    <a href="#%e5%8d%8f%e8%ae%ae%e7%b1%bb%e5%9e%8b%e7%9f%a5%e8%af%86%e7%82%b9" class="header-mark"></a>协议类型知识点:</h3><p>协议类型解析：UDP:53  tcp:53  tls:853  https:443</p>
+</div>
+
+        
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-08-07</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-title="中国DNS服务器" data-hashtags="DNS"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-hashtag="DNS"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-title="中国DNS服务器" data-web><span class="fab fa-whatsapp fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-title="中国DNS服务器"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-title="中国DNS服务器" data-image="featured-image.png"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Myspace" data-sharer="myspace" data-url="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-title="中国DNS服务器" data-description="中国DNS服务器"><span data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></span></button><button title="分享到 Blogger" data-sharer="blogger" data-url="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-title="中国DNS服务器" data-description="中国DNS服务器"><span class="fab fa-blogger fa-fw"></span></button><button title="分享到 Evernote" data-sharer="evernote" data-url="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-title="中国DNS服务器"><span class="fab fa-evernote fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/dns/">DNS</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/nas%E5%AF%BC%E8%88%AA%E9%9D%A2%E6%9D%BFsun-panel/" class="prev" rel="prev" title="NAS导航面板Sun-Panel"><i class="fas fa-angle-left fa-fw"></i>NAS导航面板Sun-Panel</a></div>
+</div>
+<div id="comments"></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">AKUMA</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"WJ BLOG","mobile-header-typeit":"WJ BLOG"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

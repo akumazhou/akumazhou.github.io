@@ -4,9 +4,18 @@
         <link>https://www.wenjie1018.cn/</link>
         <description>这是我的全新 Hugo 网站</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wenjie1018@gmail.com (AKUMA)</managingEditor>
-            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Mon, 05 Aug 2024 10:55:12 &#43;0800</lastBuildDate>
+            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Wed, 07 Aug 2024 11:11:12 &#43;0800</lastBuildDate>
             <atom:link href="https://www.wenjie1018.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>中国DNS服务器</title>
+    <link>https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+    <pubDate>Wed, 07 Aug 2024 11:11:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/featured-image.png" referrerpolicy="no-referrer">
+            </div>背景日常工作中，会需要用到一些DNS服务器的链接，更新等。这里记录一些收集回来的公开的DNS服务器。 公共DNS服务器 名称 各省公共DNS服务器]]></description>
+</item><item>
     <title>NAS导航面板Sun-Panel</title>
     <link>https://www.wenjie1018.cn/nas%E5%AF%BC%E8%88%AA%E9%9D%A2%E6%9D%BFsun-panel/</link>
     <pubDate>Mon, 05 Aug 2024 10:55:12 &#43;0800</pubDate><author>
@@ -87,14 +96,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AAcloudns%E6%B0%B8%E4%B9%85%E5%9F%9F%E5%90%8D/featured-image.jpg" referrerpolicy="no-referrer">
             </div>“ 互联网人该给自己备个域名啦！” ClouDNS是欧洲最大的全球托管DNS服务提供商，包括GeoDNS，Anycast DNS和DDoS保护的D]]></description>
-</item><item>
-    <title>电脑cmd命令大全</title>
-    <link>https://www.wenjie1018.cn/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</link>
-    <pubDate>Thu, 09 May 2024 10:51:29 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>https://www.wenjie1018.cn/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/%E7%94%B5%E8%84%91cmd%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/featured-image.webp" referrerpolicy="no-referrer">
-            </div>在不同的操作系统环境下，命令提示符各不相同，在Windows环境下，命令行程序为cmd.exe，是一个32 位的命令行程序。 cmd是指命令提示]]></description>
 </item></channel>
 </rss>
