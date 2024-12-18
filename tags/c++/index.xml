@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>VS Code - 标签 - WJ BLOG</title>
-        <link>https://www.wenjie1018.cn/tags/vs-code/</link>
-        <description>VS Code - 标签 - WJ BLOG</description>
+        <title>C&#43;&#43; - 标签 - WJ BLOG</title>
+        <link>https://www.wenjie1018.cn/tags/c&#43;&#43;/</link>
+        <description>C&#43;&#43; - 标签 - WJ BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wenjie1018@gmail.com (AKUMA)</managingEditor>
-            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Wed, 18 Dec 2024 11:11:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/vs-code/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Wed, 18 Dec 2024 11:11:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/c&#43;&#43;/" rel="self" type="application/rss+xml" /><item>
     <title>Visual Studio Code(VS Code)配置C/C&#43;&#43;环境</title>
     <link>https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/</link>
     <pubDate>Wed, 18 Dec 2024 11:11:12 &#43;0800</pubDate><author>

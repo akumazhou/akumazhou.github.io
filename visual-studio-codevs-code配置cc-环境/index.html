@@ -1,0 +1,626 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Visual Studio Code(VS Code)配置C/C&#43;&#43;环境 - WJ BLOG</title><meta name="Description" content="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境"><meta property="og:title" content="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境" />
+<meta property="og:description" content="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/" /><meta property="og:image" content="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/featured-image.jpeg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-12-18T11:11:12+08:00" />
+<meta property="article:modified_time" content="2024-12-18T11:11:12+08:00" /><meta property="og:site_name" content="我的全新 Hugo 网站" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/featured-image.jpeg"/>
+<meta name="twitter:title" content="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境"/>
+<meta name="twitter:description" content="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境"/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/" /><link rel="prev" href="https://www.wenjie1018.cn/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Visual Studio Code(VS Code)配置C/C++环境",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.wenjie1018.cn\/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83\/"
+        },"genre": "posts","keywords": "VS Code, C\u002b\u002b","wordcount":  2618 ,
+        "url": "https:\/\/www.wenjie1018.cn\/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83\/","datePublished": "2024-12-18T11:11:12+08:00","dateModified": "2024-12-18T11:11:12+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "AKUMA"
+            },"description": "Visual Studio Code(VS Code)配置C/C++环境"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="WJ BLOG"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/series/"> 系列 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="WJ BLOG"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/series/" title="">系列</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#一visual-studio-code安装">一、Visual Studio Code安装</a></li>
+    <li><a href="#二mingw编译器下载与配置">二、MinGW编译器下载与配置</a>
+      <ul>
+        <li><a href="#1mingw介绍">1、MinGW介绍</a></li>
+        <li><a href="#2为什么vs-code配置cc环境要安装mingw">2、为什么VS Code配置C/C++环境要安装MinGW</a></li>
+        <li><a href="#3mingw安装与环境变量配置">3、MinGW安装与环境变量配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#三在vs-code中安装相关插件">三、在VS Code中安装相关插件</a></li>
+    <li><a href="#四配置调试功能重要">四、配置调试功能（重要）</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Visual Studio Code(VS Code)配置C/C&#43;&#43;环境</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">AKUMA</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-12-18">2024-12-18</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-12-18">2024-12-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2618 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 6 分钟&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/featured-image.jpeg"
+        srcset="/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/featured-image.jpeg, /visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/featured-image.jpeg 1.5x, /visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/featured-image.jpeg 2x"
+        sizes="auto"
+        alt="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境"
+        title="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境" height="628"   width="1724" ></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#一visual-studio-code安装">一、Visual Studio Code安装</a></li>
+    <li><a href="#二mingw编译器下载与配置">二、MinGW编译器下载与配置</a>
+      <ul>
+        <li><a href="#1mingw介绍">1、MinGW介绍</a></li>
+        <li><a href="#2为什么vs-code配置cc环境要安装mingw">2、为什么VS Code配置C/C++环境要安装MinGW</a></li>
+        <li><a href="#3mingw安装与环境变量配置">3、MinGW安装与环境变量配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#三在vs-code中安装相关插件">三、在VS Code中安装相关插件</a></li>
+    <li><a href="#四配置调试功能重要">四、配置调试功能（重要）</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="visual-studio-codevs-code配置cc环境" class="headerLink">
+    <a href="#visual-studio-codevs-code%e9%85%8d%e7%bd%aecc%e7%8e%af%e5%a2%83" class="header-mark"></a>Visual Studio Code(VS Code)配置C/C++环境</h1><h2 id="一visual-studio-code安装" class="headerLink">
+    <a href="#%e4%b8%80visual-studio-code%e5%ae%89%e8%a3%85" class="header-mark"></a>一、Visual Studio Code安装</h2><figure><img src="./bac10f42c9ed4c778fd05a588463745e.png"/>
+</figure>
+
+<p>​    Visual Studio Code，下文中简称为VS Code的详细安装方法请参考<a href="https://blog.csdn.net/csh1807266489/article/details/126805853" target="_blank" rel="noopener noreferrer">VSCode安装教程（超详细）-CSDN博客</a></p>
+<h2 id="二mingw编译器下载与配置" class="headerLink">
+    <a href="#%e4%ba%8cmingw%e7%bc%96%e8%af%91%e5%99%a8%e4%b8%8b%e8%bd%bd%e4%b8%8e%e9%85%8d%e7%bd%ae" class="header-mark"></a>二、MinGW编译器下载与配置</h2><h3 id="1mingw介绍" class="headerLink">
+    <a href="#1mingw%e4%bb%8b%e7%bb%8d" class="header-mark"></a>1、MinGW介绍</h3><figure><img src="./0fbc34b38b8540c1a2d520d92521cd77.png"/>
+</figure>
+
+<p>​    MinGW(Minimalist <a href="https://so.csdn.net/so/search?q=GNU&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">GNU</a> for Windows)是一款用于Windows 平台的<a href="https://so.csdn.net/so/search?q=%e8%bd%bb%e9%87%8f%e7%ba%a7&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">轻量级</a>开源编译器工具集，基于 GNU 编译器集合（GCC, GNU Compiler Collection）。它提供了一组工具和库，用于将 C、C++ 和 Fortran 等语言的源代码编译为 Windows 可执行文件。</p>
+<h3 id="2为什么vs-code配置cc环境要安装mingw" class="headerLink">
+    <a href="#2%e4%b8%ba%e4%bb%80%e4%b9%88vs-code%e9%85%8d%e7%bd%aecc%e7%8e%af%e5%a2%83%e8%a6%81%e5%ae%89%e8%a3%85mingw" class="header-mark"></a>2、为什么VS Code配置C/C++环境要安装MinGW</h3><p>​    VS Code作为一个轻量级<a href="https://edu.csdn.net/cloud/sd_summit?utm_source=glcblog&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">代码编辑器</a>，本身不带编译功能。要运行和调试 C++ 程序，必须有一个能够将代码转为可执行文件的编译器，而 MinGW可以实现上述功能。</p>
+<p>​    VS Code中的C++插件（如 C/C++ Extension）能够直接调用 MinGW 提供的 GCC编译器进行编译。MinGW提供的gdb调试器可以用于VS Code的调试工具链。</p>
+<h3 id="3mingw安装与环境变量配置" class="headerLink">
+    <a href="#3mingw%e5%ae%89%e8%a3%85%e4%b8%8e%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e9%85%8d%e7%bd%ae" class="header-mark"></a>3、MinGW安装与环境变量配置</h3><p>​    MinGW的下载地址：<a href="https://nuwen.net/mingw.html" target="_blank" rel="noopener noreferrer">MinGW Distro - nuwen.net</a></p>
+<figure><img src="./14582c47a7444815863872a7ea44eb4a.png"/>
+</figure>
+
+<p>​    点击下载mingw-19.0.exe文件并安装。注意提取文件的路径不能包含中文。本人将文件提取到D:\MinGW路径下。</p>
+<figure><img src="./74c1f1d43e6f454abc2b50cc31cd6c85.png"/>
+</figure>
+
+<p>​    找到提取后的MinGW中bin文件夹的路径并复制。</p>
+<figure><img src="./1807a6129f234c4b8ce1096648b7f548.png"/>
+</figure>
+
+<p>​    <strong>MinGW的环境变量配置方法如下：</strong></p>
+<p>​    Win+R组合键打开运行对话框，输入sysdm.cpl打开系统属性。在高级选项卡下点击环境变量。</p>
+<figure><img src="./c9a00a1e020c40a690604af1c3adf562.png"/>
+</figure>
+
+<p>​    双击用户变量中的Path。</p>
+<figure><img src="./b8903a4bf424423ba7e3382bca40ad63.png"/>
+</figure>
+
+<p>​    点击新建，将复制的MinGW中bin文件夹的路径粘贴进去。</p>
+<figure><img src="./8be274612dc9483ea5729bd99c554ec6.png"/>
+</figure>
+
+<p>​    依次点击三次确定后，至此MinGW的环境变量配置完毕。</p>
+<p>​    验证MinGW安装是否成功的方法如下：</p>
+<p>​    Win+R组合键打开运行对话框，输入cmd，在终端中输入g++ &ndash;version。如果终端中正常打印出g++的版本号，则证明MinGW已经成功安装。</p>
+<figure><img src="./4bc6575cb4a1441aa19d75661c826f5d.png"/>
+</figure>
+
+<h2 id="三在vs-code中安装相关插件" class="headerLink">
+    <a href="#%e4%b8%89%e5%9c%a8vs-code%e4%b8%ad%e5%ae%89%e8%a3%85%e7%9b%b8%e5%85%b3%e6%8f%92%e4%bb%b6" class="header-mark"></a>三、在VS Code中安装相关插件</h2><p>​    打开VS Code<a href="https://marketing.csdn.net/p/3127db09a98e0723b83b2914d9256174?pId=2782&amp;utm_source=glcblog&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">软件</a>，在左侧点击插件管理按钮。</p>
+<figure><img src="./ab1854eac298436ca27e3acc6f2d8c69.png"/>
+</figure>
+
+<p>​    在搜索栏中搜索C/C++，安装C/C++插件。该插件是由微软官方发布的一款扩展（C/C++ Extension），旨在为开发者提供高效的C和C++代码编辑、调试和构建功能。它是用VS Code进行C/C++开发的核心工具。</p>
+<figure><img src="./d579fdd3ed704450b01f1316ef8761a0.png"/>
+</figure>
+
+<p>​    在搜索栏中搜索code runner，安装code runner插件。该插件可以让开发者快速运行多种编程语言的代码，而无需配置复杂的任务或调试环境。</p>
+<figure><img src="./3406e73c699f4ef39aba86f51dae7c53.png"/>
+</figure>
+
+<p>​    在搜索栏中搜索c/c++ Extension Pack，安装c/c++ Extension Pack插件。该插件由多个与C/C++开发相关的插件组成，帮助开发者更高效地在VS Code中进行代码编辑、调试、构建和测试工作。</p>
+<p><figure><img src="./e0c5ec5d316c467696ed36eff9342b44.png"/>
+</figure>
+    在搜索栏中搜索Cmake，安装c/c++ Extension Pack插件。该插件专门为使用CMake构建系统的开发者设计。它提供了丰富的功能，可以帮助开发者更高效地配置、生成、构建和调试基于CMake的项目。</p>
+<figure><img src="./4ba18a54dd6b4fbaa5239610fe059ba2.png"/>
+</figure>
+
+<h2 id="四配置调试功能重要" class="headerLink">
+    <a href="#%e5%9b%9b%e9%85%8d%e7%bd%ae%e8%b0%83%e8%af%95%e5%8a%9f%e8%83%bd%e9%87%8d%e8%a6%81" class="header-mark"></a>四、配置调试功能（重要）</h2><p>​    首先创建一个文件夹，注意不要用中文名称，待调试的C/C++代码都要在这个文件夹中才能正常调试。本人创建的文件夹名称为vscode_c_cpp_test。</p>
+<figure><img src="./0afa75c415b74a3580fbd4e783e9ef65.png"/>
+</figure>
+
+<p>​    在VS Code中打开创建的vscode_c_cpp_test文件夹。点击新建文件夹按钮，命名为.vscode（这个名称不能修改）。</p>
+<figure><img src="./14c43c7ef81a41b2b1429e945b52b194.png"/>
+</figure>
+
+<p><strong>选中新建的.vscode文件夹</strong>，点击新建文件按钮。在.vscode文件夹下创建四个文件，文件名如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">c_cpp_properties</span><span class="p">.</span><span class="n">json</span>
+</span></span><span class="line"><span class="cl"><span class="n">launch</span><span class="p">.</span><span class="n">json</span>
+</span></span><span class="line"><span class="cl"><span class="n">settings</span><span class="p">.</span><span class="n">json</span>
+</span></span><span class="line"><span class="cl"><span class="n">tasks</span><span class="p">.</span><span class="n">json</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><figure><img src="./21db46ca1719483bb310bfe5c60ffda9.png"/>
+</figure>
+
+<figure><img src="./7f12e622d63549b292167b5dc1208411.png"/>
+</figure>
+
+<p>​    首先配置<strong>c_cpp_properties.json</strong>文件，该文件用于配置C/C++扩展的编译环境信息，帮助VS Code更好地提供代码提示、语法检查、错误报告等功能。它主要指定头文件路径、编译器配置和其他信息。所配置的文件内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;configurations&#34;</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;name&#34;</span><span class="o">:</span> <span class="s">&#34;Win64&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;includePath&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s">&#34;${workspaceFolder}/**&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;defines&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s">&#34;_DEBUG&#34;</span><span class="p">,</span> <span class="s">&#34;UNICODE&#34;</span><span class="p">,</span> <span class="s">&#34;_UNICODE&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;windowsSdkVersion&#34;</span><span class="o">:</span> <span class="s">&#34;10.0.22631.4460&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;compilerPath&#34;</span><span class="o">:</span> <span class="s">&#34;D:/MinGW/MinGW/bin/g++.exe&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;cStandard&#34;</span><span class="o">:</span> <span class="s">&#34;c17&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;cppStandard&#34;</span><span class="o">:</span> <span class="s">&#34;c++17&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;intelliSenseMode&#34;</span><span class="o">:</span> <span class="s">&#34;gcc-x64&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;version&#34;</span><span class="o">:</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>​    注意事项：</p>
+<p>​    1）windowsSdkVersion的查询方法： Win+R组合键打开运行对话框，输入cmd，在终端中输入VER。经查询，本人计算机的windowsSdkVersion为10.0.22631.4460。</p>
+<figure><img src="./7fcc13a684934b2a9bad9c35aa77ef8b.png"/>
+</figure>
+
+<p>​    2）compilerPath需要配置成g++的安装路径。本人的安装路径为D:/MinGW/MinGW/bin/g++.exe。</p>
+<p>​    然后配置<strong>launch.json</strong>文件，该文件用于配置调试环境，它定义了如何启动、运行和调试C/C++程序。通过这个文件可以指定调试器、程序路径、启动参数以及调试相关的设置，从而完成对程序的调试任务。所配置的文件内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;version&#34;</span><span class="o">:</span> <span class="s">&#34;0.2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;configurations&#34;</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;name&#34;</span><span class="o">:</span> <span class="s">&#34;(gdb) Launch&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;type&#34;</span><span class="o">:</span> <span class="s">&#34;cppdbg&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;request&#34;</span><span class="o">:</span> <span class="s">&#34;launch&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;program&#34;</span><span class="o">:</span> <span class="s">&#34;${fileDirname}</span><span class="se">\\</span><span class="s">${fileBasenameNoExtension}.exe&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;args&#34;</span><span class="o">:</span> <span class="p">[],</span> 
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;stopAtEntry&#34;</span><span class="o">:</span> <span class="nb">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;cwd&#34;</span><span class="o">:</span> <span class="s">&#34;${workspaceRoot}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;environment&#34;</span><span class="o">:</span> <span class="p">[],</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;externalConsole&#34;</span><span class="o">:</span> <span class="nb">true</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;MIMode&#34;</span><span class="o">:</span> <span class="s">&#34;gdb&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;miDebuggerPath&#34;</span><span class="o">:</span> <span class="s">&#34;D:</span><span class="se">\\</span><span class="s">MinGW</span><span class="se">\\</span><span class="s">MinGW</span><span class="se">\\</span><span class="s">bin</span><span class="se">\\</span><span class="s">gdb.exe&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;preLaunchTask&#34;</span><span class="o">:</span> <span class="s">&#34;g++&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;setupCommands&#34;</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">          <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s">&#34;description&#34;</span><span class="o">:</span> <span class="s">&#34;Enable pretty-printing for gdb&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s">&#34;text&#34;</span><span class="o">:</span> <span class="s">&#34;-enable-pretty-printing&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s">&#34;ignoreFailures&#34;</span><span class="o">:</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>​    注意事项：</p>
+<p>​    miDebuggerPath需要配置成gdb的安装路径。本人的安装路径为D:\MinGW\MinGW\bin\gdb.exe。</p>
+<p>​    接下来配置<strong>settings.json</strong>文件，该文件用于为当前项目定义工作区范围内的设置。这些设置会覆盖全局设置，并针对特定项目进行定制化配置。在配置C/C++环境时，该文件可以用来指定代码格式化、编译路径、头文件搜索路径等与开发环境相关的参数。所配置的文件内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;files.associations&#34;</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;*.py&#34;</span><span class="o">:</span> <span class="s">&#34;python&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;iostream&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;*.tcc&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;string&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;unordered_map&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;vector&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;ostream&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;new&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;typeinfo&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;deque&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;initializer_list&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;iosfwd&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;fstream&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;sstream&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;map&#34;</span><span class="o">:</span> <span class="s">&#34;c&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;stdio.h&#34;</span><span class="o">:</span> <span class="s">&#34;c&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;algorithm&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;atomic&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;bit&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;cctype&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;clocale&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;cmath&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;compare&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;concepts&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;cstddef&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;cstdint&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;cstdio&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;cstdlib&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;cstring&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;ctime&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;cwchar&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;exception&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;ios&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;istream&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;iterator&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;limits&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;memory&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;random&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;set&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;stack&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;stdexcept&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;streambuf&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;system_error&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;tuple&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;type_traits&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;utility&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xfacet&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xiosbase&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xlocale&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xlocinfo&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xlocnum&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xmemory&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xstddef&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xstring&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xtr1common&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xtree&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;xutility&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;stdlib.h&#34;</span><span class="o">:</span> <span class="s">&#34;c&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;string.h&#34;</span><span class="o">:</span> <span class="s">&#34;c&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;editor.suggest.snippetsPreventQuickSuggestions&#34;</span><span class="o">:</span> <span class="nb">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;aiXcoder.showTrayIcon&#34;</span><span class="o">:</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>​    最后配置<strong>tasks.json</strong>文件，该文件用于配置任务自动化。在配置C/C++开发环境时，该文件主要定义编译任务，帮助开发者完成程序的编译、构建、清理等操作。所配置的文件内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;version&#34;</span><span class="o">:</span> <span class="s">&#34;2.0.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;tasks&#34;</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;label&#34;</span><span class="o">:</span> <span class="s">&#34;g++&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;command&#34;</span><span class="o">:</span> <span class="s">&#34;g++&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;args&#34;</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;-g&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;-fexec-charset=GBK&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;${file}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;-o&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;${fileDirname}/${fileBasenameNoExtension}.exe&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">],</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;problemMatcher&#34;</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;owner&#34;</span><span class="o">:</span> <span class="s">&#34;cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;fileLocation&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s">&#34;relative&#34;</span><span class="p">,</span> <span class="s">&#34;${workspaceRoot}&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;pattern&#34;</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;regexp&#34;</span><span class="o">:</span> <span class="s">&#34;^(.*):(</span><span class="se">\\</span><span class="s">d+):(</span><span class="se">\\</span><span class="s">d+):</span><span class="se">\\</span><span class="s">s+(warning|error):</span><span class="se">\\</span><span class="s">s+(.*)$&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;file&#34;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;line&#34;</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;column&#34;</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;severity&#34;</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;message&#34;</span><span class="o">:</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">},</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;group&#34;</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;kind&#34;</span><span class="o">:</span> <span class="s">&#34;build&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;isDefault&#34;</span><span class="o">:</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>​    在vscode_c_cpp_test文件夹下创建一个test.cpp文件，测试调试功能是否配置成功。</p>
+<figure><img src="./314a88ef6c5f4e8fba94beae360cda23.png"/>
+</figure>
+
+<p>​    可以看到终端打印出了&quot;The C/C++ environment has been successfully configured in VS Code!&quot;。至此，已经成功为VS Code配置了C/C++环境。</p>
+<p>原文地址：<a href="https://blog.csdn.net/real86/article/details/143817763" target="_blank" rel="noopener noreferrer">Visual Studio Code(VS Code)配置C/C++环境_vscode c++-CSDN博客</a></p>
+</div>
+
+        
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2024-12-18</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/" data-title="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境" data-hashtags="VS Code,C&#43;&#43;"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/" data-hashtag="VS Code"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/" data-title="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境" data-web><span class="fab fa-whatsapp fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/" data-title="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/" data-title="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境" data-image="featured-image.jpeg"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Myspace" data-sharer="myspace" data-url="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/" data-title="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境" data-description="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境"><span data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></span></button><button title="分享到 Blogger" data-sharer="blogger" data-url="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/" data-title="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境" data-description="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境"><span class="fab fa-blogger fa-fw"></span></button><button title="分享到 Evernote" data-sharer="evernote" data-url="https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/" data-title="Visual Studio Code(VS Code)配置C/C&#43;&#43;环境"><span class="fab fa-evernote fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/vs-code/">VS Code</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E4%B8%AD%E5%9B%BDdns%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="prev" rel="prev" title="中国DNS服务器"><i class="fas fa-angle-left fa-fw"></i>中国DNS服务器</a></div>
+</div>
+<div id="comments"></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">AKUMA</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"WJ BLOG","mobile-header-typeit":"WJ BLOG"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>
