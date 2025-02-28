@@ -4,9 +4,18 @@
         <link>https://www.wenjie1018.cn/</link>
         <description>这是我的全新 Hugo 网站</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wenjie1018@gmail.com (AKUMA)</managingEditor>
-            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Wed, 18 Dec 2024 11:11:12 &#43;0800</lastBuildDate>
+            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Thu, 27 Feb 2025 14:12:12 &#43;0800</lastBuildDate>
             <atom:link href="https://www.wenjie1018.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>OCRmyPDF让你能搜索扫描版PDF文档</title>
+    <link>https://www.wenjie1018.cn/ocrmypdf%E8%AE%A9%E4%BD%A0%E8%83%BD%E6%90%9C%E7%B4%A2%E6%89%AB%E6%8F%8F%E7%89%88pdf%E6%96%87%E6%A1%A3/</link>
+    <pubDate>Thu, 27 Feb 2025 14:12:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/ocrmypdf%E8%AE%A9%E4%BD%A0%E8%83%BD%E6%90%9C%E7%B4%A2%E6%89%AB%E6%8F%8F%E7%89%88pdf%E6%96%87%E6%A1%A3/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/ocrmypdf%E8%AE%A9%E4%BD%A0%E8%83%BD%E6%90%9C%E7%B4%A2%E6%89%AB%E6%8F%8F%E7%89%88pdf%E6%96%87%E6%A1%A3/8077687b5627ecdbd21f18c51834236b.png" referrerpolicy="no-referrer">
+            </div>OCRmyPDF让你能搜索扫描版PDF文档什么是 OCRmyPDF ？ PDF 是存储和交换扫描文档的最佳格式。不幸的是，PDF 可能很难修改。OCRmyPDF 是一个 Python]]></description>
+</item><item>
     <title>Visual Studio Code(VS Code)配置C/C&#43;&#43;环境</title>
     <link>https://www.wenjie1018.cn/visual-studio-codevs-code%E9%85%8D%E7%BD%AEcc-%E7%8E%AF%E5%A2%83/</link>
     <pubDate>Wed, 18 Dec 2024 11:11:12 &#43;0800</pubDate><author>
@@ -87,14 +96,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/%E5%9C%A8linux%E4%B8%8A%E5%AE%89%E8%A3%85warp/featured-image.png" referrerpolicy="no-referrer">
             </div>在Linux上安装Warp官网安装说明： pkg.cloudflareclient.com 官网使用手册： Linux desktop client · Cloudflare WARP client docs Ubuntu： 1 2 3 4 5 6 7 8 # Add cloudflare gpg key curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg # Add this repo]]></description>
-</item><item>
-    <title>ClouDNS永久免费域名向cloudflare迁移</title>
-    <link>https://www.wenjie1018.cn/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/</link>
-    <pubDate>Thu, 23 May 2024 10:21:12 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>https://www.wenjie1018.cn/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/cloudns%E6%B0%B8%E4%B9%85%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D%E5%90%91cloudflare%E8%BF%81%E7%A7%BB/featured-image.png" referrerpolicy="no-referrer">
-            </div>上一篇文章已经教大家如何白嫖一个ClouDNS免费服务下的永久域名，见教你免费注册一个ClouDNS永久域名(保姆级教程） 现在再来教大家如何]]></description>
 </item></channel>
 </rss>
