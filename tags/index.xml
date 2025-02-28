@@ -4,14 +4,7 @@
         <link>https://www.wenjie1018.cn/tags/</link>
         <description>Tags - 标签 - WJ BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wenjie1018@gmail.com (AKUMA)</managingEditor>
-            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Thu, 27 Feb 2025 14:12:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>OCRmyPDF</title>
-    <link>https://www.wenjie1018.cn/tags/ocrmypdf/</link>
-    <pubDate>Thu, 27 Feb 2025 14:12:12 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>https://www.wenjie1018.cn/tags/ocrmypdf/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
+            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Wed, 18 Dec 2024 11:11:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/" rel="self" type="application/rss+xml" /><item>
     <title>C&#43;&#43;</title>
     <link>https://www.wenjie1018.cn/tags/c&#43;&#43;/</link>
     <pubDate>Wed, 18 Dec 2024 11:11:12 &#43;0800</pubDate><author>
@@ -73,6 +66,13 @@
     <pubDate>Wed, 29 May 2024 10:50:45 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>https://www.wenjie1018.cn/tags/linux/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>warp</title>
+    <link>https://www.wenjie1018.cn/tags/warp/</link>
+    <pubDate>Wed, 29 May 2024 10:50:45 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/tags/warp/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
