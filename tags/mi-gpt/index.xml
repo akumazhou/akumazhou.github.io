@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>MI-GPT - 标签 - WJ BLOG</title>
+        <link>https://www.wenjie1018.cn/tags/mi-gpt/</link>
+        <description>MI-GPT - 标签 - WJ BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wenjie1018@gmail.com (AKUMA)</managingEditor>
+            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Wed, 12 Mar 2025 11:19:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/mi-gpt/" rel="self" type="application/rss+xml" /><item>
+    <title>小米音箱&#43;DeepSeek让小爱秒变贾维斯</title>
+    <link>https://www.wenjie1018.cn/%E5%B0%8F%E7%B1%B3%E9%9F%B3%E7%AE%B1-deepseek%E8%AE%A9%E5%B0%8F%E7%88%B1%E7%A7%92%E5%8F%98%E8%B4%BE%E7%BB%B4%E6%96%AF/</link>
+    <pubDate>Wed, 12 Mar 2025 11:19:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/%E5%B0%8F%E7%B1%B3%E9%9F%B3%E7%AE%B1-deepseek%E8%AE%A9%E5%B0%8F%E7%88%B1%E7%A7%92%E5%8F%98%E8%B4%BE%E7%BB%B4%E6%96%AF/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%E5%B0%8F%E7%B1%B3%E9%9F%B3%E7%AE%B1-deepseek%E8%AE%A9%E5%B0%8F%E7%88%B1%E7%A7%92%E5%8F%98%E8%B4%BE%E7%BB%B4%E6%96%AF/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>先简单介绍一下本次会用到的工具一个专门将小爱接入AI的开源项目：mi-gpt **地址：**https://github.com/idooto]]></description>
+</item><item>
+    <title>通过群晖将小爱音箱接入各种大模型</title>
+    <link>https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87%E7%BE%A4%E6%99%96%E5%B0%86%E5%B0%8F%E7%88%B1%E9%9F%B3%E7%AE%B1%E6%8E%A5%E5%85%A5%E5%90%84%E7%A7%8D%E5%A4%A7%E6%A8%A1%E5%9E%8B/</link>
+    <pubDate>Wed, 12 Mar 2025 11:14:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/%E9%80%9A%E8%BF%87%E7%BE%A4%E6%99%96%E5%B0%86%E5%B0%8F%E7%88%B1%E9%9F%B3%E7%AE%B1%E6%8E%A5%E5%85%A5%E5%90%84%E7%A7%8D%E5%A4%A7%E6%A8%A1%E5%9E%8B/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%E9%80%9A%E8%BF%87%E7%BE%A4%E6%99%96%E5%B0%86%E5%B0%8F%E7%88%B1%E9%9F%B3%E7%AE%B1%E6%8E%A5%E5%85%A5%E5%90%84%E7%A7%8D%E5%A4%A7%E6%A8%A1%E5%9E%8B/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>通过群晖将小爱音箱接入各种大模型在上篇文章中我们把群晖接入了各大模型，接口实现了 API 接口的统一。 很多小伙伴不知道接入了有什么作用，其最大的优势]]></description>
+</item></channel>
+</rss>

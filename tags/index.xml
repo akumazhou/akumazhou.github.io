@@ -4,7 +4,21 @@
         <link>https://www.wenjie1018.cn/tags/</link>
         <description>Tags - 标签 - WJ BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wenjie1018@gmail.com (AKUMA)</managingEditor>
-            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Thu, 27 Feb 2025 14:12:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>wenjie1018@gmail.com (AKUMA)</webMaster><lastBuildDate>Wed, 12 Mar 2025 11:19:12 &#43;0800</lastBuildDate><atom:link href="https://www.wenjie1018.cn/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>MI-GPT</title>
+    <link>https://www.wenjie1018.cn/tags/mi-gpt/</link>
+    <pubDate>Wed, 12 Mar 2025 11:19:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/tags/mi-gpt/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>cloudflare</title>
+    <link>https://www.wenjie1018.cn/tags/cloudflare/</link>
+    <pubDate>Wed, 12 Mar 2025 10:14:12 &#43;0800</pubDate><author>
+        <name>AKUMA</name>
+    </author><guid>https://www.wenjie1018.cn/tags/cloudflare/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>OCRmyPDF</title>
     <link>https://www.wenjie1018.cn/tags/ocrmypdf/</link>
     <pubDate>Thu, 27 Feb 2025 14:12:12 &#43;0800</pubDate><author>
@@ -40,13 +54,6 @@
     </author><guid>https://www.wenjie1018.cn/tags/nas/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>cloudflare</title>
-    <link>https://www.wenjie1018.cn/tags/cloudflare/</link>
-    <pubDate>Wed, 31 Jul 2024 14:12:12 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>https://www.wenjie1018.cn/tags/cloudflare/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
     <title>Docker</title>
     <link>https://www.wenjie1018.cn/tags/docker/</link>
     <pubDate>Mon, 22 Jul 2024 10:19:12 &#43;0800</pubDate><author>
@@ -66,13 +73,6 @@
     <pubDate>Wed, 12 Jun 2024 14:21:12 &#43;0800</pubDate><author>
         <name>AKUMA</name>
     </author><guid>https://www.wenjie1018.cn/tags/windows%E6%8A%80%E5%B7%A7/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>linux</title>
-    <link>https://www.wenjie1018.cn/tags/linux/</link>
-    <pubDate>Wed, 29 May 2024 10:50:45 &#43;0800</pubDate><author>
-        <name>AKUMA</name>
-    </author><guid>https://www.wenjie1018.cn/tags/linux/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
