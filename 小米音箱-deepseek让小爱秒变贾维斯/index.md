@@ -111,7 +111,7 @@ MIot的配置，我的是小爱音箱Pro，默认配置跟表格里面指定配�
 
 {{< figure src="./662.png" >}}
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/3QzcPBL9P1DbQvXwzIYZm1lY7uprs5Fgcgb0xVrZdSjhUGOiaYOZbxhHMRY30S84VYQQNrMwrla0PXbdxyaGg9g/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+{{< figure src="./679.png" >}}
 
 关于机器人角色，主人角色设定
 
@@ -131,7 +131,7 @@ systemTemplate是系统提示词，{{}}中的参数是变量名，程序启动�
 
 另外如果您的小米机型不在如下行列，可以关闭streamResponse连续对话（设置为false）
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/3QzcPBL9P1DbQvXwzIYZm1lY7uprs5Fgn9UUL8S7qxTFovlyia6VGmmnXMzNLWYiaPK5pFibI8MchJ5z8cvQZGw2A/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+{{< figure src="./680.png" >}}
 
 我的是小爱音箱Pro，可开启（设置为true）
 
@@ -171,7 +171,7 @@ docker run -d --env-file C:/Users/kangarooking/Documents/mi-gpt/.env -v C:/Users
 
 {{< figure src="./669.png" >}}
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/3QzcPBL9P1DbQvXwzIYZm1lY7uprs5FgVUpxiaDDlOZuCvhXOgjaAjW8b0xZEiby8LYpjnYNX9T9zkicOicgQzQ95g/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+{{< figure src="./681.png" >}}
 
 到这里就大功告成啦~
 
@@ -231,7 +231,7 @@ TTS_DEFAULT_SPEAKER=选择音色（写音色名称即可）
 
 https://github.com/idootop/mi-gpt-tts/blob/main/src/tts/volcano.ts
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/3QzcPBL9P1DbQvXwzIYZm1lY7uprs5FgibBQu8bsGibvzLcqxvZI5lTRfRPialIVVwWH4yL1hicavnJOW55zNtYwMQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+{{< figure src="./682.png" >}}
 
 配置完成之后保存
 
